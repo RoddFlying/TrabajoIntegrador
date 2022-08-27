@@ -21,7 +21,7 @@
 - Integrantes del grupo :
 
 1) Acevedo, Facundo Rodrigo : Tengo 27 años, soy de Buenos Aires. Me dedico al Área cannabica hace unos años, y quiero poder encararlo desde el lado del sofware.
-También me gusta la tecnología y los videojuegos. Soy amante de los viajes y conocer nuevos lugares. Me encuentro aprendiendo sobre programación, ya que me resulta muy interesante.
+También me gusta la tecnología y los videojuegos. Soy amante de los viajes y conocer nuevos lugares. Me encuentro aprendiendo sobre programación, ya que me resulta muy interesante. Tengo mucho interes, en aprender sobre blockchain y ethereum.
 
 2)
 
