@@ -26,10 +26,9 @@ También me gusta la tecnología y los videojuegos. Soy amante de los viajes y c
 
 2) Maureen Parody. 37años. Diseñadora Gráfica y profesora de diseño. Trabaje los ultimos años de profesora de Diseño y con el programa de Digital House Schools, ahí me gustó la programación y decidi meterme más en tema. Me acabo de mudar a Chile y viajo mucho. Tengo un hijo de casi dos años bastante demandante.
 
-3)
+3) Canay, Marcelo Luis. 41 años, trabajo como analista contable y estoy formado en el area de ciencias sociales. Comenze a estudiar programacion para adquirir nuevos conocimientos que permitan potenciar mi formacion profesional. 
 
 4)
 
 5)
-
 
