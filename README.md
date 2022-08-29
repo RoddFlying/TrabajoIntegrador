@@ -2,8 +2,7 @@
 
 - Nuestro proyecto integrador es crear un E-commerce de un growshop que se dedica a la venta de insumos de Cannabis. Incluyendo información necesaria para quienes quieran incursionar en el tema incluido el marco legal.
 
-
-- Público cultivadorxs.
+- Publico: Personas entre 18 a 30 años que creen en medicinas alternativas, viven en la ciudad (y/o conurbano), viven sólos, trabajan pero al no tener mucho depenientes tiene plata para gastar en lo que les gusta.
 
 - Páginas de referencia : 
 
@@ -32,6 +31,4 @@ También me gusta la tecnología y los videojuegos. Soy amante de los viajes y c
 
 5)
 
-
-Publico: Personas entre 18 a 30 años que creen en medicinas alternativas, viven en la ciudad (y/o conurbano), viven sólos, trabajan pero al no tener mucho depenientes tiene plata para gastar en lo que les gusta.
 
