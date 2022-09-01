@@ -32,3 +32,17 @@ También me gusta la tecnología y los videojuegos. Soy amante de los viajes y c
 5)
 
 
+-Wireframes y paletas de colores adjuntos en otros archivos
+
+-Tipografías: 
+
+Si usamos la de paletas jugadas seria para los titulos
+https://fonts.google.com/specimen/Lobster 
+si usamos la mas recatada seria 
+https://fonts.google.com/specimen/Roboto
+
+para subtítulos  https://fonts.google.com/specimen/Lato?query=Lato 
+párrafos por un tema de fácil lectura (tiene que ser con serif para que sea mas fácil la lectura de largos textos) https://fonts.google.com/specimen/Cormorant+Garamond 
+para arriba de las imágenes podría ser  https://fonts.google.com/?query=Zilla+Slab 
+
+
