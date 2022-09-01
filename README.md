@@ -29,8 +29,7 @@ También me gusta la tecnología y los videojuegos. Soy amante de los viajes y c
 
 4) Juan Cruz Rodriguez: tengo 30 años, trabaje en IT durante mucho tiempo, actualmente para un banco dando soporte a su base de datos en SQL. Mis hobbies son tocar la guitarra, jugar a los videojuegos y al fútbol. Comencé a estudiar programación por intriga y formación profesional.
 
-5)
-Miqueas Muñoz: Tengo 20 años y soy de San Miguel, tengo 2 años de experiencia en el mundo de IT, estando en proyectos de gamedev como product manager, community manager y programador.
+5) Miqueas Muñoz: Tengo 20 años y soy de San Miguel, tengo 2 años de experiencia en el mundo de IT, estando en proyectos de gamedev como product manager, community manager y programador.
 
 -Wireframes y paletas de colores adjuntos en otros archivos
 
