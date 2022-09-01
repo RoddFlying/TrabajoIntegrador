@@ -28,7 +28,7 @@ También me gusta la tecnología y los videojuegos. Soy amante de los viajes y c
 3) Canay, Marcelo Luis. 41 años, trabajo como analista contable y estoy formado en el area de ciencias sociales. Comenze a estudiar programacion para adquirir nuevos conocimientos que permitan potenciar mi formacion profesional.
 
 4)
-
+Juan Cruz Rodriguez: tengo 30 años, trabaje en IT durante mucho tiempo, actualmente para un banco dando soporte a su base de datos en SQL. Mis hobbies son tocar la guitarra, jugar a los videojuegos y al fútbol. Comencé a estudiar programación por intriga y formación profesional.
 5)
 
 
