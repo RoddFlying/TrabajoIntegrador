@@ -8,5 +8,5 @@ app.listen(3000,()=>{
 });
 
 app.get('/', (req,res) =>{
-res. send("Cambie"): // permite enviar texto o codlgo
+res. send("Cambie"); // permite enviar texto o codlgo
 });
