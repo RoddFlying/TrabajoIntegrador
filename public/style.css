@@ -23,8 +23,49 @@ p{
 
 /*HEADER*/
 
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+#promoHeader{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.headingContainer{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
 h1{
     font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+}
+.menuPrincipal{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: auto auto auto auto auto;
+    align-content: center;
+}
+.menuPrincipal li{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+.menuPrincipal li a{
+    text-decoration: none;
+    color: black;
+   
 }
 
 /*FOOTER*/
