@@ -1,5 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Font Roboto bold 900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Font Roboto thin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Font roboto regular */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Lobster font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*lato regular font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); /*lato bold*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); /*lato thin*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); /*Garamond regular font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');/*Garamond italic*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap'); /*garamond Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
+
+
+/*GENERAL*/
+body{
+    color: black;
+}
+p{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/*HEADER*/
 
 h1{
     font-family: 'Roboto', sans-serif;
 }
+
+/*FOOTER*/
