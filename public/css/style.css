@@ -12,6 +12,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
 
+/*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
+
+/*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
 /*GENERAL*/
 body{
@@ -24,15 +27,18 @@ p{
 /*HEADER*/
 
 header{
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     right: 0;
     left: 0;
     width: 100%;
+    margin-top: -25px;
+    margin-right: 0%;
+    margin-right: 0%;
 }
 
 #promoHeader{
-    background-color: gray;
+    background-color: #3f3222;
     color: white;
     text-align: center;
     padding-top: 10px;
@@ -49,8 +55,9 @@ header{
 
 h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 100px;
+    font-size: 75px;
     line-height: 0%;
+    text-align: center;
 }
 .menuPrincipal{
     display: grid;
@@ -69,4 +76,13 @@ h1{
    
 }
 
+
 /*FOOTER*/
+footer{
+    background-color: #3f3222;
+}
+
+footer i{
+    color:#ffffff;
+    
+}
