@@ -1,1 +1,1 @@
-
+Decidimos divirnos los roles y hacer una página cada uno para que todos los integrantes del grupo puedan realizar tareas en común tanto de HTML como de CSS y también aprovechar para en esta etapa inicial que no se efectuen tantos conflictos.
