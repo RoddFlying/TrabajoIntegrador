@@ -11,6 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap'); /*garamond Bold*/
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
 
     :root {
      --dark-olive-green : #5a6b47;
@@ -38,6 +39,13 @@ section{
   width: 100%;
 }
 
+.bannerIndex .bannerIndexInfo{
+  position: relative;
+  bottom: 200px;
+  left: 70%;
+  z-index: 50;
+}
+
 .bannerIndex .bannerIndexInfo button{
   padding: 10px;
   color: #ffffff;
@@ -51,6 +59,11 @@ section{
 
 .bannerIndex img{
   width: 100%;
+}
+.bannerIndex li{
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 
@@ -72,6 +85,10 @@ section{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
+  position: relative;
+  bottom: 100px;
+  left: 25%;
+  z-index: 50;
 }
 
 .destacado img{
@@ -143,7 +160,7 @@ section{
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-
+  
 }
 
 .bannerUno{
@@ -164,11 +181,17 @@ section{
   margin: 10px;
   align-items: center;
   border: none;
+  position: relative;
+  bottom: 100px;
+  left: 50%;
+  z-index: 50;
+
 }
 
 .bannerDos{
   margin: auto;
   width: 75%;
+  
 }
 
 .bannerDos img{
@@ -185,4 +208,9 @@ section{
   margin: 10px;
   align-items: center;
   border: none;
+  position: relative;
+  bottom: 100px;
+  left: 10%;
+  z-index: 50;
+
 }

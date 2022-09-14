@@ -118,6 +118,8 @@ header i{
 .menuPrincipal li a{
     text-decoration: none;
     color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 h2 {
