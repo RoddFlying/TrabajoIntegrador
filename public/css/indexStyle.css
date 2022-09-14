@@ -31,6 +31,9 @@ section{
   margin-top: 50px; 
 }
 
+
+
+/*BANNER INCIAL CON TEXTO Y BOTONES*/
 .bannerIndex{
   width: 100%;
 }
@@ -50,42 +53,10 @@ section{
   width: 100%;
 }
 
-.productoIndex{
-  padding: 20px;
-  background-color: #5a6b47;
-  color:#ffffff;
-}
 
-.productosMenu{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  margin: 20px;
-}
 
-.producto{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px;
-  width: 10%;
-  
-}
 
-.producto img{
-  width: 100%;
-  padding: 10px;
-}
-
-.producto h3{
-  font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    padding: 10px;
-    text-align: center;
-}
-
+/*PRODUCTO DESTACADO BANNER PRE PDOCUTOS*/
 .destacado{
   margin: auto;
   width: 75%;
@@ -126,6 +97,47 @@ section{
   background-color: #5a6b47;
 }
 
+
+
+/*PRODUCTOS*/
+.productoIndex{
+  padding: 20px;
+  background-color: #5a6b47;
+  color:#ffffff;
+}
+
+.productosMenu{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.producto{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  width: 10%;
+  
+}
+
+.producto img{
+  width: 100%;
+  padding: 10px;
+}
+
+.producto h3{
+  font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*BANNERS MELLIZOS*/
 .banners{
   display: flex;
   flex-wrap: wrap;
@@ -142,6 +154,18 @@ section{
   width: 100%;
 }
 
+.bannerUno button{
+  padding: 10px;
+  color: #ffffff;
+  background-color: #dabf94;
+  border-radius: 5px;
+  z-index: 100;
+  width: 40%;
+  margin: 10px;
+  align-items: center;
+  border: none;
+}
+
 .bannerDos{
   margin: auto;
   width: 75%;
@@ -149,4 +173,16 @@ section{
 
 .bannerDos img{
   width: 100%;
+}
+
+.bannerDos button{
+  padding: 10px;
+  color: #ffffff;
+  background-color: #5a6b47;
+  border-radius: 5px;
+  z-index: 100;
+  width: 40%;
+  margin: 10px;
+  align-items: center;
+  border: none;
 }

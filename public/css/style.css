@@ -89,12 +89,21 @@ header i{
     outline:none;
 }
 
-h1{
+.logo{
+    margin: auto;
+    align-items: center;
+    width: 250px;
+}
+
+.headingLogo{
+    margin: auto;
+}
+/* h1{
     font-family: 'Roboto', sans-serif;
     font-size: 75px;
     line-height: 50%;
     text-align: center;
-}
+} */
 .menuPrincipal{
     display: grid;
     grid-gap:10px;
