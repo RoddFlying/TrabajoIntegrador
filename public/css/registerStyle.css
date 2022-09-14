@@ -20,9 +20,17 @@ HEAD
     position: relative;
     left: 50px;
   }
+
+  .Email {
+   font-weight: bold;
+   font-size: 20px;
+   position: relative;
+   left: 20%;
+  }
    
 
   .BotonRegistro {
+    color:white;
     background-color: #5a6b47;
     border: none;
     border-radius: 40px;
