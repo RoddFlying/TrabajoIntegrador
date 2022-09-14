@@ -37,16 +37,17 @@
    border-radius: 8px;
    border:none;
    height: 40px;
-   width: 100%;
+   width: 7%;
    cursor:pointer;     
    font-size: 18px;
    font-weight: bold;
    height: 50px;
    color:white;
-   justify-items: center;       
-
+   justify-items: center;   
+   position: relative;
+   left:870px;    
   }
-  .subtitulo{
+  .subtitulo {
     color: var(--black);
     margin-bottom: 50px;
     margin-top: 350px;
