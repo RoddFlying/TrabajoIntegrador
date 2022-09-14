@@ -12,7 +12,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
 
-<<<<<<< HEAD
     :root {
      --dark-olive-green : #5a6b47;
      --black : #000000;
@@ -23,12 +22,12 @@
     } 
     
     
-=======
+
 /*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
->>>>>>> c5c7bf38f126b80da6a1db0524bb544809a6a5cb
+
 /*GENERAL*/
 
 *{
@@ -72,13 +71,8 @@ header{
 
 h1{
     font-family: 'Roboto', sans-serif;
-<<<<<<< HEAD
-    font-size: 100px;
-    line-height: 0%;
-=======
     font-size: 75px;
     line-height: 50%;
->>>>>>> c5c7bf38f126b80da6a1db0524bb544809a6a5cb
     text-align: center;
 }
 .menuPrincipal{
@@ -97,7 +91,6 @@ h1{
     color: black;
 }
 
-<<<<<<< HEAD
 h2 {
     text-align: center;
 }
@@ -133,12 +126,6 @@ Codigo Rodd
     border-radius: 50%;
 }
 
-
-
-
-/*FOOTER*/
-=======
-
 /*FOOTER*/
 footer{
     background-color: #3f3222;
@@ -148,4 +135,4 @@ footer i{
     color:#ffffff;
     
 }
->>>>>>> c5c7bf38f126b80da6a1db0524bb544809a6a5cb
+
