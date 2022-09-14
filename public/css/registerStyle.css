@@ -1,0 +1,17 @@
+.Contenedor{
+    position:relative;
+    top:100px;
+}
+.headingLogo {
+    color: var(--dark-olive-green);
+    font-size: 10px;
+
+  }
+  .registro {
+    color:white;
+    background-color:var(--dark-olive-green) ;
+    border-radius: 10%;
+    
+    position: relative;
+    top: 100px;
+  }
