@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/loginStyle.css">
+    <style>
+      .headingLogo {
+        color: var(--dark-olive-green);
+        font-size: 10px;
+
+      }
+      .datos{
+      margin-bottom: 10px;
+      text-align: center;
+      margin-top: 10px;
+      border: none;
+      font-size: 20px;
+      display:grid;     
+      }
+      .datos2{
+        background-color: var(--tan)  ;
+        border:none;
+        border-radius:8px;
+        height: 30px;
+        font-size: 20px;
+        padding: 6px;
+      }
+      .ultima{
+        text-align: center;
+      margin-top: 30px;
+     
+      font-weight: bold;
+      }
+      .registrarse{
+        margin-bottom: 30px;
+      text-align: center;
+      margin-top: 30px;
+      cursor:pointer;
+      font-weight: bold;
+      }
+      .boton {
+       background-color: var(--dark-olive-green);
+       border-radius: 8px;
+       border:none;
+       height: 40px;
+       width: 100%;
+       cursor:pointer;     
+       font-size: 18px;
+       font-weight: bold;
+       height: 50px;
+       color:white;
+       justify-items: center;       
+
+      }
+      .subtitulo{
+        color: var(--black);
+        margin-bottom: 50px;
+        margin-top: 350px;
+      
+      }
+      .formulario{
+        display:flex;
+        flex-direction : column;
+        margin-bottom: 12px;
+
+      }
+      .contraseña2{
+        margin-top:30px;
+        font-weight: bold;
+      }
+  
+    </style>
+</head>
+<body>
+  <header>
+    <div>
+        <h4 id="promoHeader">20% de decuento en parafernalia</h4>
+    </div>
+    <div class="headingContainer">
+        <div class="searchBar">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i> <!--icono lupa--> 
+            <input type="text" placeholder="Buscar productos, serivicios, más..">
+        </div>
+        <div class="headingLogo">
+            <h1>GROWSHOP</h1> <!-- reemplazar con logo--> 
+        </div>
+        <div class="iconosPrincipales">
+            <i class="fa-regular fa-user"></i> <!--icono usuario-->
+            <i class="fa-regular fa-envelope"></i> <!--sobre de contacto-->
+            <i class="fa-regular fa-basket-shopping"></i> <!--cansato de compras... no funciona. ver que pasa-->
+            <i class="fa-regular fa-bag-shopping"></i> 
+            <!-- colocar iconos cuenta, mail y carrito --> 
+        </div>
+    </div>
+    <hr>
+    <nav>
+        <ul class="menuPrincipal">
+            <li><a href="">PRODUCTOS</a></li> 
+            <li><a href="">APRENDE MAS</a></li>
+            <li><a href="">SERVICIOS</a></li>
+            <li><a href="">ASESORIAS</a></li>
+            <li><a href="">CONTACTO</a></li>
+        </ul>
+
+    </nav>
+    <hr>
+
+</header>    
+  <div class="Container">
+    <h2 class="subtitulo">INICIAR SESION</h2>
+    <form action = "index.html" method="POST" class="formulario" > 
+        <div>
+        <label class="datos"> Correo Eléctronico </label>
+        <input class="datos2" type="email" name="CorreoElectronico" placeholder="maureeen@gmail.com">
+        </div>
+        
+        <div>
+        <label class="datos"> Contraseña </label>
+        <input  class="datos2" type="password" name="Contraseña" placeholder="*********">
+        </div>
+        <label class="ultima"> No tienes cuenta? </label>
+        <a href= "../public/css/style.css " class="registrarse"  >    Registrarse  </a>
+  
+
+    <input type = "submit" value= "Confirmar" class="boton" ></input>
+
+    <a href="../public/css/style.css" class="contraseña2"> Olvide mi contraseña </a>
+  </form>   
+</div>
+</body>
+</html>

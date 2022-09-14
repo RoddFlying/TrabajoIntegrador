@@ -12,7 +12,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
 
-
+    :root {
+     --dark-olive-green : #5a6b47;
+     --black : #000000;
+     --artichoke : #a1a48f;
+     --tan: #dabf94;
+     --cafe-noir :#3f3222;
+     --white : #ffffff;
+    } 
+    
+    
 /*GENERAL*/
 body{
     color: black;
@@ -51,6 +60,7 @@ h1{
     font-family: 'Roboto', sans-serif;
     font-size: 100px;
     line-height: 0%;
+    text-align: center;
 }
 .menuPrincipal{
     display: grid;
@@ -66,7 +76,44 @@ h1{
 .menuPrincipal li a{
     text-decoration: none;
     color: black;
-   
 }
+
+h2 {
+    text-align: center;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.inicio {
+    justify-content: center;
+}
+
+.container {
+
+    justify-content: center;
+}
+
+/*
+Codigo Rodd
+*/
+
+.boton {
+    width: 100px;
+    height: 70px;
+    transition: border-radius 450ms;
+    justify-content: center;
+    position:relative;
+    left:900px;
+    bottom: 5px;
+}
+.boton:hover {
+
+    border-radius: 50%;
+}
+
+
+
 
 /*FOOTER*/
