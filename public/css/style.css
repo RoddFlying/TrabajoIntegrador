@@ -51,6 +51,7 @@ header{
     left: 0;
     width: 100%;
     background-color: #ffffff;
+    z-index: 500;
    
 }
 header i{
@@ -68,7 +69,7 @@ header i{
 }
 
 .headingContainer{
-    margin-top: 30px;
+    margin-top: 50px;
     display: grid;
     grid-gap:10px;
     grid-template-columns: 1fr 3fr 1fr;
@@ -78,11 +79,14 @@ header i{
 .searchBar{
     margin-left: 50px;
     align-items: center;
+    border-bottom: #000000 5px solid;
 }
 
 .searchBar input{
     padding: 10px 5px;
     border-radius: 5px;
+    border:none;
+    outline:none;
 }
 
 h1{
@@ -173,4 +177,5 @@ footer i{
     color:#ffffff;
     
 }
+
 

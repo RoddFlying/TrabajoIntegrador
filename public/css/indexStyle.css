@@ -27,11 +27,100 @@
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
+section{
+  margin-top: 50px; 
+}
 
 .bannerIndex{
   width: 100%;
 }
 
+.bannerIndex .bannerIndexInfo button{
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  z-index: 100;
+  margin: 10px;
+  align-items: center;
+  border: none;
+  background-color: #5a6b47;
+}
+
 .bannerIndex img{
   width: 100%;
+}
+
+.productoIndex{
+  background-color: #5a6b47;
+  color:#ffffff
+}
+
+.productosMenu{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.producto{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  width: 10%;
+  
+}
+
+.producto img{
+  width: 100%;
+  padding: 10px;
+}
+
+.producto h3{
+  font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.destacado{
+  margin: auto;
+  width: 75%;
+}
+
+.destacado img{
+  width: 100%;
+}
+
+.destacado .destacadoInfo{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.destacado img{
+  width: 100%;
+}
+
+.destacado .destacadoInfo button{
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  z-index: 100;
+  width: 40%;
+  margin: 10px;
+  align-items: center;
+  border: none;
+}
+
+.conocer{
+  background-color: #dabf94;
+}
+
+.comprar{
+  background-color: #5a6b47;
 }
