@@ -2,6 +2,7 @@ HEAD
 .Contenedor{
     position:relative;
     top:100px;
+    
 }
 .headingLogo {
     color: var(--dark-olive-green);
@@ -12,6 +13,19 @@ HEAD
     color:white;
     background-color:var(--dark-olive-green) ;
     border-radius: 10%;
+  }
+  .BotonRegistro {
+    background-color: #5a6b47;
+    border: none;
+    border-radius: 40px;
+    width: 7%;
+    height: 40px;
+    cursor: pointer;
+
+  }
+  .footer {
+    position: relative;
+    top:478px;
   }
 
 /* TIPOGRAFIAS */
