@@ -288,7 +288,18 @@ background-color:var(--dark-olive-green) ;
     font-size: 20px;
     padding: 2px;
    }
-  
+   .Checkbox {
+    position: absolute;
+    top: 172%;
+    left: 39%;
+   }
+   .Checkbox2 {
+    position: absolute;
+    top: 172.39%;
+    left: 38%;
+    cursor: pointer;
+
+   }
   .BotonRegistro {
     color:white;
     margin-bottom: 5px;
@@ -300,8 +311,8 @@ background-color:var(--dark-olive-green) ;
     cursor: pointer;
     transition:450ms;
     position: absolute;
-    top:172%;
-    left:47%;    
+    top:178%;
+    left:46.9%;    
     }
 
     .BotonRegistro:hover {
@@ -314,7 +325,7 @@ background-color:var(--dark-olive-green) ;
   .footer {
    display: flex;
    position: relative;
-   top: 1400px;
+   top: 1450px;
 
   }
 
