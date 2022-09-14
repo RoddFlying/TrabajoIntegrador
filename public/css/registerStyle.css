@@ -37,8 +37,15 @@ HEAD
     width: 7%;
     height: 40px;
     cursor: pointer;
+    transition:450ms;
+    }
+    .BotonRegistro:hover {
 
-  }
+     border-radius: 50%;
+
+    }
+
+  
   .footer {
     position: relative;
     top:478px;

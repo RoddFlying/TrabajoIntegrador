@@ -163,19 +163,7 @@ main{
 
 /* Codigo Rodd - pasar a loginStyle */
 
-.boton {
-    width: 100px;
-    height: 70px;
-    transition: border-radius 450ms;
-    justify-content: center;
-    position:relative;
-    left:900px;
-    bottom: 5px;
-}
-.boton:hover {
 
-    border-radius: 50%;
-}
 
 /*FOOTER*/
 footer{
