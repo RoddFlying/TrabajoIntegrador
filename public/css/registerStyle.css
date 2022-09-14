@@ -1,36 +1,297 @@
 HEAD
 .Contenedor{
-    position:relative;
-    top:100px;
+    display: flex;    
+    justify-content: center;
+    
     
 }
 .headingLogo {
     color: var(--dark-olive-green);
     font-size: 10px;
+}
+.ContainerRegistro{
+background-color:var(--dark-olive-green) ;
+    width: 90%;
+    height: 50px;  
+    border-radius: 40PX;
+    position: absolute;
+    left: 5%;
 
-  }
+}
   .registro {
     color:white;
-    background-color:var(--dark-olive-green) ;
-    width: 90%;
-    height: 50px;
+    font-weight: bold;
     font-size: 20px;
     text-align: center;
-    border-radius: 40PX;
-    position: relative;
-    left: 50px;
+    position: absolute;
+    top:23%;
+    left: 46.3%;
+
   }
 
   .Email {
+   display: grid;
    font-weight: bold;
    font-size: 20px;
-   position: relative;
-   left: 20%;
-  }
+   position: absolute;
+   left: 45.5%;
+   top: 28%;
+   margin-top: 10px;
+   margin-bottom: 10px;   
    
+  }
+  
+  .Email2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:35%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 6px;
+      
+  }
+   .Contraseña {
+    display: grid;
+   font-weight: bold;
+   font-size: 20px;
+   position: absolute;
+   left: 47%;
+   top: 41%;
+   margin-top: 10px;
+   margin-bottom: 10px; 
+   }
+   .Contraseña2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:47%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 6px;
+      
+   }
+   .Contraseña3 {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 44.5%;
+    top: 53%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Contraseña4 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:60%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+    
+   }
+   .Nombre {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 48.5%;
+    top: 66%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Nombre2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:73%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Apellido {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 48.5%;
+    top: 79%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Apellido2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:86%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Direccion {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 45.5%;
+    top: 93%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Direccion2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:100%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Direccion3 {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 43%;
+    top: 106%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
 
+   .Direccion4 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:113%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Ciudad {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 48.5%;
+    top: 119%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Ciudad2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:126%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Provincia {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 48.5%;
+    top: 132%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Provincia2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:139%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Codigo {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 47%;
+    top: 145%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Codigo2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:152%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Pais {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 49%;
+    top: 158%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Pais2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:165%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+  
   .BotonRegistro {
     color:white;
+    margin-bottom: 5px;
     background-color: #5a6b47;
     border: none;
     border-radius: 40px;
@@ -38,7 +299,11 @@ HEAD
     height: 40px;
     cursor: pointer;
     transition:450ms;
+    position: absolute;
+    top:172%;
+    left:47%;    
     }
+
     .BotonRegistro:hover {
 
      border-radius: 50%;
@@ -47,8 +312,10 @@ HEAD
 
   
   .footer {
-    position: relative;
-    top:478px;
+   display: flex;
+   position: relative;
+   top: 1400px;
+
   }
 
 /* TIPOGRAFIAS */

@@ -9,9 +9,10 @@
   margin-top: 10px;
   border: none;
   font-size: 20px;
-  display:grid;     
+  display:grid;
+
   }
-  .datos2{
+  .datos2 {
     background-color: var(--tan)  ;
     border:none;
     border-radius:8px;
@@ -46,6 +47,7 @@
    justify-items: center;   
    position: relative;
    left:870px;    
+   
   }
   .subtitulo {
     color: var(--black);
@@ -67,7 +69,7 @@
   .boton {
     width: 100px;
     height: 70px;
-    transition: border-radius 450ms;
+    transition:450ms;
     justify-content: center;
     position:relative;
     left:900px;
