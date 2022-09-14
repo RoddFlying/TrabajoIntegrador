@@ -51,8 +51,9 @@ section{
 }
 
 .productoIndex{
+  padding: 20px;
   background-color: #5a6b47;
-  color:#ffffff
+  color:#ffffff;
 }
 
 .productosMenu{
@@ -123,4 +124,29 @@ section{
 
 .comprar{
   background-color: #5a6b47;
+}
+
+.banners{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.bannerUno{
+  margin: 50px auto;
+  width: 75%;
+}
+.bannerUno img{
+  width: 100%;
+}
+
+.bannerDos{
+  margin: auto;
+  width: 75%;
+}
+
+.bannerDos img{
+  width: 100%;
 }
