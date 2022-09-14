@@ -45,3 +45,6 @@ párrafos por un tema de fácil lectura (tiene que ser con serif para que sea ma
 para arriba de las imágenes podría ser  https://fonts.google.com/?query=Zilla+Slab 
 
 
+ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp
+
+
