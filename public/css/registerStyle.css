@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 .Contenedor{
     position:relative;
     top:100px;
@@ -12,11 +12,8 @@
     color:white;
     background-color:var(--dark-olive-green) ;
     border-radius: 10%;
-    
-    position: relative;
-    top: 3px;
   }
-=======
+
 /* TIPOGRAFIAS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Font Roboto bold 900 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Font Roboto thin */
@@ -45,4 +42,4 @@
 /*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
->>>>>>> ba7dee65a9c58a06a7b4042384b7dd20c0160acf
+
