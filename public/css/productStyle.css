@@ -31,52 +31,61 @@ main{
 }
 
 .product{
-    margin-top: 50px;
+    margin-top: 1px;
     background-color: #dabf94;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 20px;
+    padding: 8px;
     justify-content: space-between;
-    padding: 40px;
     
 }
 .productTitle{
-    width: 45%;
+    width: 60%;
 }
 .productTitle h2{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-align: justify;
-    font-size: 30px;
+    font-size: 25px;
 }
 .productTitle .productTitleCreator{
-    font-size: 16px;
+    font-size: 12px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/* .menuPrincipal li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; */
 
 .productAdd{
-    width: 30%;
+    width: 15%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: flex-end;
+    padding : 1px; 
 }
 .productAdd .masMenos{
     display: flex;
     flex-wrap: nowrap;
     justify-content: row;
 }
+/*
+.productAdd .menosMenos{ 
+    margin: 2px; 
+} */
 .productSpec{
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: stretch;
-    padding: 40px;
-    margin: 20px 10px;
+    padding: 2px;
+    margin: 20px;
 }
 .productSpec img{
-    width: 40%;
+    width: 25%;
 }
 .productSpec .productSpecInfo{
     display: flex;
@@ -87,13 +96,13 @@ main{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: #5a6b47;
     color: #ffffff;
-    width: 100%;
-    padding: 40px;
-    font-size: 28px;
+    width: 35%;
+    padding: 5px;
+    font-size: 20px;
 }
 .productSpec .productSpecInfo p{
     overflow: scroll;
-    width: 100%;
+    width: 50%;
     height: 400px;
     padding: 40px;
     font-size: 18px;
