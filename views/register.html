@@ -22,7 +22,8 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
                 <input type="text" placeholder="Buscar productos, serivicios, más..">
             </div>
             <div class="headingLogo">
-                <h1>GROWSHOP</h1> <!-- reemplazar con logo--> 
+                <!-- <h1>GROWSHOP</h1> reemplazar con logo  -->
+                <img src="../public/img/logoGHboceto.png" alt="" class="logo">
             </div>
             <div class="iconosPrincipales">
                 <i class="fa-sharp fa-solid fa-user fa-2x"></i><!--icono usuario-->
@@ -30,8 +31,8 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
                 <i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i> <!--cansato de compras... no funciona. ver que pasa-->
             </div>
         </div>
-        <hr>
-        <nav>
+       
+        <nav class="nav-bar ,">
             <ul class="menuPrincipal">
                 <li><a href="">PRODUCTOS</a></li> 
                 <li><a href="">APRENDE MAS</a></li>
@@ -40,75 +41,84 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
                 <li><a href="">CONTACTO</a></li>
             </ul>
         </nav>
-        <hr>
+       
     </header>
 
     <main>
-        <div class="ContainerRegistro"></div>
-    <p class="registro">REGISTRARSE</p>
+
+    <section class="containerRegistro">
+    <h2>REGISTRARSE</h2>
       
-    <div class="Contenedor">      
-     <div>
-      <form action="Registro" method="POST">
+    <div class="contenedor">  
+
+      <form action="register" method="POST">
         <div>
-        <label class="Email"> Correo Electrónico </label>
-        <input class="Email2" type="email" name="email" placeholder="roddfly@gmail.com">
+        <label > Correo Electrónico </label>
+        <input  type="email" name="email" placeholder="roddfly@gmail.com" required>
         </div>
         <div>
-        <label class="Contraseña"> Contraseña </label>  
-        <input class="Contraseña2" type="password" name="contraseña" placeholder="********">        
+        <label > Contraseña </label>  
+        <input  type="password" name="contraseña" placeholder="********" required>        
         </div>
         <div>
-        <label class="Contraseña3"> Confirmar Contraseña </label>  
-        <input class="Contraseña4" type="password" name="contraseña" placeholder="********">        
+        <label > Confirmar Contraseña </label>  
+        <input type="password" name="contraseña" placeholder="********" required>        
         </div>
         <div>
-        <label class="Nombre" > Nombre </label>
-        <input class="Nombre2" type="text" name="nombre" placeholder="DonFumon">
+        <label > Nombre </label>
+        <input  type="text" name="nombre" placeholder="DonFumon" required>
         </div>
         <div>
-        <label class="Apellido" > Apellido </label>
-        <input class="Apellido2" type="text" name="apellido" placeholder="Acevedo">
+        <label > Apellido </label>
+        <input  type="text" name="apellido" placeholder="Acevedo" required>
         </div>
         <div>
-        <label class="Direccion" > Dirección - Linea 1 </label>
-        <input class="Direccion2" type="text" name="direccion" placeholder="Aristobulo Del Valle 1455">
+        <label > Dirección - Linea 1 </label>
+        <input type="text" name="direccion" placeholder="Aristobulo Del Valle 1455" required>
         </div>
         <div>
-        <label class="Direccion3" > Dirección - Linea 2 (opcional)</label>
-        <input class="Direccion4" type="text" name="direccion2" placeholder="Maipu 335">
+        <label > Dirección - Linea 2 (opcional)</label>
+        <input  type="text" name="direccion2" placeholder="Maipu 335" required>
         </div>
         <div>
-        <label class="Ciudad" > Ciudad </label>
-        <input class="Ciudad2" type="text" name="ciudad" placeholder="Vicente López">
+        <label > Ciudad </label>
+        <input  type="text" name="ciudad" placeholder="Vicente López" required>
         </div>
         <div>
-        <label class="Provincia" > Provincia </label>
-        <input class="Provincia2" type="text" name="Provincia" placeholder=" Buenos Aires">
+        <label  > Provincia </label>
+        <input  type="text" name="Provincia" placeholder=" Buenos Aires" required>
         </div>
         <div>
-        <label class="Codigo" > Código Postal </label>
-        <input class="Codigo2" type="number" name="codigo" placeholder="1644">
+        <label > Código Postal </label>
+        <input  type="number" name="codigo" placeholder="1644" required>
         </div>
         <div>
-        <label class="Pais" > Pais </label>
-        <input class="Pais2" type="text" name="apellido" placeholder="Argentina">
+        <label  > Pais </label>
+        <input type="text" name="apellido" placeholder="Argentina">
         </div>
-        <div>
-            <label class="Checkbox" for="checkbox"> Sí, deseo recibir información a mi correo electrónico de ofertas </label>
-            <input class="Checkbox2" type="checkbox" name="checbox"> 
+        <div class="checkbox">
+            <input type="checkbox" name="checbox"> 
+            <label  for="checkbox"> Sí, deseo recibir información a mi correo electrónico de ofertas </label>
+            
         </div>
-        <button class="BotonRegistro"> REGISTRARSE </button>
+        <button class="botonRegistro"> REGISTRARSE </button>
       </form>
+
       </div>
+
+    </section>
+
+
     </main>
 
-    <footer class=" footer">
+    <footer>
+
         <div class="redesSociales">
             <i class="fa-brands fa-instagram fa-2x"></i>
             <i class="fa-brands fa-tiktok fa-2x"></i>
             <i class="fa-brands fa-twitter fa-2x"></i>
         </div>
+
     </footer>
 </body>
 </html>
