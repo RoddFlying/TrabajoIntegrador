@@ -39,10 +39,21 @@ main{
     padding: 20px;
     justify-content: space-between;
     padding: 40px;
+    
 }
 .productTitle{
     width: 45%;
 }
+.productTitle h2{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 30px;
+}
+.productTitle .productTitleCreator{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .productAdd{
     width: 30%;
     display: flex;
