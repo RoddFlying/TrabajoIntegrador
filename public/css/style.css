@@ -54,6 +54,11 @@ header{
     z-index: 500;
    
 }
+/* 
+.burger-menu{
+    display: none;
+} */
+
 header i{
     padding: 10px;
     font-size: 30px;
@@ -205,3 +210,12 @@ footer i{
     font-size: 30px;
  }
 
+/*VERSION TABLET*/
+@media (min-width: 768px){
+
+}
+
+/*VERSION DESKTOP*/
+@media (min-width: 1024px){
+
+}
