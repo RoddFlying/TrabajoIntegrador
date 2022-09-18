@@ -54,10 +54,10 @@ header{
     z-index: 500;
    
 }
-/* 
-.burger-menu{
+
+.headingContainer .searchBar .burger-menu{
     display: none;
-} */
+}
 
 header i{
     padding: 10px;
@@ -196,7 +196,7 @@ footer i{
     color: #ffffff;
     text-decoration: none;
 }
- .redesSociales {
+.redesSociales {
     color: #ffffff;
     padding: 20px 60px 50px 60px;
     display: flex;
@@ -205,17 +205,34 @@ footer i{
     justify-content: flex-end;
     align-items: baseline;
  }
- .redesSociales h4{
+.redesSociales h4{
     font-family: 'Lobster', cursive;
     font-size: 30px;
  }
 
-/*VERSION TABLET*/
-@media (min-width: 768px){
+ /*VERSION TABLET*/
+@media (max-width: 1023px){
+    .menuFooter div {
+        width: 30%;
+    }
+  
 
 }
 
-/*VERSION DESKTOP*/
-@media (min-width: 1024px){
-
+/*VERSION MOBILE*/
+@media (max-width: 767px){
+    .headingContainer .searchBar .burger-menu{
+        display: flex;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .headingContainer .searchBar input{
+        display: none;
+    }
+    .menuFooter div {
+        width: 45%;
+    }
+   
 }
+
