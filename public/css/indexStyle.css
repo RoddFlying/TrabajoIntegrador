@@ -215,7 +215,8 @@ section{
 
 }
 
- /*VERSION TABLET*/
+
+/*VERSION TABLET*/
  @media (max-width: 1023px){
   .producto{
     display: flex;
@@ -250,20 +251,34 @@ section{
     }
 
     .bannerIndex img{
-      background: url(../img/imagePlacerholder.jpg) left top no-repeat;
-    }
-    
-  
-  }
-
-
-  /*Extra para que quede bien*/
-
-  @media (max-width: 686px){
-    .bannerIndex {
-      margin-top: 330px;
+      content: url("../img/mobilePlaceholder.png");
     }
 
-    
-  
-  }
+    .destacado{
+      margin: 20px auto;
+      width: 90%;
+    }
+
+    .destacado img{
+      content: url("../img/mobilePlaceholder.png");
+    }
+
+    .bannerUno{
+      margin: 50px auto;
+      width: 90%;
+    }
+
+    .bannerUno img{
+      content: url("../img/mobilePlaceholder.png");
+    }
+
+    .bannerDos{
+      margin: 50px auto;
+      width: 90%;
+    }
+
+    .bannerDos img{
+      content: url("../img/mobilePlaceholder.png");
+    }
+}
+

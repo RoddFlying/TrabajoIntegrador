@@ -26,74 +26,124 @@
 /*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
-
-
-.contenedor{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; 
-  align-items: center;
+main{
+  margin-top: 300px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .containerRegistro{
-  margin-top: 270px;
-  align-items: center;
-  width: 90%;
-}
-
-.containerRegistro h2{
-  color: #ffffff;
-  background-color:var(--dark-olive-green);
-  text-align: center;
-  align-items: center;
-  font-family: 'Roboto', Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 20px;
   width: 80%;
+  margin: auto;
 }
 
-.containerRegistro form div{
+.containerRegistro .subtitulo{
+  background-color: var(--dark-olive-green);
+  color: #ffffff;
+  padding: 20px;
+  border-top: #000000 5px solid;
+  margin: 50px auto 30px auto;
+}
+
+.containerRegistro .subtitulo h2{ 
+  text-align: left;
+}
+
+.contenedor form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  justify-content: flex-start;
+}
+
+.containerRegistro form .emailDiv{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 10px 0;
+  margin: 10px 20px;
+  width: 100%;
 }
 
-.containerRegistro form div label{
+.containerRegistro form .emailDiv label{
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   padding: 10px;
 }
 
-.containerRegistro form div input{
+.containerRegistro form .emailDiv input{
   background-color: var(--tan)  ;
-  border:none;
-  border-radius:8px;
+  border: var(--dark-olive-green) 1px solid;
+  text-align: center;
+  padding: 10px;  
+}
+
+.containerRegistro form .grupos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerRegistro form .grupos div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 45%;
+}
+
+.containerRegistro form .grupos div label{
+  font-weight: bold;
+  font-size: 20px;
   text-align: center;
   padding: 10px;
-  
 }
+
+.containerRegistro form .grupos div input{
+  background-color: var(--tan)  ;
+  border: var(--dark-olive-green) 1px solid;
+  text-align: center;
+  padding: 10px;  
+}
+
 .checkbox{
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
 }
 
 .botonRegistro {
-  color:white;
-  margin-bottom: 5px;
-  background-color: #5a6b47;    
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--artichoke);
+  color: var(--white);
   border: none;
-  border-radius: 10px;
-  width: 7%;
-  height: 40px;
   cursor: pointer;
   transition:450ms;
 }
 
 .botonRegistro:hover {
   border-radius: 50%;
+}
+
+
+/*VERSION TABLET*/
+@media (max-width: 1023px){
+  .containerRegistro form .grupos{
+    flex-direction: column;
+  }
+  .containerRegistro form .grupos div{
+    width: 100%;
+  }
+
+
+}
+
+/*VERSION MOBILE*/
+@media (max-width: 767px){
+  
+ 
 }
 
 
