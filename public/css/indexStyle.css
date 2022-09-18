@@ -250,20 +250,39 @@ section{
     }
 
     .bannerIndex img{
-      background: url(../img/imagePlacerholder.jpg) left top no-repeat;
+      content: url("../img/mobilePlaceholder.png");
     }
+
+    .destacado{
+      margin: 20px auto;
+      width: 90%;
+    }
+
+    .destacado img{
+      content: url("../img/mobilePlaceholder.png");
+    }
+
+    .bannerUno{
+      margin: 50px auto;
+      width: 90%;
+    }
+
+    .bannerUno img{
+      content: url("../img/mobilePlaceholder.png");
+    }
+
+    .bannerDos{
+      margin: 50px auto;
+      width: 90%;
+    }
+
+    .bannerDos img{
+      content: url("../img/mobilePlaceholder.png");
+    }
+
     
   
   }
 
 
   /*Extra para que quede bien*/
-
-  @media (max-width: 686px){
-    .bannerIndex {
-      margin-top: 330px;
-    }
-
-    
-  
-  }

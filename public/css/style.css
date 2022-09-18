@@ -65,6 +65,16 @@ header i{
     align-items: center;
 }
 
+.headingContainer .iconosPricipales{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 #promoHeader{
     background-color: #3f3222;
     color: white;
@@ -81,10 +91,15 @@ header i{
     align-content: center;
     justify-content: space-evenly;
 }
+
 .searchBar{
     margin-left: 50px;
     align-items: center;
     border-bottom: #000000 5px solid;
+}
+
+.headingContainer .searchBar .burger-menu{
+    display: none;
 }
 
 .searchBar input{
@@ -227,11 +242,25 @@ footer i{
     .nav-bar{
         display: none;
     }
+
+    .searchBar{  
+        border-bottom: none;
+    }
+   
     .headingContainer .searchBar input{
         display: none;
     }
+
     .menuFooter div {
         width: 45%;
+    }
+
+    .headingContainer .iconosPricipales{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
    
 }
