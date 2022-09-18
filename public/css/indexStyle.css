@@ -215,7 +215,8 @@ section{
 
 }
 
- /*VERSION TABLET*/
+
+/*VERSION TABLET*/
  @media (max-width: 1023px){
   .producto{
     display: flex;
@@ -279,10 +280,5 @@ section{
     .bannerDos img{
       content: url("../img/mobilePlaceholder.png");
     }
+}
 
-    
-  
-  }
-
-
-  /*Extra para que quede bien*/

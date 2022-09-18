@@ -18,6 +18,7 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
         </div>
         <div class="headingContainer">
             <div class="searchBar">
+            <i class="fa-sharp fa-solid fa-bars burger-menu"></i>
                 <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i><!--icono lupa--> 
                 <input type="text" placeholder="Buscar productos, serivicios, más..">
             </div>
@@ -31,8 +32,8 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
                 <i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i> <!--cansato de compras... no funciona. ver que pasa-->
             </div>
         </div>
-       
-        <nav class="nav-bar ,">
+        
+        <nav class="nav-bar">
             <ul class="menuPrincipal">
                 <li><a href="">PRODUCTOS</a></li> 
                 <li><a href="">APRENDE MAS</a></li>
@@ -40,6 +41,7 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
                 <li><a href="">ASESORIAS</a></li>
                 <li><a href="">CONTACTO</a></li>
             </ul>
+
         </nav>
        
     </header>
@@ -47,54 +49,67 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
     <main>
 
     <section class="containerRegistro">
-    <h2>REGISTRARSE</h2>
-      
+
+        <div class="subtitulo">
+            <h2>REGISTRARSE</h2>
+        </div>
+
     <div class="contenedor">  
 
       <form action="register" method="POST">
-        <div>
-        <label > Correo Electrónico </label>
-        <input  type="email" name="email" placeholder="roddfly@gmail.com" required>
+        <div class="emailDiv">
+            <label > Correo Electrónico </label>
+            <input  type="email" name="email" placeholder="roddfly@gmail.com" required>
         </div>
-        <div>
-        <label > Contraseña </label>  
-        <input  type="password" name="contraseña" placeholder="********" required>        
+        <div class="grupos">
+            <div>
+                <label > Contraseña </label>  
+                <input  type="password" name="contraseña" placeholder="********" required>        
+            </div>
+            <div>
+                <label > Confirmar Contraseña </label>  
+                <input type="password" name="contraseña" placeholder="********" required>        
+            </div>
         </div>
-        <div>
-        <label > Confirmar Contraseña </label>  
-        <input type="password" name="contraseña" placeholder="********" required>        
+        <div class="grupos">
+            <div>
+                <label > Nombre </label>
+                <input  type="text" name="nombre" placeholder="DonFumon" required>
+            </div>
+            <div>
+                <label > Apellido </label>
+                <input  type="text" name="apellido" placeholder="Acevedo" required>
+            </div>
         </div>
-        <div>
-        <label > Nombre </label>
-        <input  type="text" name="nombre" placeholder="DonFumon" required>
+        <div class="grupos">
+            <div>
+                <label > Dirección - Linea 1 </label>
+                <input type="text" name="direccion" placeholder="Aristobulo Del Valle 1455" required>
+            </div>
+            <div>
+                <label > Dirección - Linea 2 (opcional)</label>
+                <input  type="text" name="direccion2" placeholder="Maipu 335" required>
+            </div>
         </div>
-        <div>
-        <label > Apellido </label>
-        <input  type="text" name="apellido" placeholder="Acevedo" required>
+        <div class="grupos">
+            <div>
+                <label > Ciudad </label>
+                <input  type="text" name="ciudad" placeholder="Vicente López" required>
+            </div>
+            <div>
+                <label  > Provincia </label>
+                <input  type="text" name="Provincia" placeholder=" Buenos Aires" required>
+            </div>
         </div>
-        <div>
-        <label > Dirección - Linea 1 </label>
-        <input type="text" name="direccion" placeholder="Aristobulo Del Valle 1455" required>
-        </div>
-        <div>
-        <label > Dirección - Linea 2 (opcional)</label>
-        <input  type="text" name="direccion2" placeholder="Maipu 335" required>
-        </div>
-        <div>
-        <label > Ciudad </label>
-        <input  type="text" name="ciudad" placeholder="Vicente López" required>
-        </div>
-        <div>
-        <label  > Provincia </label>
-        <input  type="text" name="Provincia" placeholder=" Buenos Aires" required>
-        </div>
-        <div>
-        <label > Código Postal </label>
-        <input  type="number" name="codigo" placeholder="1644" required>
-        </div>
-        <div>
-        <label  > Pais </label>
-        <input type="text" name="apellido" placeholder="Argentina">
+        <div class="grupos">
+            <div>
+                <label > Código Postal </label>
+                <input  type="number" name="codigo" placeholder="1644" required>
+            </div>
+            <div>
+                <label > Pais </label>
+                <input type="text" name="apellido" placeholder="Argentina">
+            </div>
         </div>
         <div class="checkbox">
             <input type="checkbox" name="checbox"> 
