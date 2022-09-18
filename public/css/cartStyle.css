@@ -110,3 +110,22 @@ main{
     color: #ffffff;
     text-decoration: none;
 }
+
+
+
+/*VERSION TABLET*/
+@media (max-width: 1023px){
+    
+  
+  }
+  
+
+
+
+  /*VERSION MOBILE*/
+  @media (max-width: 767px){
+      
+    
+  }
+  
+  
