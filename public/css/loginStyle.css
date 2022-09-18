@@ -1,0 +1,81 @@
+.headingLogo {
+    color: var(--dark-olive-green);
+    font-size: 10px;
+
+  }
+  .datos{
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 10px;
+  border: none;
+  font-size: 20px;
+  display:grid;
+
+  }
+  .datos2 {
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    height: 30px;
+    font-size: 20px;
+    padding: 6px;
+  }
+  .ultima{
+    text-align: center;
+  margin-top: 30px;
+ 
+  font-weight: bold;
+  }
+  .registrarse{
+    margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px;
+  cursor:pointer;
+  font-weight: bold;
+  }
+  .boton {
+   background-color: var(--dark-olive-green);
+   border-radius: 8px;
+   border:none;
+   height: 40px;
+   width: 7%;
+   cursor:pointer;     
+   font-size: 18px;
+   font-weight: bold;
+   height: 50px;
+   color:white;
+   justify-items: center;   
+   position: relative;
+   left:870px;    
+   
+  }
+  .subtitulo {
+    color: var(--black);
+    margin-bottom: 50px;
+    margin-top: 350px;
+  
+  }
+  .formulario{
+    display:flex;
+    flex-direction : column;
+    margin-bottom: 12px;
+
+  }
+  .contraseña2{
+    margin-top:30px;
+    font-weight: bold;
+  }
+
+  .boton {
+    width: 100px;
+    height: 70px;
+    transition:450ms;
+    justify-content: center;
+    position:relative;
+    left:900px;
+    bottom: 5px;
+}
+.boton:hover {
+
+    border-radius: 50%;
+}

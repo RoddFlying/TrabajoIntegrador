@@ -1,0 +1,116 @@
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Font Roboto bold 900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Font Roboto thin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Font roboto regular */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Lobster font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*lato regular font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); /*lato bold*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); /*lato thin*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); /*Garamond regular font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');/*Garamond italic*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap'); /*garamond Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
+    :root {
+     --dark-olive-green : #5a6b47;
+     --black : #000000;
+     --artichoke : #a1a48f;
+     --tan: #dabf94;
+     --cafe-noir :#3f3222;
+     --white : #ffffff;
+    } 
+    
+    
+/*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
+/*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
+main{
+    margin-top: 250px;
+}
+.product{
+    margin-top: 50px;
+    background-color: #dabf94;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 60px;
+
+}
+.productTitle{
+    width: 45%;
+}
+.productTitle h2{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 30px;
+}
+.productTitle .productTitleCreator{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.productAdd{
+    width: 30%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.productAdd button{
+    background-color: #a1a48f;
+    border: #000000 2px solid;
+    padding: 5px;
+}
+
+.productAdd .masMenos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: row;
+    align-items: center;
+}
+
+.productAdd .masMenos button{
+    border: none;
+    background-color: #a1a48f;
+}
+
+
+.productAdd h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.productSpec{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    padding: 40px;
+    margin: 20px 10px;
+}
+.productSpec img{    
+    width: 40%;
+}
+.productSpec .productSpecInfo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40%;
+}
+.productSpec .productSpecInfo h3{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #5a6b47;
+    color: #ffffff;
+    width: 100%;
+    padding: 40px;
+    font-size: 28px;
+}
+.productSpec .productSpecInfo p{
+    overflow: scroll;
+    width: 100%;
+    height: 400px;
+    padding: 40px;
+    font-size: 18px;
+}

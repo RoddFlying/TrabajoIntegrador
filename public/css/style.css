@@ -1,0 +1,221 @@
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Font Roboto bold 900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Font Roboto thin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Font roboto regular */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Lobster font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*lato regular font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); /*lato bold*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); /*lato thin*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); /*Garamond regular font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');/*Garamond italic*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap'); /*garamond Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
+
+    :root {
+     --dark-olive-green : #5a6b47;
+     --black : #000000;
+     --artichoke : #a1a48f;
+     --tan: #dabf94;
+     --cafe-noir :#3f3222;
+     --white : #ffffff;
+    } 
+    
+    
+
+/*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
+
+/*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
+
+
+/*GENERAL*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: black;
+}
+p{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/*HEADER*/
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 500;
+   
+}
+/* 
+.burger-menu{
+    display: none;
+} */
+
+header i{
+    padding: 10px;
+    font-size: 30px;
+    align-items: center;
+}
+
+#promoHeader{
+    background-color: #3f3222;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.headingContainer{
+    margin-top: 50px;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.searchBar{
+    margin-left: 50px;
+    align-items: center;
+    border-bottom: #000000 5px solid;
+}
+
+.searchBar input{
+    padding: 10px 5px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+}
+
+.logo{
+    margin: auto;
+    align-items: center;
+    width: 250px;
+}
+
+.headingLogo{
+    margin: auto;
+}
+/* h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    line-height: 50%;
+    text-align: center;
+} */
+.menuPrincipal{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: auto auto auto auto auto;
+    align-content: center;
+}
+.menuPrincipal li{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+.menuPrincipal li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.inicio {
+    justify-content: center;
+}
+
+.container {
+
+    justify-content: center;
+}
+
+.nav-bar{
+    margin-top: 50px;
+    border-top: #3f3222 3px solid;
+    border-bottom: #3f3222 3px solid;
+    padding: 10px 0;
+}
+
+/*para que no queda nada detras del header*/
+main{
+    margin-top: 190px;
+
+}
+/* Codigo Rodd - pasar a loginStyle */
+
+
+
+/*FOOTER*/
+footer{
+    margin-top:50px;
+    background-color: #3f3222;
+}
+
+footer i{
+    color:#ffffff;
+    margin: 0 10px;
+    
+}
+.menuFooter {
+    padding: 40px 60px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.menuFooter div {
+    width: 15%;
+}
+
+.menuFooter h3{
+    margin: 20px 0;
+}
+.menuFooter li{
+    list-style: none;
+
+}
+.menuFooter a{
+    color: #ffffff;
+    text-decoration: none;
+}
+ .redesSociales {
+    color: #ffffff;
+    padding: 20px 60px 50px 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+ }
+ .redesSociales h4{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+ }
+
+/*VERSION TABLET*/
+@media (min-width: 768px){
+
+}
+
+/*VERSION DESKTOP*/
+@media (min-width: 1024px){
+
+}

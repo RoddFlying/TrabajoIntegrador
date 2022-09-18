@@ -1,0 +1,216 @@
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Font Roboto bold 900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Font Roboto thin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Font roboto regular */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Lobster font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*lato regular font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); /*lato bold*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); /*lato thin*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); /*Garamond regular font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');/*Garamond italic*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap'); /*garamond Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+
+    :root {
+     --dark-olive-green : #5a6b47;
+     --black : #000000;
+     --artichoke : #a1a48f;
+     --tan: #dabf94;
+     --cafe-noir :#3f3222;
+     --white : #ffffff;
+    } 
+    
+    
+
+/*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
+
+/*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
+
+section{
+  margin-top: 50px; 
+}
+
+
+
+/*BANNER INCIAL CON TEXTO Y BOTONES*/
+.bannerIndex{
+  width: 100%;
+}
+
+.bannerIndex .bannerIndexInfo{
+  position: relative;
+  bottom: 200px;
+  left: 70%;
+  z-index: 50;
+}
+
+.bannerIndex .bannerIndexInfo button{
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  z-index: 100;
+  margin: 10px;
+  align-items: center;
+  border: none;
+  background-color: #5a6b47;
+}
+
+.bannerIndex img{
+  width: 100%;
+}
+.bannerIndex li{
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+/*PRODUCTO DESTACADO BANNER PRE PDOCUTOS*/
+.destacado{
+  margin: auto;
+  width: 75%;
+}
+
+.destacado img{
+  width: 100%;
+}
+
+.destacado .destacadoInfo{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 100px;
+  left: 25%;
+  z-index: 50;
+}
+
+.destacado img{
+  width: 100%;
+}
+
+.destacado .destacadoInfo button{
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  z-index: 100;
+  width: 40%;
+  margin: 10px;
+  align-items: center;
+  border: none;
+}
+
+.conocer{
+  background-color: #dabf94;
+}
+
+.comprar{
+  background-color: #5a6b47;
+}
+
+
+
+/*PRODUCTOS*/
+.productoIndex{
+  padding: 20px;
+  background-color: #5a6b47;
+  color:#ffffff;
+}
+
+.productosMenu{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.producto{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  width: 10%;
+  
+}
+
+.producto img{
+  width: 100%;
+  padding: 10px;
+}
+
+.producto h3{
+  font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*BANNERS MELLIZOS*/
+.banners{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.bannerUno{
+  margin: 50px auto;
+  width: 75%;
+}
+.bannerUno img{
+  width: 100%;
+}
+
+.bannerUno button{
+  padding: 10px;
+  color: #ffffff;
+  background-color: #dabf94;
+  border-radius: 5px;
+  z-index: 100;
+  width: 40%;
+  margin: 10px;
+  align-items: center;
+  border: none;
+  position: relative;
+  bottom: 100px;
+  left: 50%;
+  z-index: 50;
+
+}
+
+.bannerDos{
+  margin: auto;
+  width: 75%;
+  
+}
+
+.bannerDos img{
+  width: 100%;
+}
+
+.bannerDos button{
+  padding: 10px;
+  color: #ffffff;
+  background-color: #5a6b47;
+  border-radius: 5px;
+  z-index: 100;
+  width: 40%;
+  margin: 10px;
+  align-items: center;
+  border: none;
+  position: relative;
+  bottom: 100px;
+  left: 10%;
+  z-index: 50;
+
+}

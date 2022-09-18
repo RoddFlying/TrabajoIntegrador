@@ -1,0 +1,371 @@
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Font Roboto bold 900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Font Roboto thin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Font roboto regular */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Lobster font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*lato regular font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); /*lato bold*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); /*lato thin*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); /*Garamond regular font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');/*Garamond italic*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap'); /*garamond Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
+
+    :root {
+     --dark-olive-green : #5a6b47;
+     --black : #000000;
+     --artichoke : #a1a48f;
+     --tan: #dabf94;
+     --cafe-noir :#3f3222;
+     --white : #ffffff;
+    } 
+    
+    
+
+/*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
+
+/*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
+
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.containerRegistro{
+  margin-top: 270px;
+  align-items: center;
+  width: 90%;
+}
+
+.containerRegistro h2{
+  color: #ffffff;
+  background-color:var(--dark-olive-green);
+  text-align: center;
+  align-items: center;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  width: 80%;
+}
+
+.containerRegistro form div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.containerRegistro form div label{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.containerRegistro form div input{
+  background-color: var(--tan)  ;
+  border:none;
+  border-radius:8px;
+  text-align: center;
+  padding: 10px;
+  
+}
+.checkbox{
+  display: flex;
+  flex-direction: row;
+}
+
+.botonRegistro {
+  color:white;
+  margin-bottom: 5px;
+  background-color: #5a6b47;    
+  border: none;
+  border-radius: 10px;
+  width: 7%;
+  height: 40px;
+  cursor: pointer;
+  transition:450ms;
+}
+
+.botonRegistro:hover {
+  border-radius: 50%;
+}
+
+
+
+  /* .Email {
+   display: grid;
+   font-weight: bold;
+   font-size: 20px;
+   position: absolute;
+   left: 45.5%;
+   top: 28%;
+   margin-top: 10px;
+   margin-bottom: 10px;   
+   
+  }
+  
+  .Email2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:35%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 6px;
+      
+  }
+   .Contraseña {
+    display: grid;
+   font-weight: bold;
+   font-size: 20px;
+   position: absolute;
+   left: 47%;
+   top: 41%;
+   margin-top: 10px;
+   margin-bottom: 10px; 
+   }
+   .Contraseña2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:47%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 6px;
+      
+   }
+   .Contraseña3 {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 44.5%;
+    top: 53%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Contraseña4 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:60%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+    
+   }
+   .Nombre {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 48.5%;
+    top: 66%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Nombre2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:73%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Apellido {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 48.5%;
+    top: 79%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Apellido2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:86%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Direccion {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 45.5%;
+    top: 93%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Direccion2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:100%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Direccion3 {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 43%;
+    top: 106%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+
+   .Direccion4 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:113%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Ciudad {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 48.5%;
+    top: 119%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Ciudad2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:126%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Provincia {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 48.5%;
+    top: 132%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Provincia2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:139%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Codigo {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 47%;
+    top: 145%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Codigo2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:152%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   }
+   .Pais {
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 49%;
+    top: 158%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+   }
+   .Pais2 {
+    display:grid;
+    background-color: var(--tan)  ;
+    border:none;
+    border-radius:8px;
+    position: absolute;
+    left: 42%;
+    top:165%;
+    height: 30px;
+    width: 290px;
+    font-size: 20px;
+    padding: 2px;
+   } */
+   /* .Checkbox {
+    position: absolute;
+    top: 172%;
+    left: 39%;
+   }
+   .Checkbox2 {
+    position: absolute;
+    top: 172.39%;
+    left: 38%;
+    cursor: pointer;
+
+   } */

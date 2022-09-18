@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>GROWSHOP</title>
+  <link href="../public/css/style.css" rel="stylesheet"> <!-- CSS del Header, no tocar -->
+  <link href="../public/css/registerStyle.css" rel="stylesheet"> <!-- BORRAR, SOLO PARA EL INDEX-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
+<script src="https://kit.fontawesome.com/9ff4ec337d.js" crossorigin="anonymous"></script> <!-- Para que funcionen lo Iconos, no tocar -->
+</head>
+<body>
+    <header>
+        <div>
+            <h4 id="promoHeader">20% de decuento en sdjfidoshfs</h4>
+        </div>
+        <div class="headingContainer">
+            <div class="searchBar">
+                <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i><!--icono lupa--> 
+                <input type="text" placeholder="Buscar productos, serivicios, más..">
+            </div>
+            <div class="headingLogo">
+                <!-- <h1>GROWSHOP</h1> reemplazar con logo  -->
+                <img src="../public/img/logoGHboceto.png" alt="" class="logo">
+            </div>
+            <div class="iconosPrincipales">
+                <i class="fa-sharp fa-solid fa-user fa-2x"></i><!--icono usuario-->
+                <i class="fa-sharp fa-solid fa-envelope fa-2x"></i><!--sobre de contacto-->
+                <i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i> <!--cansato de compras... no funciona. ver que pasa-->
+            </div>
+        </div>
+       
+        <nav class="nav-bar ,">
+            <ul class="menuPrincipal">
+                <li><a href="">PRODUCTOS</a></li> 
+                <li><a href="">APRENDE MAS</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a href="">ASESORIAS</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <main>
+
+    <section class="containerRegistro">
+    <h2>REGISTRARSE</h2>
+      
+    <div class="contenedor">  
+
+      <form action="register" method="POST">
+        <div>
+        <label > Correo Electrónico </label>
+        <input  type="email" name="email" placeholder="roddfly@gmail.com" required>
+        </div>
+        <div>
+        <label > Contraseña </label>  
+        <input  type="password" name="contraseña" placeholder="********" required>        
+        </div>
+        <div>
+        <label > Confirmar Contraseña </label>  
+        <input type="password" name="contraseña" placeholder="********" required>        
+        </div>
+        <div>
+        <label > Nombre </label>
+        <input  type="text" name="nombre" placeholder="DonFumon" required>
+        </div>
+        <div>
+        <label > Apellido </label>
+        <input  type="text" name="apellido" placeholder="Acevedo" required>
+        </div>
+        <div>
+        <label > Dirección - Linea 1 </label>
+        <input type="text" name="direccion" placeholder="Aristobulo Del Valle 1455" required>
+        </div>
+        <div>
+        <label > Dirección - Linea 2 (opcional)</label>
+        <input  type="text" name="direccion2" placeholder="Maipu 335" required>
+        </div>
+        <div>
+        <label > Ciudad </label>
+        <input  type="text" name="ciudad" placeholder="Vicente López" required>
+        </div>
+        <div>
+        <label  > Provincia </label>
+        <input  type="text" name="Provincia" placeholder=" Buenos Aires" required>
+        </div>
+        <div>
+        <label > Código Postal </label>
+        <input  type="number" name="codigo" placeholder="1644" required>
+        </div>
+        <div>
+        <label  > Pais </label>
+        <input type="text" name="apellido" placeholder="Argentina">
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="checbox"> 
+            <label  for="checkbox"> Sí, deseo recibir información a mi correo electrónico de ofertas </label>
+            
+        </div>
+        <button class="botonRegistro"> REGISTRARSE </button>
+      </form>
+
+      </div>
+
+    </section>
+
+
+    </main>
+
+    <footer>
+        <section class="menuFooter">
+           <div>
+                <h3>PRODUCTOS</h3>
+                <ul>
+                    <li><a href="#">Sustratos</a></li>
+                    <li><a href="#">Luces</a></li>
+                    <li><a href="#">Fertilizantes</a></li>
+                    <li><a href="#">Parafrenalia</a></li>
+                    <li><a href="#">Hidroponia</a></li>
+                    <li><a href="#">Picadores</a></li>
+                    <li><a href="#">Carpas</a></li>
+                    <li><a href="#">Frascos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>APRENDE MAS</h3>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>SERVICIOS</h3>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>ASESORIAS</h3>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+
+
+        </section>
+        <div class="redesSociales">
+            <h4>Seguinos</h4>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-tiktok fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+        </div>
+    </footer>
+</body>
+</html>
