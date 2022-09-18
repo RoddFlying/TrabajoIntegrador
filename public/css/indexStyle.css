@@ -214,3 +214,56 @@ section{
   z-index: 50;
 
 }
+
+ /*VERSION TABLET*/
+ @media (max-width: 1023px){
+  .producto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 24%;
+    
+  }
+  .bannerIndex {
+    margin-top: 250px;
+  }
+  
+
+
+}
+
+/*VERSION MOBILE*/
+@media (max-width: 767px){
+    .producto{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+      width: 48%;
+      
+    }
+    .bannerIndex {
+      margin-top: 220px;
+    }
+
+    .bannerIndex img{
+      background: url(../img/imagePlacerholder.jpg) left top no-repeat;
+    }
+    
+  
+  }
+
+
+  /*Extra para que quede bien*/
+
+  @media (max-width: 686px){
+    .bannerIndex {
+      margin-top: 330px;
+    }
+
+    
+  
+  }
