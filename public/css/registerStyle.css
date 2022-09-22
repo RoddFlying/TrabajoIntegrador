@@ -130,7 +130,7 @@ main{
 }
 
 .botonRegistro {
-<<<<<<< HEAD
+
   color:white;
   justify-content: center;
   margin-bottom: 5px;
@@ -139,7 +139,6 @@ main{
   border-radius: 10px;
   width: 50%;
   height: 40px;
-=======
   margin-top: 50px;
   padding: 20px;
   font-size: 20px;
@@ -147,13 +146,14 @@ main{
   background-color: var(--artichoke);
   color: var(--white);
   border: none;
->>>>>>> 48a5a3f0f759dcf712cf6fe1d69a639d5cccd1ee
   cursor: pointer;
   transition:450ms;
+  
 }
 
 .botonRegistro:hover {
   border-radius: 50%;
+  
 }
 
 
