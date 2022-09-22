@@ -15,19 +15,19 @@ app.get('/login', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
 
-app.get('/login', function (req, res) {
+app.get('/contact', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/contact.html'));
 });
 
-app.get('/login', function (req, res) {
+app.get('/cart', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/cart.html'));
 });
 
-app.get('/login', function (req, res) {
+app.get('/product', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/product.html'));
 });
 
-app.use(express.static(path.resolve(__dirname, './public')));
+app.use(express.static(path.resolve(__dirname, './')));
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Servidor corriendo");
