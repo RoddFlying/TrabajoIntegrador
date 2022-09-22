@@ -27,4 +27,123 @@
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
+main{
+    margin-top: 275px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 275px 80px 40px 80px;
 
+}
+.tituloCart{
+    background-color: #dabf94;
+    color: #ffffff;
+    padding: 20px;
+    border-top: #000000 5px solid;
+}
+.tituloCart h2{
+    text-align: left;
+}
+.detalleCart{
+    display: grid;
+    grid-template-columns: 6fr 1fr 2fr 1fr ;
+    border-bottom: #000000 3px solid;
+    padding: 20px;
+    width: 75%;
+   
+}
+
+.itemResumenCart{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.itemsCart article{
+    display: grid;
+    grid-template-columns: 6fr 1fr 2fr 1fr;
+    border-bottom: #000000 2px solid;
+    padding: 20px;
+
+}
+
+.itemsCart article h3{
+    margin: 0 10px;
+    text-align: left;
+}
+.itemsCart article .itemImg {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.itemsCart article .itemImg img{
+    width: 100%;
+    border: #000000 1px solid;
+
+}
+.masMenos{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.resumenCart {
+    background-color: #3f3222;
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    /*sin terminar*/
+}
+
+.subtotalCart{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.totalsEnvioCart{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.resumenCart button{
+    background-color: #5a6b47;
+    padding: 20px;
+    margin: 10px 0;
+    /*falta centrar*/
+}
+.resumenCart a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+/*VERSION TABLET*/
+@media (max-width: 1023px){
+    .itemResumenCart{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    .detalleCart{
+        width: 100%;
+    }
+  
+  }
+  
+
+
+
+  /*VERSION MOBILE*/
+  @media (max-width: 767px){
+
+    .itemsCart article .itemImg {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+      
+
+  }
+  
+  

@@ -54,11 +54,26 @@ header{
     z-index: 500;
    
 }
+
+.headingContainer .searchBar .burger-menu{
+    display: none;
+}
+
 header i{
     padding: 10px;
     font-size: 30px;
     align-items: center;
 }
+
+.headingContainer .iconosPricipales{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 #promoHeader{
     background-color: #3f3222;
@@ -76,10 +91,15 @@ header i{
     align-content: center;
     justify-content: space-evenly;
 }
+
 .searchBar{
     margin-left: 50px;
     align-items: center;
     border-bottom: #000000 5px solid;
+}
+
+.headingContainer .searchBar .burger-menu{
+    display: none;
 }
 
 .searchBar input{
@@ -157,12 +177,91 @@ main{
 
 /*FOOTER*/
 footer{
+    margin-top:50px;
     background-color: #3f3222;
 }
 
 footer i{
     color:#ffffff;
+    margin: 0 10px;
     
 }
+.menuFooter {
+    padding: 40px 60px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.menuFooter div {
+    width: 15%;
+}
 
+.menuFooter h3{
+    margin: 20px 0;
+}
+.menuFooter li{
+    list-style: none;
+
+}
+.menuFooter a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.redesSociales {
+    color: #ffffff;
+    padding: 20px 60px 50px 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+ }
+.redesSociales h4{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+ }
+
+ /*VERSION TABLET*/
+@media (max-width: 1023px){
+    .menuFooter div {
+        width: 30%;
+    }
+  
+
+}
+
+/*VERSION MOBILE*/
+@media (max-width: 767px){
+    .headingContainer .searchBar .burger-menu{
+        display: flex;
+    }
+    .nav-bar{
+        display: none;
+    }
+
+    .searchBar{  
+        border-bottom: none;
+    }
+   
+    .headingContainer .searchBar input{
+        display: none;
+    }
+
+    .menuFooter div {
+        width: 45%;
+    }
+
+    .headingContainer .iconosPricipales{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
 

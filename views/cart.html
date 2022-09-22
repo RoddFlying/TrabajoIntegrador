@@ -1,3 +1,5 @@
+cart
+
 <!DOCTYPE html>
 <html>
 
@@ -18,6 +20,7 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
         </div>
         <div class="headingContainer">
             <div class="searchBar">
+            <i class="fa-sharp fa-solid fa-bars burger-menu"></i>
                 <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i><!--icono lupa--> 
                 <input type="text" placeholder="Buscar productos, serivicios, más..">
             </div>
@@ -31,8 +34,8 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
                 <i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i> <!--cansato de compras... no funciona. ver que pasa-->
             </div>
         </div>
-       
-        <nav class="nav-bar ,">
+        
+        <nav class="nav-bar">
             <ul class="menuPrincipal">
                 <li><a href="">PRODUCTOS</a></li> 
                 <li><a href="">APRENDE MAS</a></li>
@@ -40,21 +43,124 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
                 <li><a href="">ASESORIAS</a></li>
                 <li><a href="">CONTACTO</a></li>
             </ul>
-        </nav>
 
+        </nav>
+       
     </header>
     <main>
-      
+      <section class="tituloCart">
+        <h2>CARRITO DE COMPRAS</h2>
+
+      </section>
+      <section class="listaCart">
+
+        <div class="detalleCart">
+            <h3>ITEMS</h3>
+            <h3>PRECIO</h3>
+            <h3>CANTIDAD</h3>
+            <h3>TOTAL</h3>
+        </div>
+        <div class="itemResumenCart">
+
+        <div class="itemsCart">
+            <article>
+                <div class="itemImg">
+                    <img src="../public/img/cbdcbggummies.png" alt="" class="imgItemCart">
+                    <h3 class="nombreItemCart">Fruity CBD/CBG Hemp Gummies | 500mg CBD | 500mg CBD</h3>
+                </div>
+                <h3 class="precioItemCart">$1800</h3>
+                <div class="masMenos">
+                    <button>+</button>
+                    <!--icon favorite, add product, cart--> <h3>1</h3>
+                    <button>-</button>
+                </div>
+                <h3>$1800</h3>
+            </article>
+            <article>
+                <div class="itemImg">
+                    <img src="../public/img/gummiescanna.png" alt="" class="imgItemCart">
+                    <h3 class="nombreItemCart">Fruity CBD/CBG Hemp Gummies | 500mg CBD | 500mg CBD</h3>
+                </div>
+                <h3 class="precioItemCart">$1800</h3>
+                <div class="masMenos">
+                    <button>+</button>
+                    <!--icon favorite, add product, cart--> <h3>1</h3>
+                    <button>-</button>
+                </div>
+                <h3>$1800</h3>
+            </article>
+        </div>
+        <div class="resumenCart">
+            <h3>Resumen</h3>
+            <div class="subtotalCart">
+                <h4>Sub-total</h4>
+                <h4>$3600</h4>
+            </div>
+            <div class="totalsEnvioCart">
+                <h4>Total sin envio</h4>
+                <h4>$3600</h4>
+            </div>
+            <button><a href="#">PAGAR</a></button>
+
+
+        </div>
+
+    </div>
+        
+
+      </section>
 
     </main>
     <footer>
+        <section class="menuFooter">
+           <div>
+                <h3>PRODUCTOS</h3>
+                <ul>
+                    <li><a href="#">Sustratos</a></li>
+                    <li><a href="#">Luces</a></li>
+                    <li><a href="#">Fertilizantes</a></li>
+                    <li><a href="#">Parafrenalia</a></li>
+                    <li><a href="#">Hidroponia</a></li>
+                    <li><a href="#">Picadores</a></li>
+                    <li><a href="#">Carpas</a></li>
+                    <li><a href="#">Frascos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>APRENDE MAS</h3>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>SERVICIOS</h3>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>ASESORIAS</h3>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3></h3>
+            </div>
 
+        </section>
         <div class="redesSociales">
+            <h4>Seguinos</h4>
             <i class="fa-brands fa-instagram fa-2x"></i>
             <i class="fa-brands fa-tiktok fa-2x"></i>
             <i class="fa-brands fa-twitter fa-2x"></i>
         </div>
-
     </footer>
 
 </body>

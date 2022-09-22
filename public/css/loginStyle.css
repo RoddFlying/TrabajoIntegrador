@@ -1,39 +1,123 @@
-.headingLogo {
-    color: var(--dark-olive-green);
-    font-size: 10px;
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Font Roboto bold 900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Font Roboto thin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Font roboto regular */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Lobster font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*lato regular font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); /*lato bold*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); /*lato thin*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); /*Garamond regular font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');/*Garamond italic*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap'); /*garamond Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
 
-  }
-  .datos{
-  margin-bottom: 10px;
-  text-align: center;
-  margin-top: 10px;
-  border: none;
+    :root {
+     --dark-olive-green : #5a6b47;
+     --black : #000000;
+     --artichoke : #a1a48f;
+     --tan: #dabf94;
+     --cafe-noir :#3f3222;
+     --white : #ffffff;
+    } 
+    
+    
+
+/*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
+
+/*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
+
+
+main{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 250px;
+  margin-left: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.imagen{
+  width: 50%;
+}
+
+.imagen img{
+  width: 100%;
+}
+
+.container{
+  width: 43%;
+}
+
+.subtitulo {
+  background-color: var(--dark-olive-green);
+  color: #ffffff;
+  padding: 20px;
+  border-top: #000000 5px solid;
+  margin: 50px auto 30px auto;
+}
+
+.subtitulo h2{ 
+  text-align: left;
+}
+
+
+.formulario{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario div{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction : column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.formulario label{
+  color: var(--dark-olive-green);
   font-size: 20px;
-  display:grid;
+  padding: 20px 0;
+}
 
-  }
-  .datos2 {
-    background-color: var(--tan)  ;
-    border:none;
-    border-radius:8px;
-    height: 30px;
-    font-size: 20px;
-    padding: 6px;
-  }
-  .ultima{
-    text-align: center;
-  margin-top: 30px;
- 
+.formulario input{
+  background-color: var(--white);
+  border: var(--dark-olive-green) 1px solid;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.boton{
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 20px;
   font-weight: bold;
-  }
-  .registrarse{
-    margin-bottom: 30px;
+  background-color: var(--artichoke);
+  color: var(--white);
+  border: none;
+}
+
+.otrasOpciones{
+  font-weight: 20px;
   text-align: center;
-  margin-top: 30px;
-  cursor:pointer;
-  font-weight: bold;
-  }
-  .boton {
+  align-items: center;
+}
+
+.otrasOpciones a{
+  font-weight: 20px;
+  color: #3f3222;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+  /* .boton {
    background-color: var(--dark-olive-green);
    border-radius: 8px;
    border:none;
@@ -48,34 +132,56 @@
    position: relative;
    left:870px;    
    
-  }
-  .subtitulo {
-    color: var(--black);
-    margin-bottom: 50px;
-    margin-top: 350px;
-  
-  }
-  .formulario{
-    display:flex;
-    flex-direction : column;
-    margin-bottom: 12px;
+  } */
+ 
 
-  }
-  .contraseña2{
-    margin-top:30px;
-    font-weight: bold;
-  }
-
-  .boton {
-    width: 100px;
-    height: 70px;
-    transition:450ms;
-    justify-content: center;
-    position:relative;
-    left:900px;
-    bottom: 5px;
-}
 .boton:hover {
 
     border-radius: 50%;
+}
+
+/*VERSION TABLET*/
+@media (max-width: 1023px){
+  .imagen{
+    width: 40%;
+  }
+
+  .imagen img{
+    content: url("../img/mobilePlaceholder.png"); /*Colocar imagen recortada*/
+  }
+  
+  .container{
+    width: 60%;
+  }
+
+
+
+
+}
+
+/*VERSION MOBILE*/
+@media (max-width: 767px){
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 250px;
+    margin-left: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  }
+  .imagen{
+    width: 100%;
+  }
+
+  .imagen img{
+    content: url("../img/mobilePlaceholder.png"); /*Colocar imagen recortada*/
+  }
+
+  .container{
+    margin: 0 20px 0 20px;
+    width: 100%;
+  }
+ 
 }

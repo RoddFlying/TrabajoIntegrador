@@ -12,72 +12,119 @@ rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
 <script src="https://kit.fontawesome.com/9ff4ec337d.js" crossorigin="anonymous"></script> <!-- Para que funcionen lo Iconos, no tocar -->
 </head>
 <body>
-  <header>
-    <div>
-        <h4 id="promoHeader">20% de decuento en sdjfidoshfs</h4>
-    </div>
-    <div class="headingContainer">
-        <div class="searchBar">
-            <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i><!--icono lupa--> 
-            <input type="text" placeholder="Buscar productos, serivicios, más..">
+    <header>
+        <div>
+            <h4 id="promoHeader">20% de decuento en sdjfidoshfs</h4>
         </div>
-        <div class="headingLogo">
-            <!-- <h1>GROWSHOP</h1> reemplazar con logo  -->
-            <img src="../public/img/logoGHboceto.png" alt="" class="logo">
+        <div class="headingContainer">
+            <div class="searchBar">
+            <i class="fa-sharp fa-solid fa-bars burger-menu"></i>
+                <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i><!--icono lupa--> 
+                <input type="text" placeholder="Buscar productos, serivicios, más..">
+            </div>
+            <div class="headingLogo">
+                <!-- <h1>GROWSHOP</h1> reemplazar con logo  -->
+                <img src="../public/img/logoGHboceto.png" alt="" class="logo">
+            </div>
+            <div class="iconosPrincipales">
+                <i class="fa-sharp fa-solid fa-user fa-2x"></i><!--icono usuario-->
+                <i class="fa-sharp fa-solid fa-envelope fa-2x"></i><!--sobre de contacto-->
+                <i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i> <!--cansato de compras... no funciona. ver que pasa-->
+            </div>
         </div>
-        <div class="iconosPrincipales">
-            <i class="fa-sharp fa-solid fa-user fa-2x"></i><!--icono usuario-->
-            <i class="fa-sharp fa-solid fa-envelope fa-2x"></i><!--sobre de contacto-->
-            <i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i> <!--cansato de compras... no funciona. ver que pasa-->
-        </div>
-    </div>
-   
-    <nav class="nav-bar ,">
-        <ul class="menuPrincipal">
-            <li><a href="">PRODUCTOS</a></li> 
-            <li><a href="">APRENDE MAS</a></li>
-            <li><a href="">SERVICIOS</a></li>
-            <li><a href="">ASESORIAS</a></li>
-            <li><a href="">CONTACTO</a></li>
-        </ul>
-    </nav>
-</header> 
+        
+        <nav class="nav-bar">
+            <ul class="menuPrincipal">
+                <li><a href="">PRODUCTOS</a></li> 
+                <li><a href="">APRENDE MAS</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a href="">ASESORIAS</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+
+        </nav>
+       
+    </header>
+
 <main>
-    <!-- <div>
+    <section class="imagen">
         <img src="../public/img/imagePlacerholder.jpg" alt="">
-    </div> -->
-  <div class="Container">
-    <h2 class="subtitulo">INICIAR SESION</h2>
-    <form action = "index.html" method="POST" class="formulario" > 
+    </section>
+    <section class="container">
+        <div class="subtitulo">
+            <h2>INICIAR SESION</h2>
+        </div>
+    
+    <form action = "/" method="POST" class="formulario" > 
     <div>
-        <label class="datos"> Correo Eléctronico </label>
-        <input class="datos2" type="email" name="CorreoElectronico" placeholder="maureeen@gmail.com">
+        <label > Correo Eléctronico </label>
+        <input  type="email" name="CorreoElectronico" placeholder="maureeen@gmail.com">
     </div>
         
     <div>
-        <label class="datos"> Contraseña </label>
-        <input  class="datos2" type="password" name="Contraseña" placeholder="*********">
+        <label > Contraseña </label>
+        <input  type="password" name="Contraseña" placeholder="*********">
     </div>
         <button class="boton">CONFIRMAR</button>
-    <div>
-        <label class="ultima"> No tienes cuenta? </label>
+    <div class="otrasOpciones">
+        <p>¿No tienes cuenta?</p>
         <a href= "#" class="registrarse"  >    Registrarse  </a>
 
          <a href="#" class="contraseña2"> Olvide mi contraseña </a>
     </div>
   </form>   
- </div>
+</section>
 </main> 
 
 
 <footer>
+    <section class="menuFooter">
+       <div>
+            <h3>PRODUCTOS</h3>
+            <ul>
+                <li><a href="#">Sustratos</a></li>
+                <li><a href="#">Luces</a></li>
+                <li><a href="#">Fertilizantes</a></li>
+                <li><a href="#">Parafrenalia</a></li>
+                <li><a href="#">Hidroponia</a></li>
+                <li><a href="#">Picadores</a></li>
+                <li><a href="#">Carpas</a></li>
+                <li><a href="#">Frascos</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>APRENDE MAS</h3>
+            <ul>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>SERVICIOS</h3>
+            <ul>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>ASESORIAS</h3>
+            <ul>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>CONTACTO</h3>
+            <ul>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
 
+
+    </section>
     <div class="redesSociales">
+        <h4>Seguinos</h4>
         <i class="fa-brands fa-instagram fa-2x"></i>
         <i class="fa-brands fa-tiktok fa-2x"></i>
         <i class="fa-brands fa-twitter fa-2x"></i>
     </div>
-
 </footer>
 
 </body>
