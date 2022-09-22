@@ -15,15 +15,15 @@ app.get('/login', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
 
-app.get('/contact', function (req, res) {
+app.get('/login', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/contact.html'));
 });
 
-app.get('/cart', function (req, res) {
+app.get('/login', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/cart.html'));
 });
 
-app.get('/product', function (req, res) {
+app.get('/login', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/product.html'));
 });
 
