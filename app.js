@@ -3,6 +3,8 @@ const path = require('path');
 
 const app = express();
 
+app.use(express.static(path.resolve(__dirname, './public')));
+
 app.get('/', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/index.html'));
 });
@@ -26,8 +28,6 @@ app.get('/cart', function (req, res) {
 app.get('/product', function (req, res) {
   res.sendFile(path.resolve(__dirname, './views/product.html'));
 });
-
-app.use(express.static(path.resolve(__dirname, './')));
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Servidor corriendo");
