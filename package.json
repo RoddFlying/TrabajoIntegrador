@@ -1,37 +1,52 @@
 {
 
-  "name": "tpdh",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "name": "trabajointegrador",
+
   "version": "1.0.0",
+
   "description": "- Nuestro proyecto integrador es crear un E-commerce de un growshop que se dedica a la venta de insumos de Cannabis. Incluyendo información necesaria para quienes quieran incursionar en el tema incluido el marco legal.",
+
   "main": "app.js",
+
   "scripts": {
+
     "test": "echo \"Error: no test specified\" && exit 1",
+
     "start": "node ./app.js"
+
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RoddFlying/TrabajoIntegrador.git"
-  },
+
   "keywords": [],
+
   "author": "",
+
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RoddFlying/TrabajoIntegrador/issues"
+
+  "repository": {
+
+    "type": "git",
+
+    "url": "git+https://github.com/RoddFlying/TrabajoIntegrador.git"
+
   },
+
+  "bugs": {
+
+    "url": "https://github.com/RoddFlying/TrabajoIntegrador/issues"
+
+  },
+
   "homepage": "https://github.com/RoddFlying/TrabajoIntegrador#readme",
+
   "dependencies": {
+
     "express": "^4.18.1",
-    "moment": "^2.29.4"
+
+    "moment": "^2.29.4",
+
+    "nodemon": "^2.0.20"
+
   }
 
 }
+
