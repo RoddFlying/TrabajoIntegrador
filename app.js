@@ -7,6 +7,8 @@ const app = express();
 
 app.use(express.static(path.resolve(__dirname, './public')));
 
+app.set('view engine', 'ejs'); //npm i EJS//
+
 app.use ('/', productosRoutes ); // nueva ruta conectada al primer require//
 
 app.get('/', function (req, res) {
