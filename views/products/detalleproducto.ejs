@@ -1,44 +1,49 @@
-<!-- INCLUDES HEAD-->
-<%- include('partials/head') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- INCLUDES HEAD-->
+<%- include('./partials/head') %>
+</head>
+<body> 
  
-    <!-- INCLUDES HEADER-->
-  <%- include('partials/header') %>
-    <main>
-        <section class="product">
-            <div class="productTitle">
-                <h2>Fruity CBD/CBG Hemp Gummies | 500mg CBD | 500mg CBD</h2>
-                <p></p>
-                <p class="productTitleCreator">by Zaraza</p>
+<!-- INCLUDES HEADER-->
+<%- include('./partials/header') %>
+<main>
+    <section class="product">
+        <div class="productTitle">
+            <h2>Fruity CBD/CBG Hemp Gummies | 500mg CBD | 500mg CBD</h2>
+            <p></p>
+            <p class="productTitleCreator">by Zaraza</p>
+        </div>
+        <div class="productAdd">
+            <div class="masMenos">
+                <button>+</button>
+                <!--icon favorite, add product, cart--> <h3>1</h3>
+                <button>-</button>
             </div>
-            <div class="productAdd">
-                <div class="masMenos">
-                    <button>+</button>
-                    <!--icon favorite, add product, cart--> <h3>1</h3>
-                    <button>-</button>
-                </div>
-                <button><h3>AGREGAR A CARRITO</h3></button>
-                <button><i class="fa-regular fa-heart"></i></button>
-            </div>
+            <button><h3>AGREGAR A CARRITO</h3></button>
+            <button><i class="fa-regular fa-heart"></i></button>
+        </div>
 
 
-        </section>
-        <section class="productSpec"> 
-            <img src="img/cbdcbggummies.png" alt="">
-            <div class="productSpecInfo">
-                <h3>Especificaciones del producto</h3>
-                <p>Estos no son ositos de goma ordinarios como cuando eras niño. Encuentra alivio con nuestra combinación perfecta de gomitas orgánicas de cannabigerol y cannabidiol premium. La relación 1:1 CBG/CBG es ideal para una liberación lenta del estrés.
-                    <br>
-                    El CBG es un compuesto de cannabis que se usa a menudo para combatir la inflamación, mientras que el CBD tiene muchos beneficios, incluidos el alivio del dolor, la relajación y otros beneficios para la salud. Rebosante de verdadero sabor a fruta, cada gominola contiene 12,5 mg de CBG y 12,5 mg de CBD, para que pueda experimentar lo mejor de ambos mundos.
-                    <br>
-                    ● Probado en laboratorio <br>
-                    ● Hecho a mano en pequeños lotes <br>
-                    ● 40 gomitas por frasco (1000 mg) <br>
-                    ● Menos del 0,3 % de THC</p>
-            </div>
-            </div>
-        </section>
-    </main>
-     <!-- INCLUDES FOOTER-->
- <%- include('partials/footer') %>
- </html>
- 
+    </section>
+    <section class="productSpec"> 
+        <img src="img/cbdcbggummies.png" alt="">
+        <div class="productSpecInfo">
+            <h3>Especificaciones del producto</h3>
+            <p>Estos no son ositos de goma ordinarios como cuando eras niño. Encuentra alivio con nuestra combinación perfecta de gomitas orgánicas de cannabigerol y cannabidiol premium. La relación 1:1 CBG/CBG es ideal para una liberación lenta del estrés.
+                <br>
+                El CBG es un compuesto de cannabis que se usa a menudo para combatir la inflamación, mientras que el CBD tiene muchos beneficios, incluidos el alivio del dolor, la relajación y otros beneficios para la salud. Rebosante de verdadero sabor a fruta, cada gominola contiene 12,5 mg de CBG y 12,5 mg de CBD, para que pueda experimentar lo mejor de ambos mundos.
+                <br>
+                ● Probado en laboratorio <br>
+                ● Hecho a mano en pequeños lotes <br>
+                ● 40 gomitas por frasco (1000 mg) <br>
+                ● Menos del 0,3 % de THC</p>
+        </div>
+        </div>
+    </section>
+</main>
+ <!-- INCLUDES FOOTER-->
+<%- include('./partials/footer') %>
+</body>
+</html>

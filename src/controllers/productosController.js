@@ -1,20 +1,11 @@
-const controlador ={
-    login: (req , res) => {
-         res.render('users/login');
-     },
- 
-     registro: (req , res) => {
-         res.render('users/registro');
-     },
-     carrito: (req , res) => {
-         res.render('carrito');
-     },
-     detalle: (req , res) => {
-         res.render('products/detalleproducto')
-     },
-     crear: (req , res) => {
-         res.render('products/crearproducto')
-     },
- }
- 
- module.exports = controlador; 
+const path = require("path");
+
+const controlador = {
+  producto: (req, res) => {
+    res.render(path.resolve(__dirname, "../../views/producto"));
+  },
+  carrito: (req, res) => {
+    res.render(path.resolve(__dirname, "../../views/carrito"));
+  },
+};
+module.exports = controlador;

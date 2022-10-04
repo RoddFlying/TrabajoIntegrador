@@ -39,21 +39,32 @@
   //console.log("Servidor corriendo");
 //}); 
 
-const mainRouter = require('./src/routes/mainRouter')
-const productsRouter = require('./src/routes/productsRouter')
-const express = require('express');
-const path = require('path');
+
+const productosRoutes = require("./src/routes/productosRoutes");
+const mainRoutes = require("./src/routes/mainRoutes");
+const singinRoutes = require("./src/routes/singinRoutes");
+
+const express = require("express");
+const path = require("path");
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, './public')));
+app.set("view engine", "ejs");
 
-app.listen(process.env.PORT || 3010,() =>{
-    console.log('Servidor en puerto 3010 OK');
+app.use(express.static(path.resolve(__dirname, "./public")));
+
+app.use("/", mainRoutes); 
+
+app.use("/", productosRoutes);
+
+app.use("/", singinRoutes);
+
+app.use("*", function (req, res) {
+  res.send("Ruta equivocada");
 });
 
-app.set('view engine', 'ejs');
+app.listen(3000, () => {
+  console.log("servidor corriendo puerto 3000");
+});
 
-app.use('/', mainRouter);
 
-app.use('*', function(req,res) {     res.send("Ruta equivocada") });
