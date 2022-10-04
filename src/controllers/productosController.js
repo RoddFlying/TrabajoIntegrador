@@ -1,17 +1,20 @@
-const path = require ('path');
-
-const controlador = {
-    index: (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../views/index.html'));
-    },
-
-    product: (req, res) => {
-        res.send("producto223");
-    },
-    
-    productEspecial: (req, res) => {
-        res.send ("producto444");
-    }
-}
-
-module.exports = controlador;
+const controlador ={
+    login: (req , res) => {
+         res.render('users/login');
+     },
+ 
+     registro: (req , res) => {
+         res.render('users/registro');
+     },
+     carrito: (req , res) => {
+         res.render('carrito');
+     },
+     detalle: (req , res) => {
+         res.render('products/detalleproducto')
+     },
+     crear: (req , res) => {
+         res.render('products/crearproducto')
+     },
+ }
+ 
+ module.exports = controlador; 
