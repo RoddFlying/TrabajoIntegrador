@@ -40,24 +40,26 @@
 //}); 
 
 
-const productosRoutes = require("./src/routes/productosRoutes");
-const mainRoutes = require("./src/routes/mainRoutes");
-const singinRoutes = require("./src/routes/singinRoutes");
+const productosRouter = require("./src/routes/productosRouter");
+const mainRouter = require("./src/routes/mainRouter");
+const signinRouters = require("./src/routes/signinRouters");
 
 const express = require("express");
 const path = require("path");
 
 const app = express();
 
-app.set("view engine", "ejs");
-
 app.use(express.static(path.resolve(__dirname, "./public")));
 
-app.use("/", mainRoutes); 
+app.set("view engine", "ejs");
 
-app.use("/", productosRoutes);
+app.set('views', path.join(__dirname, './src/views'));
 
-app.use("/", singinRoutes);
+app.use("/", mainRouter); 
+
+//app.use("/", productosRouter);
+
+//app.use("/", signinRouters);
 
 app.use("*", function (req, res) {
   res.send("Ruta equivocada");

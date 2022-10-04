@@ -1,8 +1,6 @@
-const path = require("path");
-
 const controlador = {
   index: (req, res) => {
-    res.render(path.resolve(__dirname, "../../views/index"));
+    res.render("./home");
   },
 };
 module.exports = controlador;
