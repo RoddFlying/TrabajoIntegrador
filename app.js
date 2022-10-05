@@ -40,9 +40,9 @@
 //}); 
 
 
-const productosRouter = require("./src/routes/productosRouter");
+const productsRouter = require("./src/routes/productsRouter"); // Modifique products
 const mainRouter = require("./src/routes/mainRouter");
-const signinRouters = require("./src/routes/signinRouters");
+const usersRouter = require("./src/routes/usersRouter"); //Modifique Nombre
 
 const express = require("express");
 const path = require("path");
