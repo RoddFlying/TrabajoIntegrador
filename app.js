@@ -49,6 +49,8 @@ const path = require("path");
 
 const app = express();
 
+var methodOverride = require('method-override') //Procesamiento PUT y DELETE
+
 app.use(express.static(path.resolve(__dirname, "./public")));
 
 app.set("view engine", "ejs");
@@ -64,6 +66,12 @@ app.use("/", mainRouter);
 app.use("*", function (req, res) {
   res.send("Ruta equivocada");
 });
+
+app.use(methodOverride ("_method")); //override
+
+app.use(router) // not-found
+app.use((req, res, next) => { res.status(404).render("not-found")
+})
 
 app.listen(3000, () => {
   console.log("servidor corriendo puerto 3000");
