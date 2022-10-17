@@ -43,7 +43,7 @@
 const productsRouter = require("./src/routes/productsRouter"); // Modifique products
 const mainRouter = require("./src/routes/mainRouter");
 const usersRouter = require("./src/routes/usersRouter"); //Modifique Nombre
-
+const session = require('express-session'); // session
 const express = require("express");
 const path = require("path");
 
@@ -68,7 +68,7 @@ app.use("*", function (req, res) {
 });
 
 app.use(methodOverride ("_method")); //override
-
+app.use (session({secret: "secret phrase"})) // frase secreta session
 app.use(router) // not-found
 app.use((req, res, next) => { res.status(404).render("not-found")
 })
