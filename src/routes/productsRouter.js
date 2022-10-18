@@ -19,6 +19,8 @@ const ConfiguracionImagen = multer.diskStorage({
     }
 });
 
+const uploadFile = multer ({ storage: ConfiguracionImagen});
+
 // Carrito //
 
 router.get('/carrito', productsController.carrito)
