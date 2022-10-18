@@ -1,4 +1,4 @@
-const { fstat } = require("fs");
+const fs  = require("fs");
 const path = require("path");
 
 const controlador = {
