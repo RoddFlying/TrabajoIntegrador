@@ -46,8 +46,8 @@ const usersRouter = require("./src/routes/usersRouter"); //Modifique Nombre
 const session = require('express-session'); // session
 const express = require("express");
 const path = require("path");
-
 const app = express();
+
 
 var methodOverride = require('method-override') //Procesamiento PUT y DELETE
 
