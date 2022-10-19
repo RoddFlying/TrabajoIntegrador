@@ -40,6 +40,8 @@
 //}); 
 
 
+
+
 const productsRouter = require("./src/routes/productsRouter"); // Modifique products
 const mainRouter = require("./src/routes/mainRouter");
 const usersRouter = require("./src/routes/usersRouter"); //Modifique Nombre
@@ -50,6 +52,8 @@ const app = express();
 
 
 var methodOverride = require('method-override') //Procesamiento PUT y DELETE
+
+app.use()
 
 app.use(express.static(path.resolve(__dirname, "./public")));
 
