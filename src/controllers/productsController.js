@@ -40,3 +40,5 @@ store: (req, res) => {
 };
 
 module.exports = controlador;
+
+// falta delete metodo destroy
