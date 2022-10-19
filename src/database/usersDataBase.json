@@ -1,0 +1,30 @@
+[
+    {
+    "id": 1,
+    "nombre": "Maureen",
+    "apellido": "Pereyra",
+    "email": "mauren@proton.com",
+    "cumpleanos": "13/3/95",
+    "direccion": "Aristobulo del valle 112",
+    "contrasena": "a2243"
+   }, 
+   {
+    "id": 2,
+    "nombre": "Juan Cruz",
+    "apellido": "Mesel",
+    "email": "Juancruzm@gmail.com",
+    "cumpleanos": "21/2/96",
+    "direccion": "Lacroze 467",
+    "contrasena": "jhon-cena"
+   },
+   {
+    "id": 3,
+    "nombre": "Rodd",
+    "apellido": "Gonzales",
+    "email": "protuberancia@gmail.com",
+    "cumpleanos": "22/4/93",
+    "direccion": "aymaraes 223",
+    "contrasena": "cuido32s"
+   }
+
+]

@@ -1,0 +1,35 @@
+[
+    {
+     "id": 1,
+     "name": "Papelillos OCB",
+     "price": 320,
+     "category": "in-sale",
+     "description": "Papelillos OCB Premium para enrolar o liar. Papel ultrafino, de combustión lenta, con goma vegetal natural.",
+     "image": ""
+    },
+    {
+    "id": 2,
+    "name": "Papelillos OCB Bamboo",
+    "price": 400,
+    "category": "in-sale",
+    "description": "Papelillos OCB Bamboo para enrolar o liar. Papel ultrafino, de combustión lenta, con goma vegetal natural. OCB Bamboo son papelillos sin blanquear y sin colorantes.",
+    "image": ""   
+    },
+    {
+    "id": 3,
+    "name": "Papelillos OCB Ultimate",
+    "price": 350,
+    "category": "in-sale",
+    "description": "Los Papelillos Ultimate son de papel delgado, ligero y transparente.",
+    "image": ""       
+    },
+    {
+    "id": 3,
+    "name": "Papelillos Gizeh Rosa",
+    "price": 330,
+    "category": "in-sale",
+    "description": "Papelillos Gizeh Pink1 1/4 25 unid. Apto Vegan",
+    "image": ""       
+    }
+
+]
