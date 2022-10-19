@@ -9,42 +9,42 @@ const productsController = require('../controllers/productsController')
 
 //Multer Configuracion //
 
-const ConfiguracionImagen = multer.diskStorage({
-    destination: function(req, file, cb){
-        cb(null, path.join(__dirname,  '../../public/images/products'));
-    },
-    filename: function(req, file, cb) {
-        let imageName = Date.now() + file.originalname ;
-        cb (null,imageName);
-    }
-});
+//const ConfiguracionImagen = multer.diskStorage({
+  //  destination: function(req, file, cb){
+    //    cb(null, path.join(__dirname,  '../../public/images/products'));
+    //},
+    //filename: function(req, file, cb) {
+      //  let imageName = Date.now() + file.originalname ;
+       // cb (null,imageName);
+    //}
+//});
 
-const uploadFile = multer ({ storage: ConfiguracionImagen});
+//const uploadFile = multer ({ storage: ConfiguracionImagen});
 
 // Carrito //
 
-router.get('/carrito', productsController.carrito)
+//router.get('/carrito', productsController.carrito)
 
 //Get all products //
 
-router.get('/', productosController.home);
+//router.get('/', productsController.home);
 
 // Create a product // 
 
-router.get('/createProducts', productsController.create);
-router.post('/createProducts' , uploadFile.single('imageProduct'), productsController.store);
+//router.get('/createProducts', productsController.create);
+//router.post('/createProducts' , uploadFile.single('imageProduct'), productsController.store);
 
 // Get a product //
 
-router.get("/detail/:id", productsController.detail);
+//router.get("/detail/:id", productsController.detail);
 
 //Edit a product //
 
-router.get("/detail/:id", productsController.edit);
-router.put("edit/:id", productsController.update);
+//router.get("/detail/:id", productsController.edit);
+//router.put("edit/:id", productsController.update);
 
 //Delete product //
 
-router.delete("/:id", productsController.destroy);
+//router.delete("/:id", productsController.destroy);
 
 module.exports = router;
