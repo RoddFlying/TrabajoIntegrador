@@ -2,19 +2,21 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-app.set("view engine", "ejs");
+const methodOverride = require('method-override'); //Procesamiento PUT y DELETE
+const productsRouter = require('./src/routes/productsRouter');
+const usersRouter = require('./src/routes/usersRouter');
+
+
 const publicPath = path.resolve(__dirname, './public');
-app.use( express.static(publicPath))
+app.set("view engine", "ejs");
+app.use( express.static(publicPath));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
-const methodOverride = require('method-override'); //Procesamiento PUT y DELETE
-app.use(methodOverride ("_method")); //override
+app.use(methodOverride ("_method")); 
 
-const productsRouter = require('./src/routes/productsRouter')
-app.use("/", productsRoutes); 
+app.use("/", productsRouter); 
 
-const usersRouter = require('./src/routes/usersRouter')
 app.use('/', usersRouter);
 
 app.use((req, res, next) => {
