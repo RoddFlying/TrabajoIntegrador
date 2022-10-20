@@ -1,0 +1,83 @@
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Font Roboto bold 900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Font Roboto thin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Font roboto regular */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Lobster font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*lato regular font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); /*lato bold*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); /*lato thin*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); /*Garamond regular font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');/*Garamond italic*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap'); /*garamond Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
+
+    :root {
+     --dark-olive-green : #5a6b47;
+     --black : #000000;
+     --artichoke : #a1a48f;
+     --tan: #dabf94;
+     --cafe-noir :#3f3222;
+     --white : #ffffff;
+    }
+
+
+
+main{
+  margin-top: 300px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  align-items: center;
+  display: block;
+}
+
+main section{
+    width: 90%; /*seccion main*/
+    margin: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+main h2{
+    width: 90%; /*seccion main*/
+    margin: 15px;
+    padding: 30px;
+    margin: auto;
+}
+
+article{
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20%;
+}
+
+article .name{
+    font-size: 16px;
+    margin: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+article .priceProduct{
+    font-size: 18px;
+}
+article .discount{
+    font-size: 16px;
+    color:var(--dark-olive-green);
+}
+
+.product-item img{
+    width: 100%;
+}
+.product-detail{
+    border-top: solid 1px #ebebeb;
+}
+.product-price{
+    margin:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
