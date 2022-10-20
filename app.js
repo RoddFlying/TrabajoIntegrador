@@ -1,84 +1,28 @@
-// const productosRoutes = require ('./routes/productosRoutes'); 
-
-// const express = require('express');
-//   const path = require('path');
-
-// const app = express();
-
-// app.use(express.static(path.join(__dirname, './public')));
-
-// app.set('view engine', 'ejs'); 
-
-// app.use ('/', mainRouter ); 
-
-// app.get('/', function (req, res) {
-// res.sendFile(path.resolve(__dirname, './views/index.html'));
-//});
-
-//app.get('/register', function (req, res) {
- // res.sendFile(path.resolve(__dirname, './views/register.html'));
-// });
-
-// app.get('/login', function (req, res) {
-//  res.sendFile(path.resolve(__dirname, './views/login.html'));
-// });
-
-// app.get('/contact', function (req, res) {
-// res.sendFile(path.resolve(__dirname, './views/contact.html'));
-// });
-
-// app.get('/cart', function (req, res) {
-//   res.sendFile(path.resolve(__dirname, './views/cart.html'));
-// });
-
-// app.get('/product', function (req, res) {
- // res.sendFile(path.resolve(__dirname, './views/product.html'));
-// });
-
-//app.listen(process.env.PORT || 3000, function() {
-  //console.log("Servidor corriendo");
-//}); 
-
-
-
-
-const productsRouter = require("./src/routes/productsRouter"); // Modifique products
-const mainRouter = require("./src/routes/mainRouter");
-const usersRouter = require("./src/routes/usersRouter"); //Modifique Nombre
-const session = require('express-session'); // session
 const express = require("express");
 const path = require("path");
-var methodOverride = require('method-override') //Procesamiento PUT y DELETE
 const app = express();
 
-
-
-
-//app.use()// Comente esta linea porque daba error al levantar servidor
-
-app.use(express.static(path.resolve(__dirname, "./public")));
-
 app.set("view engine", "ejs");
-app.set('views', path.join(__dirname, '/views'));
+const publicPath = path.resolve(__dirname, './public');
+app.use( express.static(publicPath))
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
-app.use("/", mainRouter); 
-
-//app.use("/products", productsRouter);
-
-//app.use("/", signinRouters);
-
-app.use("*", function (req, res) {
-  res.send("Ruta equivocada");
-});
-
+const methodOverride = require('method-override'); //Procesamiento PUT y DELETE
 app.use(methodOverride ("_method")); //override
-app.use (session({secret: "secret phrase"})) // frase secreta session
-//app.use(router) // not-found
-app.use((req, res, next) => { res.status(404).render("not-found")
-})
+
+const productsRouter = require('./src/routes/productsRouter')
+app.use("/", productsRoutes); 
+
+const usersRouter = require('./src/routes/usersRouter')
+app.use('/', usersRouter);
+
+app.use((req, res, next) => {
+   res.status(404).render("not-found")
+});
 
 app.listen(3000, () => {
   console.log("servidor corriendo puerto 3000");
 });
 
-module.exports = app;
+

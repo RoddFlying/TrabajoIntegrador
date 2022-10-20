@@ -1,17 +1,14 @@
 const express = require('express');
 const router = express.Router();
-
-const multer = require ('multer'); //Multer//
-
-// Requerimiento del controller //
-
-const productsController = require('../controllers/productsController')
+const multer = require ('multer');
+const path = require('path');
+let productsController = require('../controllers/productsController')
 
 //Multer Configuracion //
 
 const ConfiguracionImagen = multer.diskStorage({
     destination: function(req, file, cb){
-        cb(null, path.join(__dirname,  '../../public/images/products'));
+        cb(null, path.join(__dirname,  '../../public/img/products'));
     },
     filename: function(req, file, cb) {
         let imageName = Date.now() + file.originalname ;
@@ -21,30 +18,19 @@ const ConfiguracionImagen = multer.diskStorage({
 
 const uploadFile = multer ({ storage: ConfiguracionImagen});
 
-// Carrito //
-
-router.get('/carrito', productsController.carrito)
-
-//Get all products //
 
 router.get('/', productsController.home);
 
-// Create a product // 
-
 router.get('/createProducts', productsController.create);
-router.post('/createProducts' , uploadFile.single('imageProduct'), productsController.store);
+router.post('/createProducts', uploadFile.single('imageProduct'), productsController.store);
 
-// Get a product //
+router.get("/editProducts/:id", productsController.edit);
+router.put('/editProducts/:id' , uploadFile.single('imageEdit'), productsController.update);
 
-router.get("/detail/:id", productsController.detail);
+router.get("/detailProducts", productsController.detail);
+router.get("/detailProducts/:id", productsController.detailId);
 
-//Edit a product //
+router.delete("/delete/:id", productsController.delete);
 
-router.get("/detail/:id", productsController.edit);
-router.put("edit/:id", productsController.update);
-
-//Delete product //
-
-router.delete("/:id", productsController.destroy);
 
 module.exports = router;
