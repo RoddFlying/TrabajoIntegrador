@@ -1,74 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
  <!-- INCLUDES HEAD-->
-<%- include('./partials/head') %>  
-</head>  
+<%-include('./partials/head') %>  
+ 
  <body>
     <!-- INCLUDES HEADER-->
   <%- include('./partials/header') %>
-         <main>
+  <main>
 
-       <h2 style="text-align: center;" class="iniciarSesion>"><strong>Crear Producto</h2></strong>
-       <div class="login-page">
-           <div class="form">
-             <form class="register-form"> 
-               <input type="text" placeholder="Email"/>
-               <input type="text" placeholder="Nombre"/>
-               <input type="text" placeholder="Apellido"/>
-               <input type="password" placeholder="Contraseña"/>
-               <input type="password" placeholder="Repetir Contraseña"/>
-               <button>Crear Cuenta</button>
-               <p class="message">Already registered? <a href="/products/login">Sign In</a></p>
-             </form>
-           </div>
-         </div>
- 
-   </main>
+    <!-- <div class="login-page">
+        <div class="form">
+          <form class="register-form" action="/products/createProducts" method="post">
+           <label for="email"></label>
+            <input type="text" placeholder="Email"/>
+            <input type="text" placeholder="Nombre"/>
+            <input type="text" placeholder="Apellido"/>
+            <input type="password" placeholder="Contraseña"/>
+            <input type="password" placeholder="Repetir Contraseña"/>
+            <button>Crear Cuenta</button>
+            <p class="message">Already registered? <a href="/products/login">Sign In</a></p>
+          </form>
+        </div>
+      </div> -->
 
-   <form action="/products/create" method="POST"enctype="multipart/form-data">
-    
-    <div class="formProducts">
-    <label for="name" class="form-label">Nombre del producto</label>
-    <input type="text" id="name" name="name" placeholder="Papelillos" class="form-input">
-    </div>
+<section class="registroProducto">
+<div class="subtitulo">
+  <h2>Registrar nuevo producto</h2>
+</div>
 
-    <div class="formProducts">
-    <label for="price" class="form-label"> Precio del producto </label>
-    <input type="number" id="price" name="productprice" placeholder="$220" class="form-input">
-    </div>
 
-    <div class="formProducts">
-    <label for="discount" class="form-label">Descuento</label>
-    <input type="number" id="discount" name="discount" placeholder="%10" class="form-input"> 
-    </div>
+<form action="/products/create" method="POST" enctype="multipart/form-data">
 
-    <div class="formProducts">
-    <label for="category" class="form-label">Categoría</label>
-    <select id="category" name="category" class="form-input">    
-      <option value="">Elegí</option>
-      <option value="in-sale">En oferta</option>
-      <option value="visited">Últimos agregados</option>
-    </select>
-  </div>
+<div class="group">
 
-  <div class="formProducts"> 
-    <label for="imageProduct" class="form-label">Seleccionar Imagen:</label>
-    <input type="file" name="imageProduct"/>
-  </div>
-    
-    <div class="formProducts2">
-    <label for="description" class="form-label" >  Descripción </label>
-    <textarea name="description" id="description" class="form-input"></textarea>
-    </div>    
-    
-    <div class="formProducts2">
-    <button type="submit" class="buy-now-button">Guardar Producto</button>
-     </div>
-  </form>
+ <div class="formProducts">
+   <label for="name" class="form-label">Nombre del producto</label>
+   <input type="text" id="name" name="name" placeholder="Papelillos" class="form-input">
+ </div>
+
+ <div class="formProducts">
+   <label for="price" class="form-label"> Precio del producto </label>
+   <input type="number" id="price" name="productprice" placeholder="$220" class="form-input"> <!--Porque aca tiene procutprice y en los demas oslo discount etc.-->
+ </div>
+
+</div>
+
+<div class="group">
+
+ <div class="formProducts">
+   <label for="discount" class="form-label">Descuento</label>
+   <input type="number" id="discount" name="discount" placeholder="%10" class="form-input">
+ </div>
+
+ <div class="formProducts">
+   <label for="category" class="form-label">Categoría</label>
+   <select id="category" name="category" class="form-input">
+     <option value="">Elegí</option>
+     <option value="in-sale">En oferta</option>
+     <option value="visited">Últimos agregados</option>
+   </select>
+ </div>
+
+</div>
+
+<div class="group">
+
+ <div class="formProducts">
+   <label for="imageProduct" class="form-label">Seleccionar Imagen:</label>
+   <input type="file" name="imageProduct"/>
+ </div>
+
+ <div class="formProducts">
+   <label for="description" class="form-label" >  Descripción </label>
+   <textarea name="description" id="description" class="form-input"></textarea>
+ </div>
+
+</div>
+<div class="botton">
+
+ <div class="formProducts">
+   <button type="submit" class="buy-now-button .confirmCreatProduct">Guardar Producto</button>
+ </div>
+
+</div>
+
+</form>
+
+</section>
+
+</main>
 <!-- Contenido formulario estilos -->  ( maureen )
 
  <!-- INCLUDES FOOTER-->
- <%- include('./partials/footer') %> 
+ <%- include('../partials/footer') %> 
  </body> 
 </html>

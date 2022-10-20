@@ -1,0 +1,92 @@
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Font Roboto bold 900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Font Roboto thin */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* Font roboto regular */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Lobster font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*lato regular font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap'); /*lato bold*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap'); /*lato thin*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); /*Garamond regular font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');/*Garamond italic*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap'); /*garamond Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap'); /*Zilla Slab regular font-family: 'Zilla Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap'); /*Zilla Slab hilighted font-family: 'Zilla Slab Highlight', cursive;*/
+
+    :root {
+     --dark-olive-green : #5a6b47;
+     --black : #000000;
+     --artichoke : #a1a48f;
+     --tan: #dabf94;
+     --cafe-noir :#3f3222;
+     --white : #ffffff;
+    }
+
+
+
+    main{
+  margin-top: 300px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.registroProducto{
+  margin-top: 270px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.registroProducto h2{
+  color: #ffffff;
+  background-color:var(--dark-olive-green);
+  text-align: center;
+  align-items: center;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.registroProducto .subtitulo{
+  background-color: var(--dark-olive-green);
+  color: #ffffff;
+  padding: 20px;
+  border-top: #000000 5px solid;
+  margin: 50px auto 30px auto;
+}
+
+.registroProducto .subtitulo h2{
+  text-align: left;
+}
+
+.registroProducto form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.registroProducto form .group{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+
+.registroProducto form .group .formProducts{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.containerProducto form .group .formProducts label{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.containerProducto form .group .formProducts input{
+  background-color: var(--tan);
+  border: var(--dark-olive-green) 1px solid;
+  text-align: center;
+  padding: 10px;
+}

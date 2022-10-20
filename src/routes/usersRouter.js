@@ -4,5 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/login", usersController.login); //USERS MODIFICACION
+// router.get("/register", usersController.register); 
+// router.get("/profile", usersController.profile); 
 
 module.exports = router;
