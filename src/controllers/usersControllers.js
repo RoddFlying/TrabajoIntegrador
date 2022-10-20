@@ -1,8 +1,18 @@
 const path = require("path");
 
-const controlador = {
+let usersController = {
+  index: (req, res) => {
+      res.render('Users/perfil')
+},
+  register: (req, res) => {
+      res.render('Users/register')
+},
   login: (req, res) => {
-    res.render(path.resolve(__dirname, "../../views/users/login"));
-  },
-};
-module.exports = controlador;
+      res.render('Users/login')
+},
+  cart: (req, res) => {
+      res.render('cart')
+}};
+
+
+module.exports = usersController;
