@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- INCLUDES HEAD-->
+<%- include('../partials/head') %>
+    <link rel="stylesheet" href="../../public/css/registerStyle.css">
+</head>
+<body> 
+ 
+<!-- INCLUDES HEADER-->
+<%- include("../partials/header") %>
+
+
+    <main>
+
+    <section class="containerRegistro">
+
+        <div class="subtitulo">
+            <h2>REGISTRARSE</h2>
+        </div>
+
+    <div class="contenedor">  
+
+      <form action="register" method="POST">
+        <div class="emailDiv">
+            <label > Correo Electrónico </label>
+            <input  type="email" name="email" placeholder="roddfly@gmail.com" required>
+        </div>
+        <div class="grupos">
+            <div>
+                <label > Contraseña </label>  
+                <input  type="password" name="contraseña" placeholder="********" required>        
+            </div>
+            <div>
+                <label > Confirmar Contraseña </label>  
+                <input type="password" name="contraseña" placeholder="********" required>        
+            </div>
+        </div>
+        <div class="grupos">
+            <div>
+                <label > Nombre </label>
+                <input  type="text" name="nombre" placeholder="DonFumon" required>
+            </div>
+            <div>
+                <label > Apellido </label>
+                <input  type="text" name="apellido" placeholder="Acevedo" required>
+            </div>
+        </div>
+        <div class="grupos">
+            <div>
+                <label > Dirección - Linea 1 </label>
+                <input type="text" name="direccion" placeholder="Aristobulo Del Valle 1455" required>
+            </div>
+            <div>
+                <label > Dirección - Linea 2 (opcional)</label>
+                <input  type="text" name="direccion2" placeholder="Maipu 335" required>
+            </div>
+        </div>
+        <div class="grupos">
+            <div>
+                <label > Ciudad </label>
+                <input  type="text" name="ciudad" placeholder="Vicente López" required>
+            </div>
+            <div>
+                <label  > Provincia </label>
+                <input  type="text" name="provincia" placeholder=" Buenos Aires" required>
+            </div>
+        </div>
+        <div class="grupos">
+            <div>
+                <label > Código Postal </label>
+                <input  type="number" name="codigo" placeholder="1644" required>
+            </div>
+            <div>
+                <label > Pais </label>
+                <input type="text" name="apellido" placeholder="Argentina">
+            </div>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="checbox"> 
+            <label  for="checkbox"> Sí, deseo recibir información a mi correo electrónico de ofertas </label>         
+            </div>
+        <button class="botonEditUser"> EDITAR</button>
+      </form>    
+      </div>
+    </section>
+ 
+
+    </main>
+
+ <!-- INCLUDES FOOTER-->
+ <%- include('../partials/footer') %>
+</body>
+</html>
