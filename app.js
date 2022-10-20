@@ -48,22 +48,22 @@ const usersRouter = require("./src/routes/usersRouter"); //Modifique Nombre
 const session = require('express-session'); // session
 const express = require("express");
 const path = require("path");
+var methodOverride = require('method-override') //Procesamiento PUT y DELETE
 const app = express();
 
 
-var methodOverride = require('method-override') //Procesamiento PUT y DELETE
 
-app.use()
+
+//app.use()// Comente esta linea porque daba error al levantar servidor
 
 app.use(express.static(path.resolve(__dirname, "./public")));
 
 app.set("view engine", "ejs");
-
-app.set('views', path.join(__dirname, './src/views'));
+app.set('views', path.join(__dirname, '/views'));
 
 app.use("/", mainRouter); 
 
-//app.use("/", productosRouter);
+//app.use("/products", productsRouter);
 
 //app.use("/", signinRouters);
 
@@ -81,4 +81,4 @@ app.listen(3000, () => {
   console.log("servidor corriendo puerto 3000");
 });
 
-
+module.exports = app;

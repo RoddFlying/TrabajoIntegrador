@@ -1,14 +1,15 @@
 const fs  = require("fs");
 const path = require("path");
-const productsFilePath = path.join(__dirname, '../data/productsDataBase.json')
+const productsFilePath = path.join(__dirname, '../database/productsDataBase.json')
 let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
 
 
 let productsController = {
 
 home: (req, res) => {
-      products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
-      res.render('home', {p: products});
+     products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
+     res.render('home', {p: products});
+    // res.render('home');//Es para probar si funciona vista
 },
   create: (req,res) => {
     res.render('products/createProducts');
