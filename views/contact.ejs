@@ -1,48 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>GROWSHOP</title>
-  <link href="css/style.css" rel="stylesheet"> <!-- CSS del Header, no tocar -->
-  <link href="css/contactStyle.css" rel="stylesheet"> <!-- BORRAR, SOLO PARA EL INDEX-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" /> <!-- Para que funcionen lo Iconos, no tocar -->
-<script src="https://kit.fontawesome.com/9ff4ec337d.js" crossorigin="anonymous"></script> <!-- Para que funcionen lo Iconos, no tocar -->
-</head>
-<body>
-    <header>
-        <div>
-            <h4 id="promoHeader">20% de decuento en sdjfidoshfs</h4>
-        </div>
-        <div class="headingContainer">
-            <div class="searchBar">
-                <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i><!--icono lupa--> 
-                <input type="text" placeholder="Buscar productos, servicios, más..">
-            </div>
-            <div class="headingLogo">
-                <!-- <h1>GROWSHOP</h1> reemplazar con logo  -->
-                <img src="../public/img/logoGHboceto.png" alt="" class="logo">
-            </div>
-            <div class="iconosPrincipales">
-                <i class="fa-sharp fa-solid fa-user fa-2x"></i><!--icono usuario-->
-                <i class="fa-sharp fa-solid fa-envelope fa-2x"></i><!--sobre de contacto-->
-                <i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i> <!--cansato de compras... no funciona. ver que pasa-->
-            </div>
-        </div>
-       
-        <nav class="nav-bar ,">
-            <ul class="menuPrincipal">
-                <li><a href="">PRODUCTOS</a></li> 
-                <li><a href="">APRENDE MAS</a></li>
-                <li><a href="">SERVICIOS</a></li>
-                <li><a href="">ASESORIAS</a></li>
-                <li><a href="">CONTACTO</a></li>
-            </ul>
-        </nav>
 
-    </header>
+   
+    <%-include('../partials/head') %>
+
+
+ <!-- INCLUDES HEAD-->
+
+ 
+ <body>
+    <!-- INCLUDES HEADER-->
+  <%- include('../partials/header') %>
     <main>
         <section class="contact"> 
                 <h2>Contáctanos</h2>
