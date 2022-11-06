@@ -3,24 +3,24 @@
         "id": 1,
         "name": "",
         "detail": "",
-        "price": ,
-        "discount": ,
-        "timeDate": "",
+        "price": 1,
+        "discount": 0,
+        "timeDate": "YYYY-MM-DD hh:mm:ss"
     },
     {
         "id": 2,
         "name": "",
         "detail": "",
-        "price": ,
-        "discount": ,
-        "timeDate": "",
+        "price": 5890,
+        "discount": 0,
+        "timeDate": "YYYY-MM-DD hh:mm:ss"
     },
     {
         "id": 3,
         "name": "",
         "detail": "",
-        "price": ,
-        "discount": ,
-        "timeDate": "",
+        "price": 7853,
+        "discount": 0,
+        "timeDate": "YYYY-MM-DD hh:mm:ss"
     }
 ]
