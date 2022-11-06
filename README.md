@@ -47,3 +47,4 @@ para arriba de las imágenes podría ser  https://fonts.google.com/?query=Zilla+
 
 ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp
 
+Seguimos con correciones, debemos arreglar rutas y hacer las vistas faltantes. Agredar productos al JSON para podes probaralo todo.
