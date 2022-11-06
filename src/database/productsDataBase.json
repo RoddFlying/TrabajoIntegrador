@@ -263,7 +263,7 @@
         se puede colocar más cerca de las plantas que el sodio, dando más lugar a las plantas para crecer.
         
         • Recomendaciones especiales:
-        Muy efectiva para sistemas de cultivo tipo "Scrog", "SOG" o "supper cropping".
+        Muy efectiva para sistemas de cultivo tipo Scrog, SOG o supper cropping.
         Ideal para automáticas.
         
         Especificaciones técnicas:
@@ -540,21 +540,5 @@
         "expiration_date": ,
         "creation_date": ,     
     }
-    //  ,
-    // {
-    //     "id": ,
-    //     "name": ,
-    //     "brand": ,
-    //     "category": ,
-    //     "image": ,
-    //     "detail": ,
-    //     "price": ,
-    //     "sale": "false",
-    //     "discount": ,
-    //     "expiration_date": ,
-    //     "creation_date": ,     
-    // }
-    
-
 
 ]
