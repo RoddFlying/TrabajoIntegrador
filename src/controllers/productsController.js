@@ -1,15 +1,21 @@
 const fs  = require("fs");
 const path = require("path");
-const productsFilePath = path.join(__dirname, '../database/productsDataBase.json')
-let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
+// const productsFilePath = path.join(__dirname, '../database/productsDataBase.json')
+// let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 
 
 let productsController = {
+  products: (req,res) => {
+    res.render("products");
+  },
+}
 
-home: (req, res) => {
+/* let productsController = { 
+
+products: (req, res) => {
      products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
-     res.render('home', {p: products});
-    // res.render('home');//Es para probar si funciona vista
+     res.render('products', {p: products});
 },
   create: (req,res) => {
     res.render('products/createProducts');
@@ -101,6 +107,6 @@ delete: (req,res) => {
   fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
   res.redirect('/');
   }
-}
+} */
 
 module.exports = productsController;

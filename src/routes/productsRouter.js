@@ -18,10 +18,12 @@ const ConfiguracionImagen = multer.diskStorage({
 
 const uploadFile = multer ({ storage: ConfiguracionImagen});
 
+//vista home, listado productos, detalle producto(boton editar)-> vista editar, vista crear producto,
+// vista login, vista registro, vista perfil .
 
-router.get('/', productsController.home);
+router.get("/products", productsController.products);
 
-router.get('/createProducts', productsController.create);
+/* router.get('/createProducts', productsController.create);
 router.post('/createProducts', uploadFile.single('imageProduct'), productsController.store);
 
 router.get("/editProducts/:id", productsController.edit);
@@ -30,7 +32,7 @@ router.put('/editProducts/:id' , uploadFile.single('imageEdit'), productsControl
 router.get("/detailProducts", productsController.detail);
 router.get("/detailProducts/:id", productsController.detailId);
 
-router.delete("/delete/:id", productsController.delete);
+router.delete("/delete/:id", productsController.delete); */
 
 
 module.exports = router;
