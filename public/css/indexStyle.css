@@ -28,18 +28,6 @@
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-body{
-  color: black;
-}
-p{
-  font-family: 'Cormorant Garamond', serif;
-}
-
 section{
   margin-top: 50px; 
 }
@@ -54,7 +42,7 @@ section{
 .bannerIndex .bannerIndexInfo{
   position: relative;
   bottom: 200px;
-  left: 30%;
+  left: 70%;
   z-index: 50;
 }
 
@@ -76,7 +64,6 @@ section{
   font-family: 'Zilla Slab Highlight', cursive;
   font-size: 20px;
   font-weight: bold;
-  list-style: none
 }
 
 

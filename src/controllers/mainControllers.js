@@ -13,8 +13,9 @@ const controlador = {
    // res.render("./home", {products: products});
 
   },
-  search: (req,res)=>{
-
+  contact: (req, res) => {
+    res.render('contact')
   },
+
 };
 module.exports = controlador;

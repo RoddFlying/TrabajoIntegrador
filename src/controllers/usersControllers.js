@@ -1,15 +1,17 @@
 const path = require("path");
 
 let usersController = {
-  index: (req, res) => {
-      res.render('Users/perfil')
+ 
+  login: (req, res) => {
+      res.render('users/login');
 },
   register: (req, res) => {
-      res.render('Users/register')
+  res.render('users/register')
 },
-  login: (req, res) => {
-      res.render('Users/login')
+  profile: (req, res) => {
+  res.render('users/perfil')
 },
+
   cart: (req, res) => {
       res.render('cart')
 }};

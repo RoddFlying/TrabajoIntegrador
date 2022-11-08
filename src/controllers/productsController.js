@@ -7,9 +7,9 @@ let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
 let productsController = {
 
 home: (req, res) => {
-     products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
-     res.render('home', {p: products});
-    // res.render('home');//Es para probar si funciona vista
+    //products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
+    //res.render('home', {p: products});
+    res.render('products/listProducts');//Es para probar si funciona vista
 },
   create: (req,res) => {
     res.render('products/createProducts');

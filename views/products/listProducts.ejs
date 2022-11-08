@@ -2,39 +2,28 @@
 <html lang="en">
 
      <!-- INCLUDES HEAD-->
-<%- include('./partials/head') %>
-
-
-
+<%- include('../partials/head') %>
 <body>
     <!-- INCLUDES HEADER-->
-<%- include('./partials/header') %>
+<%- include('../partials/header') %>
 
 <main>
-  
   <section class="products">
-
-    <% for (let i=0, i < products.length,i++) { %>
-    <a href="product/detail?productId=<%=product[i].id 
-    %>
+  <!--For each --> 
     <article class="product-item" name="id">
-     <img src="<%=product[i].image%>" name="image" alt="image-product">
-     <div class="product-price">
-        <p class="price" name="price"> <%=product[i].price%></p>
-        <% if(sale){%>
-          <p class="discount" name="discount"> <%=product[i].discount></p>
-        <%}%>
-      </div>
-      <h3 class="name" name="name"><%=product[i].name %></h3>
-      <h5 class="category" name="category"><%=product[i].category%></h5>
+        <img src="/img/gummiescanna.png" name="image" alt="image-product">
+          <div class="product-price">
+              <p class="priceProduct" name="price"></p>
+              <p class="discount" name="discount"></p>
+          </div>
+
+        <h3 class="name" name="name">Gummies Canna</h3>
     </article>
-    </a>
-    <% } %>
-  
-    </section>
+  <!--For each -->
+  </section>
 </main>
 
   <!-- INCLUDES FOOTER-->
-<%- include('./partials/footer') %>
+<%- include('../partials/footer') %>
 </body>
 </html>
