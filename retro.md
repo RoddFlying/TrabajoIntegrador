@@ -4,6 +4,7 @@ Para este tercer sprint, empezamos a realizar las rutas para mejorar la arquitec
 
 Para este cuarto sprint se sumo un integrante mas al equipo de trabajo. Trabajamos con el proceso Create, Read, Update y Delete (CRUD). Sustentados en los métodos de HTTP para guardar datos y almacenar en nuestro servidor archivos junto con la posibilidad de procesar archivos del lado del servidor. Para eso se realizo el enrutamiento con Multer y se crearon vistas nuevas. Discutimos para el proximo sprint trabajar con el metodo de ramas o branchs de GIT.
 
+5 sprint, vinimos con dificultades con el sprint anterior que se nos retrasaron en arreglar, estamos logrando resolver las bugs pendientes para poder prepararnos para este sprint. 
 
 <!-- 
 //Crear vista de formulario para editar un producto (con sus estilos)
