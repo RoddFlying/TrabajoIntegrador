@@ -9,18 +9,25 @@
 
 <main>
   <section class="products">
-  <!--For each --> 
-    <article class="product-item" name="id">
-        <img src="/img/gummiescanna.png" name="image" alt="image-product">
-          <div class="product-price">
-              <p class="priceProduct" name="price"></p>
-              <p class="discount" name="discount"></p>
-          </div>
 
-        <h3 class="name" name="name">Gummies Canna</h3>
+    <% for (let i=0, i < products.length,i++) { %>
+    <a href="product/detail?productId=<%=product[i].id 
+    %>
+    <article class="product-item" name="id">
+     <img src="<%=product[i].image%>" name="image" alt="image-product">
+     <div class="product-price">
+        <p class="price" name="price"> <%=product[i].price%></p>
+        <% if(sale){%>
+          <p class="discount" name="discount"> <%=product[i].discount></p>
+        <%}%>
+      </div>
+      <h3 class="name" name="name"><%=product[i].name %></h3>
+      <h5 class="category" name="category"><%=product[i].category%></h5>
     </article>
-  <!--For each -->
-  </section>
+    </a>
+    <% } %>
+  
+    </section>
 </main>
 
   <!-- INCLUDES FOOTER-->
