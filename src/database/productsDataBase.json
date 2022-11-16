@@ -1,29 +1,92 @@
+meta charset="utf-8"
 [
     {
-     "id": 1,
-     "name": "Papelillos OCB",
-     "price": 320,
-     "category": "in-sale",
-     "description": "Papelillos OCB Premium para enrolar o liar. Papel ultrafino, de combustión lenta, con goma vegetal natural.",
-     "image": ""
+        "id": 1,
+        "name": "CARPA INDOOR GARDEN HIGH PROBOX ECOPRO 80",
+        "brand": "ECOPRO",
+        "category": "carpas",
+        "image": "./img/products/carpas/carpas1.jpeg",
+        "detail": "CARPA INDOOR GARDEN HIGH PROBOX ECOPRO 80
+        • Carpa Probox Ecopro Suiza 80 x 80 x 160 cm.
+        
+        • Las carpas GARDEN HIGHPRO entregan una alternativa insuperable en términos de calidad y precio .
+        
+        Especificaciones técnicas:
+        • Carpa Probox suiza 80 x 80 x 160 cm.
+        • Posee mylar 420D, 100% aprueba de luz.
+        • Doble cierre reforzado.
+        • Estructura sólida, varillas y base doble.
+        • Tubos de refrigeración incorporados.
+        • Caja cerrada.",
+        "price": 41285,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null
     },
     {
-    "id": 2,
-    "name": "Papelillos OCB Bamboo",
-    "price": 400,
-    "category": "in-sale",
-    "description": "Papelillos OCB Bamboo para enrolar o liar. Papel ultrafino, de combustión lenta, con goma vegetal natural. OCB Bamboo son papelillos sin blanquear y sin colorantes.",
-    "image": ""   
+        "id": 2,
+        "name": "CARPA BELLAVITA LITE CULTIVO INDOOR MOD. 80",
+        "brand": "BELLAVITA",
+        "category": "carpas",
+        "image": "./img/products/carpas/carpas2.jpeg",
+        "detail": "CARPA BELLAVITA LITE CULTIVO INDOOR MOD. 80
+        • Carpa de cultivo Bellavita Lite, tamaño de 80 x 80 x 160 cm.
+        
+        Especificaciones
+        • Dimensiones: 80 x 80 x 160 cm.
+        • Material: Tela Mylar + Tela 600D.
+        • Ventilación: 2 mangas de ventilación de 4 pulgadas.
+        • Estructura: metal y conectores de plástico reforzado.
+        • Controla con eficacia los parámetros de tu cultivo: temperatura, humedad, iluminación y ventilación.
+        • Utiliza sus múltiples mangas de ventilación y ventanas, aprovecha su tela 100% reflectiva.
+        • Arma tu carpa sin herramientas ni conocimientos técnicos, se ensambla en menos de 5 minutos.
+        • Durabilidad de por vida, con cierres de alta calidad y materiales importados.
+        
+        ¿QUÉ INCLUYE?
+        • Manual de armado de la carpa.
+        • Bandeja de tela impermeable para el agua.
+        • Dos soportes (caños) para iluminación / filtros.
+        • Refuerzo de costura en las esquinas de la carpa.
+        ",
+        "price": 26250,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null
     },
     {
-    "id": 3,
-    "name": "Papelillos OCB Ultimate",
-    "price": 350,
-    "category": "in-sale",
-    "description": "Los Papelillos Ultimate son de papel delgado, ligero y transparente.",
-    "image": ""       
+        "id": 3,
+        "name": "CARPA INDOOR CULTIVARG INDOOR REFORZADA 80",
+        "brand": "CULTIVARG",
+        "category": "carpas",
+        "image": "./img/products/carpas/carpas3.jpeg",
+        "detail": "CARPA INDOOR CULTIVARG INDOOR REFORZADA 80
+        • Carpa indoor Cultivarg 80. Medidas ideales, con una altura muy buena para colocar todo tipo de iluminación.
+        
+        Especificaciones técnicas:
+        • Mylar Diamantado 600D, Réflex 98%
+        • Ventanas de aceso lateral
+        • Caños estructurales de acero 19mm.
+        • Medidas: 80 x 80 x 180 cm.
+        • Bolso para guardar o transportar.
+        • Esquineros metálicos.
+        • Cierres reforzados con topes.
+        • Intracción pasiva regulable.
+        • Máxima impermeabilidad lumínica. - Bandeja de seguridad para residuos.
+        • Velcro de agarre para puerta.
+        • Fácil y rápido montaje.
+        • 5 mangas de ventilación con doble ajuste.
+        • 1 manga superior trasera para cableado.
+        • 1 manga inferior trasera para sistemas hidropónicos.",
+        "price": 30235,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null     
     },
     {
+<<<<<<< HEAD
     "id": 3,
     "name": "Papelillos Gizeh Rosa",
     "price": 330,
@@ -34,6 +97,462 @@
     {
     "id": 4,
     "name": ""
+=======
+        "id": 4,
+        "name": "EDEN ROOTS ESTIMULADOR DE RAICES 500 CC",
+        "brand": "EDEN",
+        "category": "fertilizantes",
+        "image": "./img/products/fertilizantes/fertilizantes1.jpeg",
+        "detail": "EDEN ROOTS ESTIMULADOR DE RAICES 500 CC
+        • EDEN ROOTS es un fertilizante biológico líquido, que estimula el crecimiento radicular, posibilitando una mayor absorción de nutrientes, incrementando el rendimiento del cultivo.
+        
+        Composición:
+        • Ácidos Húmicos 4,0%.
+        • Ácidos Fúlvicos 0,1%.
+        • Potasio, k2O 0,5%.
+        
+        • Contiene microelementos, tales como: Boro(B), Cobre(Cu), Hierro(Fe), Mangnesio(Mn) y Zinc(Zn)
+        
+        • Usos y aplicaciones:
+        Diluir 2-3ml/ 1L de agua. Aplicar una vez por semana.",
+        "price": 2720,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null    
+    },
+    {
+        "id": 5,
+        "name": "EDEN 4PACK FERTILIZANTES PREMIUM PARA TODAS LAS ETAPAS 125 CC",
+        "brand": "EDEN",
+        "category": "fertilizantes",
+        "image": "./img/products/fertilizantes/fertilizantes2.jpeg",
+        "detail": "EDEN 4PACK FERTILIZANTES PREMIUM PARA TODAS LAS ETAPAS 125 CC
+        EDEN garantiza un óptimo desarrollo en cada etapa de la planta, maximizando el resultado mediante una manera de utilización sencilla. Son productos premium y casi obligatorios para fortalecer la planta en todas sus etapas, logrando resultados increíbles. Cont: 125cc
+        
+        Especificaciones:
+        • EDEN ROOTS es un fertilizante biológico líquido, que estimula el crecimiento radicular, posibilitando una mayor absorción de nutrientes, incrementando el rendimiento del cultivo.
+        
+        • EDEN VEGE es un fertilizante NPK + micronutrientes para ser usado en todo tipo de cultivos en etapas activas de crecimiento vegetativo. Su formulación permite un rápido y eficiente aprovechamiento de los nutrientes para lograr mayor cantidad, calidad y duración de las flores y así incrementar los rendimientos.
+        
+        • EDEN FLORA es un fertilizante NPK + micronutrientes para ser usado en todo tipo de cultivos para estimular su floración. Su formulación permite un rápido y eficiente aprovechamiento de los nutrientes para lograr mayor cantidad, calidad y duración de las flores y así incrementar los rendimientos.
+        
+        • EDEN SUGAR posee una formulación, que permite un rápido y eficiente aprovechamiento de los nutrientes para lograr mayor cantidad, calidad y duración de las flores.",
+        "price": 2710,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null   
+    },
+    {
+        "id": 6,
+        "name": "ADVANCED NUTRIENTS BASES PH PERFECT GROW MICRO BLOOM 1 LITRO",
+        "brand": "ADVANCED NUTRIENTS",
+        "category": "fertilizantes",
+        "image": "./img/products/fertilizantes/fertilizantes3.jpeg",
+        "detail": "ADVANCED NUTRIENTS BASES PH PERFECT GROW MICRO BLOOM 1 LITRO
+        • pH Perfect Grow, Micro, Bloom es un compuesto de nutrientes base premium de 3 partes. Se ha diseñado específicamente para aportar a tu cultivo los nutrientes necesarios en su proporción y concentración exactas. No encontrarás un producto de la competencia con un espectro tan amplio de ingredientes de calidad.
+        
+        • Perfect Grow, Micro, Bloom aportará una amplia gama de aminoácidos a tus plantas. Comprobarás los increíbles resultados del ácido fúlvico y del poderoso surfactante no iónico. Ambos formarán un compuesto de nutrición que garantizará la absorción de los nutrientes suministrados en cada fase. La potente quelatación permitirá que cada uno de los nutrientes esté en mejor disposición para ser absorbido por las raíces de la planta. Y esto no es todo: La tecnología pH Perfect trabajará sin descanso. Se encargará de calibrar y ajustar el pH para que nunca más tengas que utilizar medidores ni añadir productos químicos agresivos para regular el pH.
+        
+        Especificaciones:
+        • Durante la fase vegetativa GROW deberá ser el fertilizante predominante en la mezcla, pues los otros aportarán elementos necesarios para su desarrollo, pero el nitrógeno será algo esencial para esta etapa. MICRO se mantendrá estable durante todo el cultivo, deberemos aumentar las dosis durante todo el ciclo, pero siempre será al que le corresponda estar el segundo en cuando a presencia. BLOOM deberás comenzar aplicando dosis mínimas, pero al acercarnos a floración deberán aumentar, llegando a ser el abono prioritario una vez entremos en esta fase.
+        
+        • Incluye la tecnología reguladora Ph Perfect, con la cual no deberás realizar ni una sola medición de Ph durante todo el cultivo, pues el agua de riego se pondrá automáticamente a la acidez necesaria.
+        
+        • Dosis y modo de empleo de Tripack de Advanced Nutrients:
+        - En plantas jóvenes, añadir 2ml/L de Bloom, 2ml/L de Micro y 2ml/L de Grow.
+        - En plantas adultas, añadir 4ml/L de Bloom, 4ml/L de Micro y 4ml/L de Grow.
+        - Alternar un riego con fertilizantes y otro solo agua, durante todo el cultivo.
+        - Recomendamos usar Grow, Micro y Bloom según la fase de la planta, lo que mejorará la asimilación de los nutrientes, y con ellos el peso de las cosechas.",
+        "price": 25630,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null    
+    },
+    {
+        "id": 7,
+        "name": " ",
+        "brand": " ",
+        "category": "frascos",
+        "image": "./img/products/frascos/frascos1.jpeg",
+        "detail": " ",
+        "price": " ",
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null     
+    },
+    {
+        "id": 8,
+        "name": " ",
+        "brand": " ",
+        "category": "frascos",
+        "image": "./img/products/frascos/frascos2.jpeg",
+        "detail": " ",
+        "price": " ",
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null    
+    },
+    {
+        "id": 9,
+        "name": " ",
+        "brand": " ",
+        "category": "frascos",
+        "image": "./img/products/frascos/frascos3.jpeg",
+        "detail": " ",
+        "price": " ",
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null    
+    },
+    {
+        "id": 10,
+        "name": ,
+        "brand": ,
+        "category": "hidroponia",
+        "image": "./img/products/hidroponia/hidroponia1.jpeg",
+        "detail": ,
+        "price": ,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null    
+    },
+    {
+        "id": 11,
+        "name": " ",
+        "brand": ,
+        "category": "hidroponia",
+        "image": "./img/products/hidroponia/hidroponia2.jpeg",
+        "detail": " ",
+        "price": ,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null,     
+    },
+    {
+        "id": 12,
+        "name": " ",
+        "brand": " ",
+        "category": "hidroponia",
+        "image": "./img/products/hidroponia/hidroponia3.jpeg",
+        "detail": " ",
+        "price": " ",
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null   
+    },
+    {
+        "id": 13,
+        "name": "PANEL LED 400W GROWTECH MASTER CULTIVO INDOOR",
+        "brand": "GROWTECH",
+        "category": "luces",
+        "image": "./img/products/luces/luces1.jpeg",
+        "detail": "PANEL LED 400W GROWTECH MASTER CULTIVO INDOOR
+        Luminaria LED full spectrum 400w para todo el cultivo Master Gardener 400.
+        
+        • Genera menos temperatura/calor:
+        por un lado se utiliza menos potencia para la misma superficie. Por el otro, el LED irradia calor de forma concentrada y en dirección opuesta a la que ilumina. Esto hace que sea más sencillo eliminar el calor en relación a un HPS Sodio, que irradia calor en todas las direcciones.
+        
+        • Sólido y fuerte:
+        disipador de aluminio anodizado, soporte de hierro galvanizado en caliente, tornillos inoxidables, sobredimensionado en su disipador para aumentar la vida útil de los LEDS. (50,000hs con un flujo no menor al 90%).
+        
+        • Seguridad:
+        Todos sus cables y conexiones están fuera del alcance de la mano y de las plantas.
+        Los LEDS están protegidos por una cubierta de poli-carbonato. La carcasa está conectada a tierra.
+        
+        • Protecciones:
+        Interruptor térmico que corta la corriente ante subidas bruscas de temperatura.
+        Protector contra picos de tensión (varistor) para proteger los LEDS de fluctuaciones en la línea de 220.
+        
+        • Ahorro de espacio:
+        se puede colocar más cerca de las plantas que el sodio, dando más lugar a las plantas para crecer.
+        
+        • Recomendaciones especiales:
+        Muy efectiva para sistemas de cultivo tipo Scrog, SOG o supper cropping.
+        Ideal para automáticas.
+        
+        Especificaciones técnicas:
+        • Potencia real: 400w
+        • Área de cobertura: 1 m2
+        • Apertura 160°
+        • Distancia óptima a las plantas: 25cm
+        • Espectro: 380-840nm
+        • Peso: 4kg
+        • Dimensiones: 48cm x 14cm x 10,5cm
+        • Alimentación: 220v 50htz
+        • Consumo Eléctrico: 415watts",
+        "price": 42430,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null    
+    },
+    {
+        "id": 14,
+        "name": "PANEL LED MARS ORBITER 80 ALTA EFICIENCIA CULTIVO INDOOR",
+        "brand": "MARS",
+        "category": "luces",
+        "image": "./img/products/luces/luces2.jpeg",
+        "detail": "PANEL LED MARS ORBITER 80 ALTA EFICIENCIA CULTIVO INDOOR
+        • A pesar de la creencia popular de que la luz para cultivo debe ser sólo de color rojo y azul (representada como luz violeta oscuro), estudios recientes demuestran que las plantas aprovechan todo el espectro de luz generado por el sol, por eso la Orbiter Grow SL pertenece a una nueva generación de luminarias de cultivo enfocadas en generar luz con las mismas propiedades que la luz solar. Para lograrlo desarrollamos una tecnología que combina distintos tipos de LEDs calibrados para simular la luz del sol y permiten alcanzar un 95.5% de precisión. EL PANEL ESTÁ CABLEADO LISTO PARA ENCHUFAR Y CULTIVAR.
+        
+        Fabricación:
+        • fabricada con materiales de primera calidad como aluminio puro, vidrio templado, acero inoxidable, bronce mecanizado y pintura epoxi con tratamiento térmico. Cuenta con una campana altamente eficiente en la disipación de calor, no se necesitan ventiladores u otras partes móviles que aumentan el consumo y acortan la vida útil. Además está certificada bajo la norma IP65, esto significa que es resistente al polvo, la tierra y la humedad.
+        
+        Ventajas:
+        • Certificación IP65 Hermética, resistente al polvo y la humedad. Diseñada para desempeñarse en ambientes reales de cultivo. *
+        • Elevado flujo lumínico PPFD (Densidad de Flujo Fotónico Fotosintéticamente Activo) de hasta 1000µmol/m²/s a 15cm.
+        • CRI de 95,5% (índice de reproducción cromática). Única luminaria en el mercado con un CRI de 95,5% con respecto a la luz solar, equivalente a las mejores luminarias para cultivo de importación.
+        • CCT de3000k (temperatura de color correlacionada). Mayor potencia en el rango de los 3000 grados Kelvin, fundamental para el proceso de floración.
+        • Diseño único. Baja temperatura de funcionamiento manteniendo un peso y perfil mínimos.
+        • Calidad de floración. Utiliza materiales de primera calidad tales como aluminio puro, vidrio templado, acero inoxidable, bronce mecanizado y pintura epoxi con tratamiento térmico.
+        • Certificada según normas IEC 60598-2-1 e IEC 60598-1
+        • Combina 4 tipos de LEDs balanceados para utilizarla tanto para germinación, crecimiento vegetativo y floración.
+        • La luz de cultivo no debe ser sólo de color rojo y azul, estudios recientes demuestran que las plantas aprovechan todo el espectro de luz generado por el sol.
+        • CRI R9 de 98% (rojo saturado, 660nm). Produce luz con un R9 (correspondiente al rojo saturado) de 98%, haciéndola ideal para efectivizar el desarrollo de la planta en la etapa crítica de floración.
+        • 99,6% de potencia activa. Integra un driver que permite que la totalidad de la potencia consumida sea de tipo activa.
+        • 80w reales equivalente a 300w. La tecnología LED permite generar la misma cantidad de luz consumiendo mucha menos energía.
+        • Espectro Ajustado para una potencia de luz óptima en el color azul (450nm), el rojo profundo (deep red, 660nm) y el rojo lejano (far red, 740nm)",
+        "price": 41510,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null     
+    },
+    {
+        "id": 15,
+        "name": "AGUILA REFLECTOR PROYECTOR GARDEN HIGH PRO PEARL PRO INDOOR",
+        "brand": "AGUILA",
+        "category": "luces",
+        "image": "./img/products/luces/luces3.jpeg",
+        "detail": "AGUILA REFLECTOR PROYECTOR GARDEN HIGH PRO PEARL PRO INDOOR
+        • Reflector Aluminio Micropunto Pearl-Pro de Garden High Pro.
+        
+        • Obtendrás un rendimiento muy superior al Reflector Stuco Standar. Pudiendo aumentar en un 60% su rendimiento.
+        • Medidas: 47 x 47 x 11 cm.
+        • Su nuevo sistema de micropunteado es más eficiente, esparciendo de forma más homogénea los lúmenes de la lámpara.
+        • La nueva caja de conexiones ESTANCA aumenta la seguridad. Manteniendo la humedad de los cultivos lejos de las conexiones eléctricas.
+        • Su placa metálica de montaje es más resistente. Soporta lámparas con mayor peso.
+        • 2 Prensastopas de seguridad para conexión en cadena. Así podrás instalar más de un reflector con menos cableado.
+        • Rosca e-40.",
+        "price": 10865,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null     
+    },
+    {
+        "id": 16,
+        "name": "SEDAS RAW CONNOISSEUR CLASSIC 1/4 + FILTROS PRE ROLLED",
+        "brand": "RAW",
+        "category": "parafrenalia",
+        "image": "./img/products/parafrenalia/parafrenalia1.jpeg",
+        "detail": "SEDAS RAW CONNOISSEUR CLASSIC 1/4 + FILTROS PRE ROLLED
+        • Los papeles RAW son una revolución a nivel mundial. En este producto incluye filtros pre-rolled en su parte inferior.
+        
+        Características:
+        • 50 unidades de papel
+        • 16 unidades de filtros reutilizables, pre rollados.
+        • Combustión Lenta.
+        • Tamaño (standard) 1 1/4.",
+        "price": 645,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null    
+    },
+    {
+        "id": 17,
+        "name": "PIPA DE VIDRIO PYREX INDIA",
+        "brand": "INDIA",
+        "category": "parafrenalia",
+        "image":  "./img/products/parafrenalia/parafrenalia2.jpeg",
+        "detail": "PIPA DE VIDRIO PYREX INDIA
+        • Pipa de pyrex con excelente terminación, colores y motivos variados.
+        
+        • Pipa de Pyrex
+        • Diseños y colores variados.
+        • 9cm de largo",
+        "price": 1045,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null    
+    },
+    {
+        "id": 18,
+        "name": "PASTILLAS SAGRADA MADRE DE DEFUMACIÓN ACTIVADA PALO SANTO",
+        "brand": "SAGRADA MADRE",
+        "category": "parafrenalia",
+        "image":  "./img/products/parafrenalia/parafrenalia3.jpeg",
+        "detail": "PASTILLAS SAGRADA MADRE DE DEFUMACIÓN ACTIVADA PALO SANTO
+        • Pastillas de defumación activada.
+        
+        • Encender palo santo es un acto sagrado y purificador. Aumenta la sensación de calma y bienestar, atrayendo energías positivas y armoniosas a todos que estén en contacto con este humo sagrado y renovador.
+        • La caja incluye 4 unidades",
+        "price": 375,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null     
+    },
+    {
+        "id": 19,
+        "name": "PICADOR GRINDER ALUMINIO 3 PARTES AMSTERDAM",
+        "brand": "AMSTERDAM",
+        "category": "picadores",
+        "image":  "./img/products/picadores/picadores1.jpeg",
+        "detail": "PICADOR GRINDER ALUMINIO 3 PARTES AMSTERDAM
+        • Increible picador de Aluminio de 3 partes.
+        
+        • 35 mm alto
+        • 50mm diametro
+        • Se compone de 3 partes
+        • dientes superiores e inferiores metalicos
+        • Imantado
+        • Rejilla inferior demontable
+        • Palita para limpieza
+        • Diseño chala",
+        "price": 1685,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null     
+    },
+    {
+        "id": 20,
+        "name": "PICADOR GRINDER ALUMINIO 3 PARTES",
+        "brand": "N/A",
+        "category": "picadores",
+        "image": "./img/products/picadores/picadores2.jpeg",
+        "detail": "PICADOR GRINDER ALUMINIO 3 PARTES
+        • Picador de Aluminio de 3 partes.
+        
+        • 30 mm alto.
+        • 50 mm diámetro.
+        • Se compone de 3 partes.
+        • dientes superiores e inferiores metálicos.
+        • Imantado.
+        • Rejilla inferior desmontable.
+        • Palita para limpieza.
+        • Varios colores.",
+        "price": 1500,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null     
+    },
+    {
+        "id": 21,
+        "name": "PICADOR GRINDER COGONAUTS 3D KOKO CACTUS",
+        "brand": "COGONAUTS",
+        "category": "picadores",
+        "image": "./img/products/picadores/picadores3.jpeg",
+        "detail": "PICADOR GRINDER COGONAUTS 3D KOKO CACTUS
+        Picador coleccionable impreso en 3D. Motivo Koko.
+        
+        • Koko es un joven cactus alegre y energético que un día se despegó del suelo del desierto para emprender un viaje sin rumbo.
+        
+        • Material: PLA (Plástico biodegradable, de origen vegetal, apto gastronómico que se usa para la impresión 3D)
+        
+        Dimensiones:
+        • Diámetro interno: 5cm.
+        • Alto: 7cm.
+        • Ancho: 7,5cm.
+        • Peso: 71g",
+        "price": 3275,
+        "sale": "false",
+        "discount": null,
+        "expiration_date": null,
+        "creation_date": null     
+    },
+    {
+        "id": 22,
+        "name": "SUSTRATO EDEN LIVIANO PREMIUM CULTIVO 10 LITROS",
+        "brand": "EDEN",
+        "category": "sustratos",
+        "image": "./img/products/sustratos/sustrato1.jpeg",
+        "detail": "SUSTRATO EDEN LIVIANO PREMIUM CULTIVO 10 LITROS
+        • EDEN - Queen´s paradise es un sustrato de uso profesional, que ofrece óptimas condiciones de siembra y/o trasplante, por su excelente aireación, retención de agua, reacción (pH) y Ce.
+        
+        • Mediante una equilibrada composición entre los mejores componentes para el auto-cultivo, se llega al sustrato definitivo para un cultivador profesional, sin necesidad de ningún agregado. Brinda un PH controlado entre 5,5 y 6,5 que se puede utilizar para cualquier etapa de la planta.
+        
+        Características
+        • Materia orgánica sobre muestra húmeda 28,8 %.
+        • Cenizas sobre muestra húmeda 6,3 %.
+        • Humedad 64,9 %.
+        • Ce 3,19 mS/cm.
+        • pH 5,5.
+        
+        Componentes:
+        • Turbas Spaghnum.
+        • Perlita.
+        • Vermiculita.
+        • Compost.",
+        "price": 1210,
+        "sale": "true",
+        "discount": 15,
+        "expiration_date": null,
+        "creation_date": null     
+    },
+    {
+        "id": 23,
+        "name": "SUSTRATO GROWERS SUPER SOIL CULTIVO ORGÁNICO 50 LITROS",
+        "brand": "GROWERS",
+        "category": "sustratos",
+        "image": "./img/products/sustratos/sustrato2.jpeg",
+        "detail": "SUSTRATO GROWERS SUPER SOIL CULTIVO ORGÁNICO 50 LITROS
+        • Sustrato orgánico Growers de 50 litros útil para indoor y exterior.
+        
+        • Sustrato orgánico de alto rendimiento específicamente desarrollado para cultivos intensivos en contenedores. Brinda la aireación, retención y humedad necesaria, además de protección y nutrición orgánica para un cultivo saludable.
+        
+        Compuesto por:
+        • Tierra negra.
+        • Compost.
+        • Turba rubia.
+        • Humus de Lombriz.
+        • Perlita.
+        • Vermiculita.
+        • Harina de Pescado.
+        • Micorriza.
+        • Trichoderma.",
+        "price": 3265,
+        "sale": "true",
+        "discount": 5,
+        "expiration_date": null,
+        "creation_date": null
+    },
+    {
+        "id": 24,
+        "name": "SUSTRATO PALMERAS Y HELECHOS TERRAFERTIL 20 DM3",
+        "brand": "TERRAFERTIL",
+        "category": "sustratos",
+        "image": "./img/products/sustratos/sustrato3.jpeg",
+        "detail": "SUSTRATO PALMERAS Y HELECHOS TERRAFERTIL 20 DM3
+        • Sustrato ideal para recomponer suelos y plantación o trasplantes de palmeras y helechos.
+        
+        Especificaciones:
+        • Compuesto obtenido de la transformación biológica de materias vegetales, llevada a cabo por las lombrices, en condiciones sanitarias de temperatura y humedad estrictamente controladas.
+        
+        Composición química: cada 100 g. (con su humedad natural).
+        • Humedad: 30 - 35 %.
+        • Ceniza tal cual: 45 - 50 %.
+        • pH: 6 - 6.5 M.O.: 15 - 20 %.
+        • C/N: 15 - 20 C:E: 0.5 - 1.0 mmhos /cm.",
+        "price": 860,
+        "sale": "true",
+        "discount": 5,
+        "expiration_date": null,
+        "creation_date": null   
+>>>>>>> 0287b60ceea00c7677d3f04f496a9b5733237713
     }
 
 ]
