@@ -13,7 +13,8 @@ const usersController = require ('../controllers/usersController');
 
 const uploadFile = require ('../middlewares/multerMiddleware');
 const validations = require ('../middlewares/validateRegisterMiddleware');
-const packageName = require('../middlewares/guestMiddleware'); 
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware'); 
 
 router.get('/register', guestMiddleware, userController.register);
 
@@ -23,7 +24,7 @@ router.get('/login', usersController.login);
 
 router.post('/login', usersController.loginProcess);
 
-router.get('/profile/', usersController.profile);
+router.get('/profile/', authMiddleware, usersController.profile);
 
 module.exports = router;
 
