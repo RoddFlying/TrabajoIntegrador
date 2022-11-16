@@ -1,5 +1,5 @@
 meta charset="utf-8"
-[
+module.exports = [
     {
         "id": 1,
         "name": "CARPA INDOOR GARDEN HIGH PROBOX ECOPRO 80",
