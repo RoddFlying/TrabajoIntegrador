@@ -40,13 +40,6 @@ router.put('/edit/:id', productsController.update);
 
 router.delete('/delete/:id', productsController.delete);
 
-/*router.get("/editProducts/:id", productsController.edit);
-router.put('/editProducts/:id' , uploadFile.single('imageEdit'), productsController.update);
-
-router.get("/detailProducts", productsController.detail);
-router.get("/detailProducts/:id", productsController.detailId);
-
-router.delete("/delete/:id", productsController.delete); */
 
 
 module.exports = router;
