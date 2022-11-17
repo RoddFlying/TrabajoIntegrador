@@ -9,24 +9,20 @@
 
 <main>
   <section class="products">
-
-<<<<<<< HEAD:views/products/products.ejs
-        <h3 class="name" name="name">name</h3>
-=======
-    <% for (let i=0, i < products.length,i++) { %>
-    <a href="product/detail?productId=<%=product[i].id 
-    %>
+    
+    <% for(let objeto of ps) { %>
+    <a href="product/detail/<%= object.id %>">
     <article class="product-item" name="id">
-     <img src="<%=product[i].image%>" name="image" alt="image-product">
+     <img src="<%= object.image %>" name="image" alt="image-product">
      <div class="product-price">
-        <p class="price" name="price"> <%=product[i].price%></p>
+        <p class="price" name="price">$<%= object.price %></p>
         <% if(sale){%>
-          <p class="discount" name="discount"> <%=product[i].discount></p>
+          <p class="discount" name="discount"> <%= object.discount %>%OFF</p>
         <%}%>
       </div>
-      <h3 class="name" name="name"><%=product[i].name %></h3>
-      <h5 class="category" name="category"><%=product[i].category%></h5>
->>>>>>> 0287b60ceea00c7677d3f04f496a9b5733237713:views/products/listProducts.ejs
+      <h3 class="name" name="name"><%= object.name %></h3>
+      <h5 class="category" name="category"><%= object.category %></h5>
+
     </article>
     </a>
     <% } %>
