@@ -21,12 +21,15 @@ const uploadFile = multer ({ storage: ConfiguracionImagen});
 //vista home, listado productos, detalle producto(boton editar)-> vista editar, vista crear producto,
 // vista login, vista registro, vista perfil .
 
-router.get("/products", productsController.products);
+//vista de todos los productos
+router.get("/", productsController.index);
+//router.get("/products", productsController.products);
 
-/* router.get('/createProducts', productsController.create);
-router.post('/createProducts', uploadFile.single('imageProduct'), productsController.store);
+//vista de formulario de creación
+router.get('/create', productsController.create);
+router.post('/create', productsController.store);
 
-router.get("/editProducts/:id", productsController.edit);
+/*router.get("/editProducts/:id", productsController.edit);
 router.put('/editProducts/:id' , uploadFile.single('imageEdit'), productsController.update);
 
 router.get("/detailProducts", productsController.detail);

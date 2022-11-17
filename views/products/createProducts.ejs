@@ -32,7 +32,7 @@
 </div>
 
 
-<form action="/products/create" method="POST" enctype="multipart/form-data">
+<form action="products/create" method="POST" enctype="multipart/form-data">
 
 <div class="group">
 
@@ -40,6 +40,11 @@
    <label for="name" class="form-label">Nombre del producto</label>
    <input type="text" id="name" name="name" placeholder="Papelillos" class="form-input">
  </div>
+
+ <div class="formProducts">
+  <label for="brand" class="form-label">Marca del producto</label>
+  <input type="text" id="brand" name="brand" placeholder="el Mejor" class="form-input">
+</div>
 
  <div class="formProducts">
    <label for="price" class="form-label"> Precio del producto </label>
@@ -52,7 +57,7 @@
 
  <div class="formProducts">
    <label for="discount" class="form-label">Descuento</label>
-   <input type="number" id="discount" name="discount" placeholder="%10" class="form-input">
+   <input type="number" id="discount" name="discount" placeholder="10%" class="form-input">
  </div>
 
  <div class="formProducts">
@@ -67,15 +72,27 @@
 </div>
 
 <div class="group">
+  <div class="formProducts">
+    <label for="expiration_date" class="form-label">Fecha de vencimiento</label>
+    <input type="date" id="expiration_date" name="expiration_date" placeholder="24 Feb 2023" class="form-input">
+  </div>
+  <div class="formProducts">
+    <label for="creation_date" class="form-label">Fecha de creación</label>
+    <input type="date" id="creation_date" name="creation_date" placeholder="24 Feb 2023" class="form-input">
+  </div>
+
+</div>
+
+<div class="group">
 
  <div class="formProducts">
    <label for="imageProduct" class="form-label">Seleccionar Imagen:</label>
-   <input type="file" name="imageProduct"/>
+   <input type="file" name="image">
  </div>
 
  <div class="formProducts">
-   <label for="description" class="form-label" >  Descripción </label>
-   <textarea name="description" id="description" class="form-input"></textarea>
+   <label for="detail" class="form-label" >  Detalle de producto </label>
+   <textarea name="detail" id="detail" class="form-input"></textarea>
  </div>
 
 </div>

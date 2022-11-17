@@ -1,15 +1,48 @@
 const fs  = require("fs");
 const path = require("path");
-// const productsFilePath = path.join(__dirname, '../database/productsDataBase.json')
-// let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 
 const productsFilePath = path.join(__dirname, '../database/productsDataBase.json')
 const products = JSON.parse(fs.readFileSync(productsDataBase, 'utf-8'));
 
 let productsController = {
-  products: (req,res) => {
-    res.render('products',{ps.products});
+  //la de productos en general
+  index: (req,res) => {
+    const products = JSON.parse(fs.readFileSync(productsDataBase, 'utf-8'));
+    res.render('products',{ps:products});
   },
+  //crear el producto
+  create: (req,res) =>{
+    res.render('createProducts',);
+
+  },
+  //guardar producto creardo
+  store: (req,res) =>{
+    console.log(req.body);
+    let productoNuevo = {
+      id : (products[products.length-1].id)+1,
+      name : req.body.name,
+      brand : req.body.brand,
+      category : req.body.category,
+      image : req.body.image,
+      detail : req.body.detail,
+      price : req.body.price,
+      //sale:req.body.sale;
+      discount: req.body.discount,
+      expiration_date: req.body.expiration_date,
+      creation_date: req.body.creation_date
+    };
+    products.push(productoNuevo);
+    fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
+    res.redirect('/');
+
+  },
+  edit: (req,res) => {
+
+  }
+
+
+  //editar un producto
 }
 
 
