@@ -2,7 +2,7 @@
 <html lang="en">
 
      <!-- INCLUDES HEAD-->
-<%- include('../partials/head') %>
+<%- include('../partials/head', {title: producto.name}) %> <!--Para agregarle algo al title-->
 
 
 <body> 
@@ -10,11 +10,12 @@
 <!-- INCLUDES HEADER-->
 <%- include("../partials/header") %>
 <main>
+<!--FALTA INFO PRICE, DISCOUNT, CATEGORY EXPIRATION_DATE, CREATION_DATE PRECIO FINAL (<%= product.price - ((producto.discount * producto.price)/100) %>)-->
     <section class="product">
         <div class="productTitle">
-            <h2>Fruity CBD/CBG Hemp Gummies | 500mg CBD | 500mg CBD</h2>
+            <h2><%= producto.name %></h2>
             <p></p>
-            <p class="productTitleCreator">by Zaraza</p>
+            <p class="productTitleCreator"><%= brand %></p>
         </div>
         <div class="productAdd">
             <div class="masMenos">
@@ -29,17 +30,10 @@
 
     </section>
     <section class="productSpec"> 
-        <img src="img/cbdcbggummies.png" alt="">
+        <img src="img/<%= producto.image %>" alt="">
         <div class="productSpecInfo">
             <h3>Especificaciones del producto</h3>
-            <p>Estos no son ositos de goma ordinarios como cuando eras niño. Encuentra alivio con nuestra combinación perfecta de gomitas orgánicas de cannabigerol y cannabidiol premium. La relación 1:1 CBG/CBG es ideal para una liberación lenta del estrés.
-                <br>
-                El CBG es un compuesto de cannabis que se usa a menudo para combatir la inflamación, mientras que el CBD tiene muchos beneficios, incluidos el alivio del dolor, la relajación y otros beneficios para la salud. Rebosante de verdadero sabor a fruta, cada gominola contiene 12,5 mg de CBG y 12,5 mg de CBD, para que pueda experimentar lo mejor de ambos mundos.
-                <br>
-                ● Probado en laboratorio <br>
-                ● Hecho a mano en pequeños lotes <br>
-                ● 40 gomitas por frasco (1000 mg) <br>
-                ● Menos del 0,3 % de THC</p>
+            <p> <%= producto.detail %></p>
         </div>
         </div>
     </section>

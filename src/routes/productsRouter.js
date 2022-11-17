@@ -29,6 +29,17 @@ router.get("/", productsController.index);
 router.get('/create', productsController.create);
 router.post('/create', productsController.store);
 
+//detalle del producto
+router.get('/detail/:id', productsController.detail);
+
+//editar el producto
+router.get('/edit/:id', productsController.edit);
+router.put('/edit/:id', productsController.update);
+
+//eliminar un producto
+
+router.delete('/delete/:id', productsController.delete);
+
 /*router.get("/editProducts/:id", productsController.edit);
 router.put('/editProducts/:id' , uploadFile.single('imageEdit'), productsController.update);
 

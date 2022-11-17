@@ -3,7 +3,7 @@
 <head>
      <!-- INCLUDES HEAD-->
 
-<%- include('./partials/head') %>
+<%- include('./partials/head',{title: 'Editando: ' + producto.name})) %>
 
 
 </head>
@@ -15,22 +15,22 @@
 <main>
   <section class="registroProducto">
     <div class="subtitulo">
-      <h2>Registrar nuevo producto</h2>
+      <h2>Estas editando: <%= producto.name %></h2>
     </div>
 
-
- <form action="/products/create" method="POST" enctype="multipart/form-data">
+<!--faltan categorias-->
+ <form action="/products/edit/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
 
    <div class="group">
 
      <div class="formProducts">
        <label for="name" class="form-label">Nombre del producto</label>
-       <input type="text" id="name" name="name" placeholder="Papelillos" class="form-input">
+       <input type="text" id="name" name="name" value="<%= producto.name %>" placeholder="<%= producto.name %>" class="form-input">
      </div>
 
      <div class="formProducts">
        <label for="price" class="form-label"> Precio del producto </label>
-       <input type="number" id="price" name="productprice" placeholder="$220" class="form-input"> <!--Porque aca tiene procutprice y en los demas oslo discount etc.-->
+       <input type="number" id="price" name="price" placeholder="<%= producto.price %>" value="<%= producto.price %>"class="form-input"> <!--Porque aca tiene procutprice y en los demas oslo discount etc.-->
      </div>
 
    </div>
@@ -39,16 +39,24 @@
 
      <div class="formProducts">
        <label for="discount" class="form-label">Descuento</label>
-       <input type="number" id="discount" name="discount" placeholder="%10" class="form-input">
+       <input type="number" id="discount" name="discount" placeholder="<%= producto.discount %>" value="<%= producto.discount %>"class="form-input">
      </div>
 
      <div class="formProducts">
        <label for="category" class="form-label">Categoría</label>
+       <% if (producto.category=="viseted") { %>
        <select id="category" name="category" class="form-input">
          <option value="">Elegí</option>
          <option value="in-sale">En oferta</option>
-         <option value="visited">Últimos agregados</option>
+         <option value="visited" selected>Últimos agregados</option>
        </select>
+       <% } else { %>
+        <select id="category" name="category" class="form-input">
+          <option value="">Elegí</option>
+          <option value="in-sale" selected>En oferta</option>
+          <option value="visited" >Últimos agregados</option>
+        </select>
+      <% } %>
      </div>
 
    </div>
@@ -56,24 +64,28 @@
    <div class="group">
 
      <div class="formProducts">
-       <label for="imageProduct" class="form-label">Seleccionar Imagen:</label>
-       <input type="file" name="imageProduct"/>
+       <label for="image" class="form-label">Seleccionar Imagen:</label>
+       <input type="file" name="image" value="<%= producto.image %>">
      </div>
 
      <div class="formProducts">
-       <label for="description" class="form-label" >  Descripción </label>
-       <textarea name="description" id="description" class="form-input"></textarea>
+       <label for="detail" class="form-label" >  Descripción </label>
+       <textarea name="detail" id="detail" value="<%= producto.detail %>"class="form-input"></textarea>
      </div>
 
    </div>
    <div class="botton">
 
      <div class="formProducts">
-       <button type="submit" class="buy-now-button .confirmCreatProduct">Guardar Producto</button>
+       <button type="submit" class="action-button edit">Guardar Cambios</button>
+     
      </div>
 
    </div>
    
+   </form>
+   <form action="/product/delete/<%= producto.id %>?_method=DELETE" method="POST">
+    <button type="submit" class="action-button delete">Eliminar</button>
    </form>
 
    </section>
