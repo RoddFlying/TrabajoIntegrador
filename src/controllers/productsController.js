@@ -98,6 +98,6 @@ let productsController = {
     res.redirect('/');
     }
 
-  },
+  };
    
-module.exports = productsController;
+  module.exports = productsController;
