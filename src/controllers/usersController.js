@@ -5,7 +5,8 @@ const path = require("path");
 const usersController = {
   
   register: (req, res) => {
-  return res.render('userRegisterForm');
+    res.cookie('testing', 'hola mundo', { maxAge: 1000 * 30 })
+    return res.render('userRegisterForm');
 },
 processRegister: (req,res) => {
   const resultValidation = validationResult(req);
@@ -51,6 +52,10 @@ processRegister: (req,res) => {
    if(isOkThePassword){
        delete userToLogin.password;
        req.session.userLogged = userToLogin;
+
+       if (req.body.remember_user){
+        res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) *2})
+       }
        return res.redirect('/user/profile');
    }
    return res.render('userLoginForm', {

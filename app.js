@@ -3,6 +3,7 @@ const path = require("path");
 const methodOverride = require('method-override'); //Procesamiento PUT y DELETE
 const session = require ('express-session');
 
+const cookies = require ('cookie-parser');
 
 //express//
 const app = express();
@@ -15,6 +16,8 @@ const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 //const methodOverride = require('method-override'); //Procesamiento PUT y DELETE
 
 const router = require('./src/routes/index.routes');
+
+app.use(cookies());
 
 app.use(session({
   secret: 'shh, is a secret',
