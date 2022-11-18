@@ -3,10 +3,17 @@ const path = require("path");
 const methodOverride = require('method-override'); //Procesamiento PUT y DELETE
 const session = require ('express-session');
 
+
 //express//
 const app = express();
 
+
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+
+
+
 //const methodOverride = require('method-override'); //Procesamiento PUT y DELETE
+
 const router = require('./src/routes/index.routes');
 
 app.use(session({
@@ -14,6 +21,8 @@ app.use(session({
   resave:false ,
   saveUninitialized:false,
 }));
+
+app.use(userLoggedMiddleware);
 
 const publicPath = path.resolve(__dirname, './public');
 app.use( express.static(publicPath));

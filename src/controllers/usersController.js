@@ -76,6 +76,10 @@ processRegister: (req,res) => {
   });
 
 },
+  logout: (req,res) => {
+    req.session.destroy();
+    return res.redirect('/');
+},
 
   cart: (req, res) => {
       res.render('cart')
