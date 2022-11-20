@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require ('multer');
 const path = require('path');
-let productsController = require('../controllers/productsController')
+let productsController = require('../controllers/productsController');
 
 //Multer Configuracion //
 
@@ -23,7 +23,6 @@ const uploadFile = multer ({ storage: ConfiguracionImagen});
 
 //vista de todos los productos
 router.get("/", productsController.index);
-//router.get("/products", productsController.products);
 
 //vista de formulario de creación
 router.get('/create', productsController.create);
