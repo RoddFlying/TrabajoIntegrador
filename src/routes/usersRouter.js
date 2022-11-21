@@ -11,7 +11,7 @@ router.get("/profile", usersController.profile);
 const uploadFile = require ('./../../Middlewares/authMiddleware');
 const validations = require ('./../../Middlewares/validateRegisterMiddleware');
 const guestMiddleware = require('./../../Middlewares/guestmiddleware');
-const authMiddleware = require('./../../Middlewares/authMiddleware'); 
+const authMiddleware = require('./../../Middlewares/authMiddleware');
 
 router.get('/register', guestMiddleware, usersController.register);
 

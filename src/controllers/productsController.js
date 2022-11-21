@@ -2,7 +2,7 @@ const fs  = require("fs");
 const path = require("path");
 const multer = require("multer");
 
-const productsFilePath = path.join(__dirname, '../database/productsDataBase.json');
+const productsFilePath = path.join(__dirname, '../database/productsDateBase');
 //const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
