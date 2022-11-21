@@ -1,15 +1,11 @@
-module.exports = [
+[
     {
         "id": 1,
         "name": "CARPA INDOOR GARDEN HIGH PROBOX ECOPRO 80",
         "brand": "ECOPRO",
         "category": "carpas",
         "image": "./img/products/carpas/carpas1.jpeg",
-        "detail": "CARPA INDOOR GARDEN HIGH PROBOX ECOPRO 80
-        • Carpa Probox Ecopro Suiza 80 x 80 x 160 cm.
-        
-        • Las carpas GARDEN HIGHPRO entregan una alternativa insuperable en términos de calidad y precio .
-        
+        "detail": "Carpa Probox Ecopro Suiza 80 x 80 x 160 cm. Las carpas GARDEN HIGHPRO entregan una alternativa insuperable en términos de calidad y precio .
         Especificaciones técnicas:
         • Carpa Probox suiza 80 x 80 x 160 cm.
         • Posee mylar 420D, 100% aprueba de luz.
@@ -29,8 +25,7 @@ module.exports = [
         "brand": "BELLAVITA",
         "category": "carpas",
         "image": "./img/products/carpas/carpas2.jpeg",
-        "detail": "CARPA BELLAVITA LITE CULTIVO INDOOR MOD. 80
-        • Carpa de cultivo Bellavita Lite, tamaño de 80 x 80 x 160 cm.
+        "detail": "Carpa de cultivo Bellavita Lite, tamaño de 80 x 80 x 160 cm.
         
         Especificaciones
         • Dimensiones: 80 x 80 x 160 cm.
@@ -60,8 +55,7 @@ module.exports = [
         "brand": "CULTIVARG",
         "category": "carpas",
         "image": "./img/products/carpas/carpas3.jpeg",
-        "detail": "CARPA INDOOR CULTIVARG INDOOR REFORZADA 80
-        • Carpa indoor Cultivarg 80. Medidas ideales, con una altura muy buena para colocar todo tipo de iluminación.
+        "detail": "Carpa indoor Cultivarg 80. Medidas ideales, con una altura muy buena para colocar todo tipo de iluminación.
         
         Especificaciones técnicas:
         • Mylar Diamantado 600D, Réflex 98%
@@ -90,8 +84,7 @@ module.exports = [
         "brand": "EDEN",
         "category": "fertilizantes",
         "image": "./img/products/fertilizantes/fertilizantes1.jpeg",
-        "detail": "EDEN ROOTS ESTIMULADOR DE RAICES 500 CC
-        • EDEN ROOTS es un fertilizante biológico líquido, que estimula el crecimiento radicular, posibilitando una mayor absorción de nutrientes, incrementando el rendimiento del cultivo.
+        "detail": "EDEN ROOTS es un fertilizante biológico líquido, que estimula el crecimiento radicular, posibilitando una mayor absorción de nutrientes, incrementando el rendimiento del cultivo.
         
         Composición:
         • Ácidos Húmicos 4,0%.
@@ -114,8 +107,7 @@ module.exports = [
         "brand": "EDEN",
         "category": "fertilizantes",
         "image": "./img/products/fertilizantes/fertilizantes2.jpeg",
-        "detail": "EDEN 4PACK FERTILIZANTES PREMIUM PARA TODAS LAS ETAPAS 125 CC
-        EDEN garantiza un óptimo desarrollo en cada etapa de la planta, maximizando el resultado mediante una manera de utilización sencilla. Son productos premium y casi obligatorios para fortalecer la planta en todas sus etapas, logrando resultados increíbles. Cont: 125cc
+        "detail": "EDEN garantiza un óptimo desarrollo en cada etapa de la planta, maximizando el resultado mediante una manera de utilización sencilla. Son productos premium y casi obligatorios para fortalecer la planta en todas sus etapas, logrando resultados increíbles. Cont: 125cc
         
         Especificaciones:
         • EDEN ROOTS es un fertilizante biológico líquido, que estimula el crecimiento radicular, posibilitando una mayor absorción de nutrientes, incrementando el rendimiento del cultivo.
@@ -137,10 +129,7 @@ module.exports = [
         "brand": "ADVANCED NUTRIENTS",
         "category": "fertilizantes",
         "image": "./img/products/fertilizantes/fertilizantes3.jpeg",
-        "detail": "ADVANCED NUTRIENTS BASES PH PERFECT GROW MICRO BLOOM 1 LITRO
-        • pH Perfect Grow, Micro, Bloom es un compuesto de nutrientes base premium de 3 partes. Se ha diseñado específicamente para aportar a tu cultivo los nutrientes necesarios en su proporción y concentración exactas. No encontrarás un producto de la competencia con un espectro tan amplio de ingredientes de calidad.
-        
-        • Perfect Grow, Micro, Bloom aportará una amplia gama de aminoácidos a tus plantas. Comprobarás los increíbles resultados del ácido fúlvico y del poderoso surfactante no iónico. Ambos formarán un compuesto de nutrición que garantizará la absorción de los nutrientes suministrados en cada fase. La potente quelatación permitirá que cada uno de los nutrientes esté en mejor disposición para ser absorbido por las raíces de la planta. Y esto no es todo: La tecnología pH Perfect trabajará sin descanso. Se encargará de calibrar y ajustar el pH para que nunca más tengas que utilizar medidores ni añadir productos químicos agresivos para regular el pH.
+        "detail": "pH Perfect Grow, Micro, Bloom es un compuesto de nutrientes base premium de 3 partes. Se ha diseñado específicamente para aportar a tu cultivo los nutrientes necesarios en su proporción y concentración exactas. No encontrarás un producto de la competencia con un espectro tan amplio de ingredientes de calidad. Perfect Grow, Micro, Bloom aportará una amplia gama de aminoácidos a tus plantas. Comprobarás los increíbles resultados del ácido fúlvico y del poderoso surfactante no iónico. Ambos formarán un compuesto de nutrición que garantizará la absorción de los nutrientes suministrados en cada fase. La potente quelatación permitirá que cada uno de los nutrientes esté en mejor disposición para ser absorbido por las raíces de la planta. Y esto no es todo: La tecnología pH Perfect trabajará sin descanso. Se encargará de calibrar y ajustar el pH para que nunca más tengas que utilizar medidores ni añadir productos químicos agresivos para regular el pH.
         
         Especificaciones:
         • Durante la fase vegetativa GROW deberá ser el fertilizante predominante en la mezcla, pues los otros aportarán elementos necesarios para su desarrollo, pero el nitrógeno será algo esencial para esta etapa. MICRO se mantendrá estable durante todo el cultivo, deberemos aumentar las dosis durante todo el ciclo, pero siempre será al que le corresponda estar el segundo en cuando a presencia. BLOOM deberás comenzar aplicando dosis mínimas, pero al acercarnos a floración deberán aumentar, llegando a ser el abono prioritario una vez entremos en esta fase.
@@ -203,8 +192,8 @@ module.exports = [
         "brand": ,
         "category": "hidroponia",
         "image": "./img/products/hidroponia/hidroponia1.jpeg",
-        "detail": ,
-        "price": ,
+        "detail": " ",
+        "price": 2000,
         "sale": "false",
         "discount": null,
         "expiration_date": null,
@@ -217,7 +206,7 @@ module.exports = [
         "category": "hidroponia",
         "image": "./img/products/hidroponia/hidroponia2.jpeg",
         "detail": " ",
-        "price": ,
+        "price": 2000,
         "sale": "false",
         "discount": null,
         "expiration_date": null,
@@ -230,7 +219,7 @@ module.exports = [
         "category": "hidroponia",
         "image": "./img/products/hidroponia/hidroponia3.jpeg",
         "detail": " ",
-        "price": " ",
+        "price": 200,
         "sale": "false",
         "discount": null,
         "expiration_date": null,
@@ -242,8 +231,7 @@ module.exports = [
         "brand": "GROWTECH",
         "category": "luces",
         "image": "./img/products/luces/luces1.jpeg",
-        "detail": "PANEL LED 400W GROWTECH MASTER CULTIVO INDOOR
-        Luminaria LED full spectrum 400w para todo el cultivo Master Gardener 400.
+        "detail": "Luminaria LED full spectrum 400w para todo el cultivo Master Gardener 400.
         
         • Genera menos temperatura/calor:
         por un lado se utiliza menos potencia para la misma superficie. Por el otro, el LED irradia calor de forma concentrada y en dirección opuesta a la que ilumina. Esto hace que sea más sencillo eliminar el calor en relación a un HPS Sodio, que irradia calor en todas las direcciones.
@@ -288,8 +276,7 @@ module.exports = [
         "brand": "MARS",
         "category": "luces",
         "image": "./img/products/luces/luces2.jpeg",
-        "detail": "PANEL LED MARS ORBITER 80 ALTA EFICIENCIA CULTIVO INDOOR
-        • A pesar de la creencia popular de que la luz para cultivo debe ser sólo de color rojo y azul (representada como luz violeta oscuro), estudios recientes demuestran que las plantas aprovechan todo el espectro de luz generado por el sol, por eso la Orbiter Grow SL pertenece a una nueva generación de luminarias de cultivo enfocadas en generar luz con las mismas propiedades que la luz solar. Para lograrlo desarrollamos una tecnología que combina distintos tipos de LEDs calibrados para simular la luz del sol y permiten alcanzar un 95.5% de precisión. EL PANEL ESTÁ CABLEADO LISTO PARA ENCHUFAR Y CULTIVAR.
+        "detail": "A pesar de la creencia popular de que la luz para cultivo debe ser sólo de color rojo y azul (representada como luz violeta oscuro), estudios recientes demuestran que las plantas aprovechan todo el espectro de luz generado por el sol, por eso la Orbiter Grow SL pertenece a una nueva generación de luminarias de cultivo enfocadas en generar luz con las mismas propiedades que la luz solar. Para lograrlo desarrollamos una tecnología que combina distintos tipos de LEDs calibrados para simular la luz del sol y permiten alcanzar un 95.5% de precisión. EL PANEL ESTÁ CABLEADO LISTO PARA ENCHUFAR Y CULTIVAR.
         
         Fabricación:
         • fabricada con materiales de primera calidad como aluminio puro, vidrio templado, acero inoxidable, bronce mecanizado y pintura epoxi con tratamiento térmico. Cuenta con una campana altamente eficiente en la disipación de calor, no se necesitan ventiladores u otras partes móviles que aumentan el consumo y acortan la vida útil. Además está certificada bajo la norma IP65, esto significa que es resistente al polvo, la tierra y la humedad.
@@ -320,10 +307,7 @@ module.exports = [
         "brand": "AGUILA",
         "category": "luces",
         "image": "./img/products/luces/luces3.jpeg",
-        "detail": "AGUILA REFLECTOR PROYECTOR GARDEN HIGH PRO PEARL PRO INDOOR
-        • Reflector Aluminio Micropunto Pearl-Pro de Garden High Pro.
-        
-        • Obtendrás un rendimiento muy superior al Reflector Stuco Standar. Pudiendo aumentar en un 60% su rendimiento.
+        "detail": "Reflector Aluminio Micropunto Pearl-Pro de Garden High Pro. Obtendrás un rendimiento muy superior al Reflector Stuco Standar. Pudiendo aumentar en un 60% su rendimiento.
         • Medidas: 47 x 47 x 11 cm.
         • Su nuevo sistema de micropunteado es más eficiente, esparciendo de forma más homogénea los lúmenes de la lámpara.
         • La nueva caja de conexiones ESTANCA aumenta la seguridad. Manteniendo la humedad de los cultivos lejos de las conexiones eléctricas.
@@ -342,8 +326,7 @@ module.exports = [
         "brand": "RAW",
         "category": "parafrenalia",
         "image": "./img/products/parafrenalia/parafrenalia1.jpeg",
-        "detail": "SEDAS RAW CONNOISSEUR CLASSIC 1/4 + FILTROS PRE ROLLED
-        • Los papeles RAW son una revolución a nivel mundial. En este producto incluye filtros pre-rolled en su parte inferior.
+        "detail": "Los papeles RAW son una revolución a nivel mundial. En este producto incluye filtros pre-rolled en su parte inferior.
         
         Características:
         • 50 unidades de papel
@@ -362,8 +345,7 @@ module.exports = [
         "brand": "INDIA",
         "category": "parafrenalia",
         "image":  "./img/products/parafrenalia/parafrenalia2.jpeg",
-        "detail": "PIPA DE VIDRIO PYREX INDIA
-        • Pipa de pyrex con excelente terminación, colores y motivos variados.
+        "detail": "Pipa de pyrex con excelente terminación, colores y motivos variados.
         
         • Pipa de Pyrex
         • Diseños y colores variados.
@@ -380,8 +362,7 @@ module.exports = [
         "brand": "SAGRADA MADRE",
         "category": "parafrenalia",
         "image":  "./img/products/parafrenalia/parafrenalia3.jpeg",
-        "detail": "PASTILLAS SAGRADA MADRE DE DEFUMACIÓN ACTIVADA PALO SANTO
-        • Pastillas de defumación activada.
+        "detail": "Pastillas de defumación activada.
         
         • Encender palo santo es un acto sagrado y purificador. Aumenta la sensación de calma y bienestar, atrayendo energías positivas y armoniosas a todos que estén en contacto con este humo sagrado y renovador.
         • La caja incluye 4 unidades",
@@ -397,8 +378,7 @@ module.exports = [
         "brand": "AMSTERDAM",
         "category": "picadores",
         "image":  "./img/products/picadores/picadores1.jpeg",
-        "detail": "PICADOR GRINDER ALUMINIO 3 PARTES AMSTERDAM
-        • Increible picador de Aluminio de 3 partes.
+        "detail": "Increible picador de Aluminio de 3 partes.
         
         • 35 mm alto
         • 50mm diametro
@@ -420,8 +400,7 @@ module.exports = [
         "brand": "N/A",
         "category": "picadores",
         "image": "./img/products/picadores/picadores2.jpeg",
-        "detail": "PICADOR GRINDER ALUMINIO 3 PARTES
-        • Picador de Aluminio de 3 partes.
+        "detail": "Picador de Aluminio de 3 partes.
         
         • 30 mm alto.
         • 50 mm diámetro.
@@ -443,8 +422,7 @@ module.exports = [
         "brand": "COGONAUTS",
         "category": "picadores",
         "image": "./img/products/picadores/picadores3.jpeg",
-        "detail": "PICADOR GRINDER COGONAUTS 3D KOKO CACTUS
-        Picador coleccionable impreso en 3D. Motivo Koko.
+        "detail": "Picador coleccionable impreso en 3D. Motivo Koko.
         
         • Koko es un joven cactus alegre y energético que un día se despegó del suelo del desierto para emprender un viaje sin rumbo.
         
@@ -467,10 +445,7 @@ module.exports = [
         "brand": "EDEN",
         "category": "sustratos",
         "image": "./img/products/sustratos/sustrato1.jpeg",
-        "detail": "SUSTRATO EDEN LIVIANO PREMIUM CULTIVO 10 LITROS
-        • EDEN - Queen´s paradise es un sustrato de uso profesional, que ofrece óptimas condiciones de siembra y/o trasplante, por su excelente aireación, retención de agua, reacción (pH) y Ce.
-        
-        • Mediante una equilibrada composición entre los mejores componentes para el auto-cultivo, se llega al sustrato definitivo para un cultivador profesional, sin necesidad de ningún agregado. Brinda un PH controlado entre 5,5 y 6,5 que se puede utilizar para cualquier etapa de la planta.
+        "detail": "EDEN - Queen´s paradise es un sustrato de uso profesional, que ofrece óptimas condiciones de siembra y/o trasplante, por su excelente aireación, retención de agua, reacción (pH) y Ce. Mediante una equilibrada composición entre los mejores componentes para el auto-cultivo, se llega al sustrato definitivo para un cultivador profesional, sin necesidad de ningún agregado. Brinda un PH controlado entre 5,5 y 6,5 que se puede utilizar para cualquier etapa de la planta.
         
         Características
         • Materia orgánica sobre muestra húmeda 28,8 %.
@@ -496,10 +471,7 @@ module.exports = [
         "brand": "GROWERS",
         "category": "sustratos",
         "image": "./img/products/sustratos/sustrato2.jpeg",
-        "detail": "SUSTRATO GROWERS SUPER SOIL CULTIVO ORGÁNICO 50 LITROS
-        • Sustrato orgánico Growers de 50 litros útil para indoor y exterior.
-        
-        • Sustrato orgánico de alto rendimiento específicamente desarrollado para cultivos intensivos en contenedores. Brinda la aireación, retención y humedad necesaria, además de protección y nutrición orgánica para un cultivo saludable.
+        "detail": "Sustrato orgánico Growers de 50 litros útil para indoor y exterior. Sustrato orgánico de alto rendimiento específicamente desarrollado para cultivos intensivos en contenedores. Brinda la aireación, retención y humedad necesaria, además de protección y nutrición orgánica para un cultivo saludable.
         
         Compuesto por:
         • Tierra negra.
@@ -523,8 +495,7 @@ module.exports = [
         "brand": "TERRAFERTIL",
         "category": "sustratos",
         "image": "./img/products/sustratos/sustrato3.jpeg",
-        "detail": "SUSTRATO PALMERAS Y HELECHOS TERRAFERTIL 20 DM3
-        • Sustrato ideal para recomponer suelos y plantación o trasplantes de palmeras y helechos.
+        "detail": "Sustrato ideal para recomponer suelos y plantación o trasplantes de palmeras y helechos.
         
         Especificaciones:
         • Compuesto obtenido de la transformación biológica de materias vegetales, llevada a cabo por las lombrices, en condiciones sanitarias de temperatura y humedad estrictamente controladas.
