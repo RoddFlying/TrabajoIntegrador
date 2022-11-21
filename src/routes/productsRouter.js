@@ -2,21 +2,23 @@ const express = require('express');
 const router = express.Router();
 const multer = require ('multer');
 const path = require('path');
-let productsController = require('../controllers/productsController');
+
 
 //Multer Configuracion //
 
-const ConfiguracionImagen = multer.diskStorage({
+const storage = multer.diskStorage({
     destination: function(req, file, cb){
         cb(null, path.join(__dirname,  '../../public/img/products'));
     },
     filename: function(req, file, cb) {
-        let imageName = Date.now() + file.originalname ;
-        cb (null,imageName);
+        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+        //let imageName = Date.now() + file.originalname ; cb (null,imageName);
     }
 });
 
-const uploadFile = multer ({ storage: ConfiguracionImagen});
+const upload = multer ({ storage: storage});
+
+const productsController = require('../controllers/productsController');
 
 //vista home, listado productos, detalle producto(boton editar)-> vista editar, vista crear producto,
 // vista login, vista registro, vista perfil .

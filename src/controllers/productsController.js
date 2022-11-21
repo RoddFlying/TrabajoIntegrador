@@ -1,15 +1,17 @@
 const fs  = require("fs");
 const path = require("path");
-
+const multer = require("multer");
 
 const productsFilePath = path.join(__dirname, '../database/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsDataBase, 'utf-8'));
+const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
 
-let productsController = {
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
+
+const productsController = {
   //la de productos en general
   index: (req,res) => {
-    products = JSON.parse(fs.readFileSync(productsDataBase, 'utf-8'));
-    res.render('products',{ps:products});
+    const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
+    res.render('products',{'products':products, toThousand}); //{ps:products});
   },
   //crear el producto
   create: (req,res) =>{
