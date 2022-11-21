@@ -85,18 +85,6 @@ module.exports = [
         "creation_date": null     
     },
     {
-<<<<<<< HEAD
-    "id": 3,
-    "name": "Papelillos Gizeh Rosa",
-    "price": 330,
-    "category": "in-sale",
-    "description": "Papelillos Gizeh Pink1 1/4 25 unid. Apto Vegan",
-    "image": ""       
-    },
-    {
-    "id": 4,
-    "name": ""
-=======
         "id": 4,
         "name": "EDEN ROOTS ESTIMULADOR DE RAICES 500 CC",
         "brand": "EDEN",
@@ -551,7 +539,7 @@ module.exports = [
         "discount": 5,
         "expiration_date": null,
         "creation_date": null   
->>>>>>> 0287b60ceea00c7677d3f04f496a9b5733237713
+
     }
 
 ]
