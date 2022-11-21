@@ -1,21 +1,17 @@
+//requires
+
 const express = require("express");
 const path = require("path");
-const methodOverride = require('method-override'); //Procesamiento PUT y DELETE
+const methodOverride = require('method-override');
 const session = require ('express-session');
-
 const cookies = require ('cookie-parser');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+const router = require('./src/routes/index.routes');
 
 //express//
 const app = express();
 
-
-const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
-
-
-
-//const methodOverride = require('method-override'); //Procesamiento PUT y DELETE
-
-const router = require('./src/routes/index.routes');
+//const methodOverride = require('method-override');
 
 app.use(cookies());
 
@@ -37,7 +33,6 @@ app.use(methodOverride ("_method")); //Procesamiento PUT y DELETE
 app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
-
 //Routes//
 const mainRouter = require('./src/routes/mainRouter')
 const productsRouter = require('./src/routes/productsRouter');
@@ -48,13 +43,17 @@ app.use('/products', productsRouter);
 app.use('/users', usersRouter);
 
 //error/
+
 app.use((req, res, next) => {
   res.status(404).render("not-found")
 });
 
 //listen//
+
 app.listen(3000, () => {
   console.log("servidor corriendo puerto 3000");
 });
 
+// exports
 
+module.exports = app;
