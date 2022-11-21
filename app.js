@@ -2,7 +2,7 @@
 const createError = require('http-errors');
 const cookies = require ('cookie-parser');
 const express = require("express");
-const logger = require('morgan');
+//const logger = require('morgan');
 const path = require("path");
 const methodOverride = require('method-override'); //Procesamiento PUT y DELETE 
 
@@ -17,7 +17,7 @@ const app = express();
 //middleware//
 app.use( express.static(path.join(__dirname, '../public')));  //app.use( express.static(publicPath));
 app.use(express.urlencoded({extended:false}));
-app.use(logger('dev'));
+//app.use(logger('dev'));
 app.use(express.json());
 app.use(cookies());
 app.use(methodOverride ("_method")); //Procesamiento PUT y DELETE 
