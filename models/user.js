@@ -59,4 +59,4 @@ const user = {
 
 module.exports = user;
 
-console.log(user.delete(4));
+//console.log(user.delete(4));
