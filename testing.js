@@ -1,4 +1,4 @@
-conts bcryptjs = require ('bcryptjs');
+const bcryptjs = require ('bcryptjs');
 
 let hash = bcryptjs.hashSync('abc123', 10);
 console.log(hash);
