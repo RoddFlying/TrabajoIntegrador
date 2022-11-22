@@ -1,4 +1,4 @@
-const usersController = require("../controllers/usersControllers"); //USERS
+const usersController = require("./../controllers/usersController"); //USERS
 
 const express = require("express");
 const router = express.Router();
@@ -6,17 +6,14 @@ const router = express.Router();
 router.get("/", usersController.login); //USERS MODIFICACION
 router.get("/register", usersController.register); 
 router.get("/profile", usersController.profile);  
-const express = require('express');
-const router = express.router();
 
-const usersController = require ('../controllers/usersController');
 
-const uploadFile = require ('../middlewares/multerMiddleware');
-const validations = require ('../middlewares/validateRegisterMiddleware');
-const guestMiddleware = require('../middlewares/guestMiddleware');
-const authMiddleware = require('../middlewares/authMiddleware'); 
+const uploadFile = require ('./../../Middlewares/authMiddleware');
+const validations = require ('./../../Middlewares/validateRegisterMiddleware');
+const guestMiddleware = require('./../../Middlewares/guestmiddleware');
+const authMiddleware = require('./../../Middlewares/authMiddleware');
 
-router.get('/register', guestMiddleware, userController.register);
+router.get('/register', guestMiddleware, usersController.register);
 
 router.post('/register', uploadFile.single('avatar'), validations, usersController.processRegister);
 
