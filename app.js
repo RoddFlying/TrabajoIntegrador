@@ -61,14 +61,7 @@ app.use(methodOverride ("_method")); //Procesamiento PUT y DELETE
 app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
-//Routes//
-//const mainRouter = require('./src/routes/mainRouter');
-//const productsRouter = require('./src/routes/productsRouter');
-//const usersRouter = require('./src/routes/usersRouter');
 
-app.use("/", mainRouter); 
-app.use('/products', productsRouter);
-app.use('/users', usersRouter);
 
 //error/
 
