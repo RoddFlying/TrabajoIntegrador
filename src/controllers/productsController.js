@@ -1,6 +1,7 @@
 const fs  = require("fs");
 const path = require("path");
 const multer = require("multer");
+const db = require('../../database/models'); //requiere la base de datos. no tocar
 
 const productsFilePath = path.join(__dirname, '../database/productsDateBase');
 //const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
@@ -10,11 +11,14 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 const productsController = {
   //la de productos en general
   index: (req,res) => {
-   // const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
-    res.render('products'); //{ps:products});
+    db.Products.findAll();   //reemplaza al JSON por la base de datos -- const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
+    /* .then(function(Products){
+      res.render('products',{Products});    //{ps:products});
+    }) */
+  
   },
   //crear el producto
-  create: (req,res) =>{
+/*   create: (req,res) =>{
     res.render('createProducts',);
 
   },
@@ -98,7 +102,7 @@ const productsController = {
     }
     fs.writeFileSync(productsFilePath,JSON.stringify(arreyProductos,null," "));
     res.redirect('/');
-    }
+    } */
 
   };
    
