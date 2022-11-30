@@ -1,9 +1,9 @@
 const fs  = require("fs");
 const path = require("path");
 const multer = require("multer");
-const db = require('../../database/models'); //requiere la base de datos. no tocar
+//const db = require('../../database/models'); //requiere la base de datos. no tocar
 
-const productsFilePath = path.join(__dirname, '../database/productsDateBase');
+//const productsFilePath = path.join(__dirname, '../database/productsDateBase'); //revisar si cambia ahora que cambio la base de datos
 //const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
@@ -11,9 +11,9 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 const productsController = {
   //la de productos en general
   index: (req,res) => {
-    db.Products.findAll();   //reemplaza al JSON por la base de datos -- const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
-    /* .then(function(Products){
-      res.render('products',{Products});    //{ps:products});
+    db.products.findAll();//productos seria el alias   //reemplaza al JSON por la base de datos -- const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
+    /* .then(function(products){
+      res.render('products',{ps: products});    //{ps:product}); el ps es por como lo llamo desde la vista
     }) */
   
   },
@@ -42,18 +42,25 @@ const productsController = {
       fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
       res.redirect('/');
     },
+
   //mostrar detalles del producto
   detail: (req,res)=>{
-    let idProducto = req.params.id;
-    let objetoProducto;
-    for(let o of products){
-      if (idProducto == o.id){
-        objetoProducto = o;
-        break;
-      }
-    }
-    req.render('detailProducts',{producto: objetoProducto})
-  },
+    db.products.findByPk(req.params.id)
+      .then(function(product){
+        req.render('detailProducts',{producto: objetoProducto})
+      })
+    //let idProducto = req.params.id;
+    //let objetoProducto;
+    //for(let o of products){
+     // if (idProducto == o.id){
+     //   objetoProducto = o;
+     //   break;
+     // }
+   // }
+   // req.render('detailProducts',{producto: objetoProducto})
+  //},
+
+
   //editar un producto
   edit: (req,res) => {
     let idProducto = req.params.id;

@@ -67,7 +67,7 @@ header i{
 
 .headingContainer .iconosPricipales{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -197,7 +197,7 @@ footer i{
     align-items: flex-start;
 }
 .menuFooter div {
-    width: 15%;
+    width: 25%;
 }
 
 .menuFooter h3{
@@ -228,7 +228,7 @@ footer i{
  /*VERSION TABLET*/
 @media (max-width: 1023px){
     .menuFooter div {
-        width: 30%;
+        width: 50%;
     }
   
 
@@ -252,7 +252,7 @@ footer i{
     }
 
     .menuFooter div {
-        width: 45%;
+        width: 80%;
     }
 
     .headingContainer .iconosPricipales{

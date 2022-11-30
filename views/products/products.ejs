@@ -12,15 +12,16 @@
     
     <% for(let objeto of ps) { %>
     <a href="product/detail/<%= object.id %>">
-    <article class="product-item" name="id">
+    <article class="product-item" name="product-spec">
      <img src="<%= object.image %>" name="image" alt="image-product">
      <div class="product-price">
         <p class="price" name="price">$<%= object.price %></p>
-        <% if(sale){%>
+        <% if(true){%>
           <p class="discount" name="discount"> <%= object.discount %>%OFF</p>
         <%}%>
       </div>
       <h3 class="name" name="name"><%= object.name %></h3>
+      <h4 class="brand" name="brand"><%= object.brand %></h4>
       <h5 class="category" name="category"><%= object.category %></h5>
 
     </article>

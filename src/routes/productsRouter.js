@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require ('multer');
 const path = require('path');
+const productsController = require('../controllers/productsController')
 
 
 //Multer Configuracion //
@@ -18,7 +19,7 @@ const storage = multer.diskStorage({
 
 const upload = multer ({ storage: storage});
 
-const productsController = require('../controllers/productsController');
+
 
 //vista home, listado productos, detalle producto(boton editar)-> vista editar, vista crear producto,
 // vista login, vista registro, vista perfil .
