@@ -8,7 +8,7 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 const productsController = {
   //la de productos en general
   index: (req,res) => {
-    db.products.findAll();//productos seria el alias   //reemplaza al JSON por la base de datos -- const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
+    db.products.findAll();//productos seria el alias   //reemplaza al JSON por la base de datos -- 
     /* .then(function(products){
       res.render('products',{ps: products});    //{ps:product}); el ps es por como lo llamo desde la vista
     }) */
