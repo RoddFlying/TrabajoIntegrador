@@ -3,9 +3,6 @@ const path = require("path");
 const multer = require("multer");
 //const db = require('../../database/models'); //requiere la base de datos. no tocar
 
-//const productsFilePath = path.join(__dirname, '../database/productsDateBase'); //revisar si cambia ahora que cambio la base de datos
-//const products = JSON.parse(fs.readFileSync(productsDataBase, {encoding: 'utf-8'}));
-
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 
 const productsController = {
@@ -19,14 +16,14 @@ const productsController = {
   },
   //crear el producto
 /*   create: (req,res) =>{
-    res.render('createProducts',);
+    res.render('createProducts');
 
   },
+ 
     //guardar producto creardo
-    store: (req,res) =>{
-      console.log(req.body);
-      let productoNuevo = {
-        id : (products[products.length-1].id)+1,
+    store: (req,res)=>{
+    db.products.add({
+      //no poner id porque ya lo pone automaticamente
         name : req.body.name,
         brand : req.body.brand,
         category : req.body.category,
@@ -37,11 +34,9 @@ const productsController = {
         discount: req.body.discount,
         expiration_date: req.body.expiration_date,
         creation_date: req.body.creation_date
-      };
-      products.push(productoNuevo);
-      fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
-      res.redirect('/');
-    },
+    })
+    res.render('/')
+  },
 
   //mostrar detalles del producto
   detail: (req,res)=>{
@@ -49,17 +44,7 @@ const productsController = {
       .then(function(product){
         req.render('detailProducts',{producto: objetoProducto})
       })
-    //let idProducto = req.params.id;
-    //let objetoProducto;
-    //for(let o of products){
-     // if (idProducto == o.id){
-     //   objetoProducto = o;
-     //   break;
-     // }
-   // }
-   // req.render('detailProducts',{producto: objetoProducto})
-  //},
-
+   },
 
   //editar un producto
   edit: (req,res) => {
@@ -74,6 +59,7 @@ const productsController = {
     req.render('editProducts',{producto: objetoProducto})
 
   },
+
   //actualizar el producto
   update: (req,res)=>{
     let idProducto = req.params.id;
@@ -92,9 +78,10 @@ const productsController = {
         break;
       }
       }
-    fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
+    //fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
     res.redirect('/');
     },
+
     //eliminar un producto
     delete: (req,res) => {
       let idProducto = req.params.id;
@@ -107,7 +94,7 @@ const productsController = {
         break;
       }
     }
-    fs.writeFileSync(productsFilePath,JSON.stringify(arreyProductos,null," "));
+    //fs.writeFileSync(productsFilePath,JSON.stringify(arreyProductos,null," "));
     res.redirect('/');
     } */
 
