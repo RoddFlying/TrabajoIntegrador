@@ -22,7 +22,7 @@ const productsController = {
  
     //guardar producto creardo
     store: (req,res)=>{
-    db.products.add({
+    db.products.store({
       //no poner id porque ya lo pone automaticamente
         name : req.body.name,
         brand : req.body.brand,
@@ -62,24 +62,24 @@ const productsController = {
 
   //actualizar el producto
   update: (req,res)=>{
-    let idProducto = req.params.id;
-    for(let o of products){
-      if (idProducto == o.id){
-          o.name = req.body.name;
-          o.brand = req.body.brand;
-          o.category = req.body.category;
-          o.image = req.body.image;
-          o.detail = req.body.detail;
-          o.price = req.body.price;
-          //o.sale = req.body.sale;
-          o.discount = req.body.discount;
-          o.expiration_date = req.body.expiration_date;
-          o.creation_date = req.body.creation_date;
-        break;
+   db.products.update({
+     
+        name : req.body.name,
+        brand : req.body.brand,
+        category : req.body.category,
+        image : req.body.image,
+        detail : req.body.detail,
+        price : req.body.price,
+        //sale:req.body.sale;
+        discount: req.body.discount,
+        expiration_date: req.body.expiration_date,
+        creation_date: req.body.creation_date
+    },{
+      where: {
+        id: req.params.id
       }
-      }
-    //fs.writeFileSync(productsFilePath,JSON.stringify(products,null," "));
-    res.redirect('/');
+    })
+    res.render('/')
     },
 
     //eliminar un producto
