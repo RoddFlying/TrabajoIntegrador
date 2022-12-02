@@ -21,3 +21,17 @@ module.exports = {
     "dialect": "mysql"
   }
 }
+
+
+// const mysql = require('mysql')
+
+// const connection = mysql.createConnection({  
+//   host: 'mysql-cuchujero.alwaysdata.net',  
+//   user: 'cuchujero',  
+//   password: 'Goku123!',  
+//   database: 'cuchujero_okp'
+// });
+
+// connection.connect((err) => {  if (err) throw err;  console.log('Conectado!');});
+
+// module.exports = connection;
