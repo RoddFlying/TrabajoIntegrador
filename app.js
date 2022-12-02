@@ -34,11 +34,11 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 //Routes//
 //const router = require('./src/routes/index.routes'); //??
 const mainRouter = require('./src/routes/mainRouter');
-//onst productsRouter = require('./src/routes/productsRouter');
+const productsRouter = require('./src/routes/productsRouter');
 const usersRouter = require('./src/routes/usersRouter');
 
 app.use("/", mainRouter); //index.Router?
-//app.use('/products', productsRouter);
+app.use('/products', productsRouter);
 app.use('/users', usersRouter);
 
 
