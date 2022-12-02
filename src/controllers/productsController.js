@@ -84,18 +84,7 @@ const productsController = {
 
     //eliminar un producto
     delete: (req,res) => {
-      let idProducto = req.params.id;
-      let arreyProductos = products.filter(function(elemento){
-        return elemento.id1=idProducto;
-      })
-    for(let o of products){
-      if (idProducto == o.id){
-        
-        break;
-      }
-    }
-    //fs.writeFileSync(productsFilePath,JSON.stringify(arreyProductos,null," "));
-    res.redirect('/');
+      
     } */
 
   };
