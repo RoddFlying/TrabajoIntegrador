@@ -9,10 +9,14 @@ const productsController = {
   //la de productos en general
   index: async (req,res) => {
   //let Products = await db.products.findAll();//productos seria el alias   //reemplaza al JSON por la base de datos -- 
-  
-     // res.render('products',{ps: products});    //{ps:product}); el ps es por como lo llamo desde la vista
-  
-  //res.JSON (Products)
+  db.products.findAll().then((products)=>{
+    let productsList = [];
+    for(product of products){
+      productsList.push(product.name);
+    }
+    res.render('products', {ps:productsList})
+  })
+   
  
   },
   //crear el producto

@@ -14,7 +14,16 @@ function sale_detailData(sequelize, Datatypes){
         }
     }
     config = {timestamps: false};
- const detalle_venta = sequelize.define(alias,cols,config)
+ const detalle_venta = sequelize.define(alias,cols,config);
+
+ detalle_venta.associate = function (modelos){
+
+    detalle_venta.hasMany(modelos.sale, {
+       as: "ventas",
+       foreignKey: "sale_detail_id"
+        });
+};
+
  return detalle_venta
 } 
 

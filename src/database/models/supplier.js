@@ -19,6 +19,15 @@ function supplierData(sequelize, Datatypes){
     }
     config = {timestamps: false};
  const provedor = sequelize.define(alias,cols,config)
+
+ provedor.associate = function (modelos){
+
+    provedor.hasMany(modelos.products, {
+       as: "productos",
+       foreignKey: "supplier_id"
+        });
+};
+
  return provedor
 } 
 

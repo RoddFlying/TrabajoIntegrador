@@ -27,8 +27,16 @@ function serviceData(sequelize, Datatypes){
         }
     }
     config = {timestamps: false};
- const serivicio= sequelize.define(alias,cols,config)
- return serivicio
+ const servicio= sequelize.define(alias,cols,config);
+
+servicio.associate = function (modelos){
+servicio.hasMany(modelos.sale, {
+    as: "venta",
+    foreignKey: "service_id"
+    })
+}
+
+ return servicio
 } 
 
 module.exports = serviceData;

@@ -12,7 +12,15 @@ function payment_methodData(sequelize, Datatypes){
         }
     }
     config = {timestamps: false};
- const metodo_pago = sequelize.define(alias,cols,config)
+ const metodo_pago = sequelize.define(alias,cols,config);
+
+ metodo_pago.associate = function (modelos){
+    metodo_pago.hasMany(modelos.sale, {
+       as: "venta",
+       foreignKey: "payment_method_id"
+       })
+   };
+
  return metodo_pago;
 } 
 

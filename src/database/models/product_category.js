@@ -12,7 +12,16 @@ function product_categoryData(sequelize, Datatypes){
         }
     }
     config = {timestamps: false};
- const categoria_producto = sequelize.define(alias,cols,config)
+ const categoria_producto = sequelize.define(alias,cols,config);
+
+ categoria_producto.associate = function (modelos){
+
+    categoria_producto.hasMany(modelos.products, {
+       as: "productos",
+       foreignKey: "product_Category_id"
+        });
+};
+
  return categoria_producto
 } 
 

@@ -39,7 +39,33 @@ function saleData(sequelize, Datatypes){
         }
     }
     config = {timestamps: false};
- const venta = sequelize.define(alias,cols,config)
+ const venta = sequelize.define(alias,cols,config);
+
+ ventas.associate = function (modelos){
+
+    ventas.belongsTo(modelos.user, {   
+       as: "usuario",
+       foreignKey: "user_id"
+        });
+    ventas.belongsTo(modelos.products, {   
+        as: "productos",
+        foreignKey: "product_id"
+        });
+    ventas.belongsTo(modelos.service, {   
+        as: "servicio",
+        foreignKey: "service_id"
+        });
+    ventas.belongsTo(modelos.payment_method, {   
+        as: "metodo_pago",
+        foreignKey: "payment_method_id"
+        });
+    ventas.belongsTo(modelos.sale_detail, {   
+        as: "detalle_venta",
+        foreignKey: "sale_detail_id"
+        });
+    };
+
+
  return venta
 } 
 

@@ -12,7 +12,16 @@ function roleData(sequelize, Datatypes){
         }
     }
     config = {timestamps: false};
- const rol = sequelize.define(alias,cols,config)
+ const rol = sequelize.define(alias,cols,config);
+
+ rol.associate = function (modelos){
+
+    rol.hasMany(modelos.user, {
+       as: "usuario",
+       foreignKey: "role_id"
+        });
+};
+
  return rol
 } 
 

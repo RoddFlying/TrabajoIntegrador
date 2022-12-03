@@ -37,7 +37,21 @@ function userData(sequelize, Datatypes){
         }
     }
     config = {timestamps: false};
- const usuario = sequelize.define(alias,cols,config)
+ const usuario = sequelize.define(alias,cols,config);
+
+ usuario.associate = function (modelos){
+
+    usuario.belongsTo(modelos.role, {   
+       as: "rol",
+       foreignKey: "role_id"
+        });
+
+    usuario.hasMany(modelos.sale, {
+         as: "venta",
+         foreignKey: "user_id"
+        });
+    };
+
  return usuario
 } 
 

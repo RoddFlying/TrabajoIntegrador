@@ -52,7 +52,27 @@ function productsData(sequelize, Datatypes){
         }
     }
     config = {timestamps: false};
- const productos = sequelize.define(alias,cols,config)
+ const productos = sequelize.define(alias,cols,config);
+
+ productos.associate = function (modelos){
+
+    productos.belongsTo(modelos.product_Category, {   
+       as: "categoriaProductos",
+       foreignKey: "product_Category_id"
+        });
+    productos.belongsTo(modelos.supplier, {   
+        as: "provedor",
+        foreignKey: "supplier_id"
+        });
+
+    rol.hasMany(modelos.sale, {
+        as: "venta",
+        foreignKey: "product_id"
+        });
+    };
+
+
+
  return productos;
 } 
 
