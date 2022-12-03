@@ -27,22 +27,22 @@
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
-main{
+.mainCart{
     margin-top: 275px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 275px 80px 40px 80px;
 
 }
-.tituloCart{
+.mainCart .tituloCart{
     background-color: #dabf94;
     color: #ffffff;
     padding: 20px;
     border-top: #000000 5px solid;
 }
-.tituloCart h2{
+.mainCart .tituloCart h2{
     text-align: left;
 }
-.detalleCart{
+.mainCart .detalleCart{
     display: grid;
     grid-template-columns: 6fr 1fr 2fr 1fr ;
     border-bottom: #000000 3px solid;
@@ -51,12 +51,12 @@ main{
    
 }
 
-.itemResumenCart{
+.mainCart .itemResumenCart{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
-.itemsCart article{
+.mainCart .itemsCart article{
     display: grid;
     grid-template-columns: 6fr 1fr 2fr 1fr;
     border-bottom: #000000 2px solid;
@@ -64,21 +64,21 @@ main{
 
 }
 
-.itemsCart article h3{
+.mainCart .itemsCart article h3{
     margin: 0 10px;
     text-align: left;
 }
-.itemsCart article .itemImg {
+.mainCart .itemsCart article .itemImg {
     display: grid;
     grid-template-columns: 2fr 4fr;
 }
 
-.itemsCart article .itemImg img{
+.mainCart .itemsCart article .itemImg img{
     width: 100%;
     border: #000000 1px solid;
 
 }
-.masMenos{
+.mainCart .masMenos{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -86,7 +86,7 @@ main{
     align-items: flex-start;
 }
 
-.resumenCart {
+.mainCart .resumenCart {
     background-color: #3f3222;
     color: #ffffff;
     padding: 20px;
@@ -94,23 +94,23 @@ main{
     /*sin terminar*/
 }
 
-.subtotalCart{
+.mainCart .subtotalCart{
     display: flex;
     flex-wrap: nowrap;
 
 }
-.totalsEnvioCart{
+.mainCart .totalsEnvioCart{
     display: flex;
     flex-wrap: nowrap;
 
 }
-.resumenCart button{
+.mainCart .resumenCart button{
     background-color: #5a6b47;
     padding: 20px;
     margin: 10px 0;
     /*falta centrar*/
 }
-.resumenCart a{
+.mainCart .resumenCart a{
     color: #ffffff;
     text-decoration: none;
 }
@@ -119,13 +119,13 @@ main{
 
 /*VERSION TABLET*/
 @media (max-width: 1023px){
-    .itemResumenCart{
+    .mainCart .itemResumenCart{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
 
     }
-    .detalleCart{
+    .mainCart .detalleCart{
         width: 100%;
     }
   
@@ -137,7 +137,7 @@ main{
   /*VERSION MOBILE*/
   @media (max-width: 767px){
 
-    .itemsCart article .itemImg {
+    .mainCart .itemsCart article .itemImg {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;

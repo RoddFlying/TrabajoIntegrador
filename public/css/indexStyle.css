@@ -28,14 +28,11 @@
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
-section{
-  margin-top: 50px; 
-}
-
 
 
 /*BANNER INCIAL CON TEXTO Y BOTONES*/
 .bannerIndex{
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -58,7 +55,7 @@ section{
 }
 
 .bannerIndex img{
-  width: 100%;
+  width: 90%;
 }
 .bannerIndex li{
   font-family: 'Zilla Slab Highlight', cursive;

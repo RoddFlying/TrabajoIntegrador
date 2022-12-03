@@ -41,25 +41,25 @@ function saleData(sequelize, Datatypes){
     config = {timestamps: false};
  const venta = sequelize.define(alias,cols,config);
 
- ventas.associate = function (modelos){
+ venta.associate = function (modelos){
 
-    ventas.belongsTo(modelos.user, {   
+    venta.belongsTo(modelos.user, {   
        as: "usuario",
        foreignKey: "user_id"
         });
-    ventas.belongsTo(modelos.products, {   
+    venta.belongsTo(modelos.products, {   
         as: "productos",
         foreignKey: "product_id"
         });
-    ventas.belongsTo(modelos.service, {   
+    venta.belongsTo(modelos.service, {   
         as: "servicio",
         foreignKey: "service_id"
         });
-    ventas.belongsTo(modelos.payment_method, {   
+    venta.belongsTo(modelos.payment_method, {   
         as: "metodo_pago",
         foreignKey: "payment_method_id"
         });
-    ventas.belongsTo(modelos.sale_detail, {   
+    venta.belongsTo(modelos.sale_detail, {   
         as: "detalle_venta",
         foreignKey: "sale_detail_id"
         });

@@ -1,7 +1,7 @@
 const fs  = require("fs");
 const path = require("path");
 const multer = require("multer");
-const db = require('../database/models'); //requiere la base de datos. no tocar
+//const db = require('../database/models'); //requiere la base de datos. no tocar
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 
@@ -9,13 +9,13 @@ const productsController = {
   //la de productos en general
   index: async (req,res) => {
   //let Products = await db.products.findAll();//productos seria el alias   //reemplaza al JSON por la base de datos -- 
-  db.products.findAll().then((products)=>{
-    let productsList = [];
-    for(product of products){
-      productsList.push(product.name);
-    }
-    res.render('products', {ps:productsList})
-  })
+  // db.products.findAll({include: [{association: 'supplier'},{association: 'product_category'}]}).then((products)=>{
+  //   let productsList = [];
+  //   for(product of products){
+  //     productsList.push(product.name);
+  //   }
+  //   res.render('products', {ps:productsList})
+  // })
    
  
   },

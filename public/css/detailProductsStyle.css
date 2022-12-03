@@ -23,10 +23,10 @@
     
 /*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
-main{
+.mainDetailProducts{
     margin-top: 250px;
 }
-.product{
+.mainDetailProducts .product{
     margin-top: 50px;
     background-color: #dabf94;
     display: flex;
@@ -36,20 +36,20 @@ main{
     padding: 40px 60px;
 
 }
-.productTitle{
+.mainDetailProducts .productTitle{
     width: 45%;
 }
-.productTitle h2{
+.mainDetailProducts .productTitle h2{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-align: justify;
     font-size: 30px;
 }
-.productTitle .productTitleCreator{
+.mainDetailProducts .productTitle .productTitleCreator{
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.productAdd{
+.mainDetailProducts .productAdd{
     width: 30%;
     display: flex;
     flex-wrap: nowrap;
@@ -57,31 +57,31 @@ main{
     align-items: flex-end;
 }
 
-.productAdd button{
+.mainDetailProducts .productAdd button{
     background-color: #a1a48f;
     border: #000000 2px solid;
     padding: 5px;
 }
 
-.productAdd .masMenos{
+.mainDetailProducts .productAdd .masMenos{
     display: flex;
     flex-wrap: nowrap;
     justify-content: row;
     align-items: center;
 }
 
-.productAdd .masMenos button{
+.mainDetailProducts .productAdd .masMenos button{
     border: none;
     background-color: #a1a48f;
 }
 
 
-.productAdd h3{
+.mainDetailProducts .productAdd h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
-.productSpec{
+.mainDetailProducts .productSpec{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -90,16 +90,16 @@ main{
     padding: 40px;
     margin: 20px 10px;
 }
-.productSpec img{    
+.mainDetailProducts .productSpec img{    
     width: 40%;
 }
-.productSpec .productSpecInfo{
+.mainDetailProducts .productSpec .productSpecInfo{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 40%;
 }
-.productSpec .productSpecInfo h3{
+.mainDetailProducts .productSpec .productSpecInfo h3{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: #5a6b47;
     color: #ffffff;
@@ -107,7 +107,7 @@ main{
     padding: 40px;
     font-size: 28px;
 }
-.productSpec .productSpecInfo p{
+.mainDetailProducts .productSpec .productSpecInfo p{
     text-align: justify;
     overflow: scroll;
     width: 100%;
@@ -120,19 +120,19 @@ main{
 
 /*VERSION TABLET*/
 @media (max-width: 1023px){
-    .product{
+    .mainDetailProducts .product{
         flex-direction: column;
         justify-content: flex-start;
         padding: 40px 60px;
     
     }
-    .productTitle{
+    .mainDetailProducts .productTitle{
         width: 85%;
     }
-    .productAdd{
+    .mainDetailProducts .productAdd{
         width: 85%;
     }
-    .productTitle h2{
+    .mainDetailProducts .productTitle h2{
         font-size: 25px;
     }
    
@@ -140,18 +140,18 @@ main{
   
   /*VERSION MOBILE*/
   @media (max-width: 767px){
-    .productTitle h2{
+    .mainDetailProducts .productTitle h2{
         font-size: 20px;
     }
-    .productSpec{
+    .mainDetailProducts .productSpec{
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
     }
-    .productSpec img{    
+    .mainDetailProducts .productSpec img{    
         width: 100%;
     }
-    .productSpec .productSpecInfo{
+    .mainDetailProducts .productSpec .productSpecInfo{
         width: 100%;
     }
   

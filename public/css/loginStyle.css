@@ -29,7 +29,7 @@
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
 
-main{
+section {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -39,19 +39,19 @@ main{
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.imagen{
+.login .imagen{
   width: 50%;
 }
 
-.imagen img{
+.login .imagen img{
   width: 100%;
 }
 
-.container{
+.login .container{
   width: 43%;
 }
 
-.subtitulo {
+.login .subtitulo {
   background-color: var(--dark-olive-green);
   color: #ffffff;
   padding: 20px;
@@ -59,12 +59,12 @@ main{
   margin: 50px auto 30px auto;
 }
 
-.subtitulo h2{ 
+.login .subtitulo h2{ 
   text-align: left;
 }
 
 
-.formulario{
+.login .formulario{
   display:flex;
   flex-wrap: wrap;
   flex-direction : column;
@@ -72,7 +72,7 @@ main{
   align-items: center;
 }
 
-.formulario div{
+.login .formulario div{
   display:flex;
   flex-wrap: wrap;
   flex-direction : column;
@@ -81,20 +81,20 @@ main{
   margin-top: 20px;
 }
 
-.formulario label{
+.login .formulario label{
   color: var(--dark-olive-green);
   font-size: 20px;
   padding: 20px 0;
 }
 
-.formulario input{
+.login .formulario input{
   background-color: var(--white);
   border: var(--dark-olive-green) 1px solid;
   font-size: 20px;
   padding: 20px;
 }
 
-.boton{
+.login .boton{
   margin-top: 50px;
   padding: 20px;
   font-size: 20px;
@@ -104,20 +104,20 @@ main{
   border: none;
 }
 
-.otrasOpciones{
+.login .otrasOpciones{
   font-weight: 20px;
   text-align: center;
   align-items: center;
 }
 
-.otrasOpciones a{
+.login .otrasOpciones a{
   font-weight: 20px;
   color: #3f3222;
   text-decoration: none;
   margin-top: 15px;
 }
 
-  /* .boton {
+  /*.login .boton {
    background-color: var(--dark-olive-green);
    border-radius: 8px;
    border:none;
@@ -135,22 +135,22 @@ main{
   } */
  
 
-.boton:hover {
+.login .boton:hover {
 
     border-radius: 50%;
 }
 
 /*VERSION TABLET*/
 @media (max-width: 1023px){
-  .imagen{
+  .login .imagen{
     width: 40%;
   }
 
-  .imagen img{
+  .login .imagen img{
     content: url("../img/mobilePlaceholder.png"); /*Colocar imagen recortada*/
   }
   
-  .container{
+  .login .container{
     width: 60%;
   }
 
@@ -161,7 +161,7 @@ main{
 
 /*VERSION MOBILE*/
 @media (max-width: 767px){
-  main{
+  .login{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -171,15 +171,15 @@ main{
     margin-left: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
   }
-  .imagen{
+  .login .imagen{
     width: 100%;
   }
 
-  .imagen img{
+  .login .imagen img{
     content: url("../img/mobilePlaceholder.png"); /*Colocar imagen recortada*/
   }
 
-  .container{
+  .login .container{
     margin: 0 20px 0 20px;
     width: 100%;
   }

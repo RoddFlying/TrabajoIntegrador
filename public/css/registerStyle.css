@@ -27,12 +27,12 @@
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 main{
-  margin-top: 300px;
+
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .containerRegistro{
-<<<<<<< HEAD
+
   margin-top: 270px;
   flex-direction: column;
   justify-content: center;

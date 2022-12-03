@@ -65,7 +65,7 @@ function productsData(sequelize, Datatypes){
         foreignKey: "supplier_id"
         });
 
-    rol.hasMany(modelos.sale, {
+    productos.hasMany(modelos.sale, {
         as: "venta",
         foreignKey: "product_id"
         });

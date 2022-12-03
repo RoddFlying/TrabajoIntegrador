@@ -23,14 +23,14 @@
 
 
 
-main{
+.main-products{
   margin-top: 300px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   align-items: center;
   display: block;
 }
 
-main section{
+.main-products section{
     width: 90%; /*seccion main*/
     margin: 15px;
     padding: 30px;
@@ -39,14 +39,14 @@ main section{
     align-items: center;
     margin: auto;
 }
-main h2{
+.main-products h2{
     width: 90%; /*seccion main*/
     margin: 15px;
     padding: 30px;
     margin: auto;
 }
 
-article{
+.main-products article{
     background-color: white;
     margin: 10px;
     display: flex;
@@ -55,27 +55,27 @@ article{
     width: 20%;
 }
 
-article .name{
+.main-products article .name{
     font-size: 16px;
     margin: 10px;
     padding-bottom: 10px;
     font-weight: bold;
 }
-article .priceProduct{
+.main-products article .priceProduct{
     font-size: 18px;
 }
-article .discount{
+.main-products article .discount{
     font-size: 16px;
     color:var(--dark-olive-green);
 }
 
-.product-item img{
+.main-products .product-item img{
     width: 100%;
 }
-.product-detail{
+.main-products .product-detail{
     border-top: solid 1px #ebebeb;
 }
-.product-price{
+.main-products .product-price{
     margin:10px;
     display: flex;
     flex-wrap: wrap;
