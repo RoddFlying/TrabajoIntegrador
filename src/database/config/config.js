@@ -3,8 +3,9 @@ module.exports = {
     "username": "root",
     "password": "root",
     "database": "growshop",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "host": "127.0.0.1", //revisar si esta bien conectado a mamp
+    "dialect": "mysql",
+    "port": 8889 
   },
   "test": {
     "username": "root",
@@ -21,17 +22,3 @@ module.exports = {
     "dialect": "mysql"
   }
 }
-
-
-// const mysql = require('mysql')
-
-// const connection = mysql.createConnection({  
-//   host: 'mysql-cuchujero.alwaysdata.net',  
-//   user: 'cuchujero',  
-//   password: 'Goku123!',  
-//   database: 'cuchujero_okp'
-// });
-
-// connection.connect((err) => {  if (err) throw err;  console.log('Conectado!');});
-
-// module.exports = connection;

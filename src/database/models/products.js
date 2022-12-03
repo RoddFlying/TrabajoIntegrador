@@ -1,7 +1,6 @@
-const {sequelize,DataTypes} = require('sequelize');
-
-module.exports = (sequelize, DataTypes) => {
-    const Product = sequelize.define('Product', {
+function productsData(sequelize, Datatypes){
+    alias = 'products';
+        cols = {
         id:{
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -51,8 +50,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: true
         }
+    }
+    config = {timestamps: false};
+ const productos = sequelize.define(alias,cols,config)
+ return productos;
+} 
 
-    })
-    return Product;
-}
-
+module.exports = productsData;
