@@ -2,52 +2,52 @@ function productsData(sequelize, Datatypes){
     alias = 'products';
         cols = {
         id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             primaryKey: true,
             autoIncremental: true
         },
         name: {
-            type: DataTypes.STRING(100),
+            type: Datatypes.STRING(100),
             allowNull: false
         },
         brand: {
-            type: DataTypes.STRING(45),
+            type: Datatypes.STRING(45),
             allowNull: true
         },
         detail: {
-            type: DataTypes.STRING(10000),
+            type: Datatypes.STRING(10000),
             allowNull: true
         },
         price: {
-            type: DataTypes.DECIMAL(65,00),
+            type: Datatypes.DECIMAL(65,00),
             allowNull: false
         },
         discount: {
-            type: DataTypes.INTEGER(100),
+            type: Datatypes.INTEGER(100),
             allowNull: true
         },
         image: {
-            type: DataTypes.STRING(200),
+            type: Datatypes.STRING(200),
             allowNull: false
         },
         expiration_date: {
-            type: DataTypes.DATE,
+            type: Datatypes.DATE,
             allowNull: true
         },
         creation_date: {
-            type: DataTypes.DATE,
+            type: Datatypes.DATE,
             allowNull: true
         },
         delete_date: {
-            type: DataTypes.DATE,
+            type: Datatypes.DATE,
             allowNull: true
         },
         product_Category_id: {
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             allowNull: false
         },
         supplier_id: {
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             allowNull: true
         }
     }

@@ -2,16 +2,15 @@ function sale_detailData(sequelize, Datatypes){
     alias = 'sale_detail';
         cols = {
         id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             primaryKey: true,
             autoIncremental: true
         },
         date: {
-            type: DataTypes.DATETIME,
-            allowNull: false
+            type: Datatypes.DATE,
         },
         total_amount:{
-            type: DataTypes.DECIMAL(65,00)
+            type: Datatypes.DECIMAL(65,00)
         }
     }
     config = {timestamps: false};

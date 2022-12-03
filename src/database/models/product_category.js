@@ -2,12 +2,12 @@ function product_categoryData(sequelize, Datatypes){
     alias = 'product_category';
         cols = {
         id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             primaryKey: true,
             autoIncremental: true
         },
         name: {
-            type: DataTypes.STRING(45),
+            type: Datatypes.STRING(45),
             allowNull: false
         }
     }

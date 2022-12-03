@@ -2,38 +2,38 @@ function userData(sequelize, Datatypes){
     alias = 'user';
         cols = {
         id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             primaryKey: true,
             autoIncremental: true
         },
         name: {
-            type: DataTypes.STRING(80),
+            type: Datatypes.STRING(80),
             allowNull: false
         },
         surname: {
-            type: DataTypes.STRING(80),
+            type: Datatypes.STRING(80),
             allowNull: false
         },
         dni: {
-            type: DataTypes.STRING(9)
+            type: Datatypes.STRING(9)
         },
         email: {
-            type: DataTypes.STRING(90)
+            type: Datatypes.STRING(90)
         },
         password: {
-            type: DataTypes.STRING(20)
+            type: Datatypes.STRING(20)
         },
         address: {
-            type: DataTypes.STRING(100)
+            type: Datatypes.STRING(100)
         },
         profile_image: {
-            type: DataTypes.STRING(100)
+            type: Datatypes.STRING(100)
         },
         telephone: {
-            type: DataTypes.INTEGER
+            type: Datatypes.INTEGER
         },
         role_id: {
-            type: DataTypes.INTEGER
+            type: Datatypes.INTEGER
         }
     }
     config = {timestamps: false};

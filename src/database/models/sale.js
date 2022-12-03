@@ -4,37 +4,37 @@ function saleData(sequelize, Datatypes){
     alias = 'sale';
         cols = {
         id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             primaryKey: true,
             autoIncremental: true
         },
         user_id:{
-            type: DataTypes.INTEGER
+            type: Datatypes.INTEGER
         },
         product_id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             allowNull: true
         },
         service_id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             allowNull: true
         },
         service_id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             allowNull: true
         },
         payment_method_id: {
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
         },
         unit_amount:{
-            type: DataTypes.DECIMAL(65,00),
+            type: Datatypes.DECIMAL(65,00),
             allowNull: false
         },
         quantity: {
-            type: DataTypes.INTEGER
+            type: Datatypes.INTEGER
         },
         sale_detail_id: {
-            type: DataTypes.DECIMAL(65,00),
+            type: Datatypes.DECIMAL(65,00),
             allowNull: false
         }
     }

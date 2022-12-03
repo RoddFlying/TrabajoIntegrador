@@ -2,27 +2,27 @@ function serviceData(sequelize, Datatypes){
     alias = 'service';
         cols = {
         id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             primaryKey: true,
             autoIncremental: true
         },
         name: {
-            type: DataTypes.STRING(45),
+            type: Datatypes.STRING(45),
             allowNull: false
         },
         detail: {
-            type: DataTypes.STRING(10000),
+            type: Datatypes.STRING(10000),
             allowNull: false
         },
         price: {
-            type: DataTypes.DECIMAL(65,00)
+            type: Datatypes.DECIMAL(65,00)
         },
         discount: {
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             allowNull: true
         },
         time_date: {
-            type: DataTypes.DATETIME,
+            type: Datatypes.DATE,
             allowNull: false
         }
     }

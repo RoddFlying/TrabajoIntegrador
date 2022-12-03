@@ -2,19 +2,19 @@ function supplierData(sequelize, Datatypes){
     alias = 'supplier';
         cols = {
         id:{
-            type: DataTypes.INTEGER,
+            type: Datatypes.INTEGER,
             primaryKey: true,
             autoIncremental: true
         },
         name: {
-            type: DataTypes.STRING(45),
+            type: Datatypes.STRING(45),
             allowNull: false
         },
         telephone: {
-            type: DataTypes.INTEGER
+            type: Datatypes.INTEGER
         },
         email: {
-            type: DataTypes.STRING(80)
+            type: Datatypes.STRING(80)
         }
     }
     config = {timestamps: false};
