@@ -17,7 +17,11 @@ processRegister: async (req,res) => {
     dni: req.body.dni,
     email: req.body.email,
     password: bcryptjs.hashSync(req.body.constraseña, 10),
-    address: req.body.address,
+    address_street: req.body.calle,
+    address_extra: req.body.extra,
+    address_city: req.body.ciudad,
+    address_state: req.body.provincia,
+    address_zipcode: req.body.codigoPostal,
     profile_image: req.file.filename,
     telephone: req.body.telefono,
     role_id: 2
