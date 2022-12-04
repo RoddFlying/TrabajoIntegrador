@@ -39,7 +39,7 @@ const usersRouter = require('./src/routes/usersRouter');
 
 app.use("/", mainRouter); //index.Router?
 app.use('/products', productsRouter);
-app.use('/users', usersRouter);
+app.use('/user', usersRouter);
 
 
 app.use(session({

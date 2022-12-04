@@ -13,7 +13,8 @@
 <main>
     <section class="login">
     <section class="imagen">
-        <img src="img/imagePlacerholder.jpg" alt="">
+        <img src="img/login.png" alt="" class="desktop">
+        <img src="img/loginMobile.png" alt="" class="mobile">
     </section>
     <section class="container">
         <div class="subtitulo">
@@ -23,7 +24,7 @@
     <form action = "/" method="POST" class="formulario" > 
     <div>
         <label > Correo Eléctronico </label>
-        <input  type="email" name="CorreoElectronico" class="form-control" placeholder="maureeen@gmail.com">
+        <input  type="email" name="CorreoElectronico" class="form-control" placeholder="user@growgreen.com">
          <% if (locals.errors && errors.email) {  %>
           <div class="text-danger">
           <%= errors.email.msg %>    
@@ -38,7 +39,7 @@
         <button class="boton">CONFIRMAR</button>
     <div class="otrasOpciones">
         <p>¿No tienes cuenta?</p>
-        <a href= "users/register" class="registrarse"  >    Registrarse  </a>
+        <a href= "/user/register" class="registrarse"  >    Registrarse  </a>
 
          <a href="#" class="contraseña2"> Olvide mi contraseña </a>
     </div>

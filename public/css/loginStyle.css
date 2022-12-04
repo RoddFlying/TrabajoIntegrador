@@ -29,34 +29,35 @@
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
 
-.login section {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin-top: 250px;
-  margin-left: 0;
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .login .imagen{
-  width: 50%;
+  width: 100%;
+ 
 }
 
 .login .imagen img{
   width: 100%;
 }
 
+.login .imagen .mobile{
+  display: none;
+}
+
 .login .container{
-  width: 43%;
+  width: 80%;
 }
 
 .login .subtitulo {
-  background-color: var(--dark-olive-green);
-  color: #ffffff;
+  color: #5a6b47;
   padding: 20px;
-  border-top: #000000 5px solid;
-  margin: 50px auto 30px auto;
+  border-bottom: #5a6b47 5px solid;
+  margin: 20px auto 10px auto;
 }
 
 .login .subtitulo h2{ 
@@ -142,17 +143,7 @@
 
 /*VERSION TABLET*/
 @media (max-width: 1023px){
-  .login .imagen{
-    width: 40%;
-  }
 
-  .login .imagen img{
-    content: url("../img/mobilePlaceholder.png"); /*Colocar imagen recortada*/
-  }
-  
-  .login .container{
-    width: 60%;
-  }
 
 
 
@@ -162,26 +153,15 @@
 /*VERSION MOBILE*/
 @media (max-width: 767px){
   .login{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 250px;
-    margin-left: 0;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  .login .imagen{
-    width: 100%;
+  .login .imagen .mobile{
+    display: block;
+  }
+  .login .imagen .desktop{
+    display: none;
   }
 
-  .login .imagen img{
-    content: url("../img/mobilePlaceholder.png"); /*Colocar imagen recortada*/
-  }
-
-  .login .container{
-    margin: 0 20px 0 20px;
-    width: 100%;
-  }
  
 }

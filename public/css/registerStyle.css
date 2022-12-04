@@ -26,42 +26,29 @@
 /*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
-main{
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
 
 .containerRegistro{
-
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-}
-
-.containerRegistro h2{
-  color: #ffffff;
-  background-color:var(--dark-olive-green);
-  text-align: center;
-  align-items: center;
-  font-family: 'Roboto', Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 20px;
-  width: 80%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   margin: auto;
 }
 
-.containerRegistro .subtitulo{
-  background-color: var(--dark-olive-green);
-  color: #ffffff;
-  padding: 20px;
-  border-top: #000000 5px solid;
-  margin: 50px auto 30px auto;
+.containerRegistro .subtitulo h2{
+  text-align: left;
+  align-items: center;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 40px;
+  margin-left: 50px;
 }
 
-.containerRegistro .subtitulo h2{ 
-  text-align: left;
+.containerRegistro .subtitulo{
+  color: #5a6b47;
+  border-bottom: #5a6b47 5px solid;
+}
+
+.contenedor {
+  margin: auto;
+  width: 70%;
 }
 
 .contenedor form{
@@ -80,6 +67,7 @@ main{
 }
 
 .containerRegistro form .emailDiv label{
+  color: #5a6b47;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -87,8 +75,8 @@ main{
 }
 
 .containerRegistro form .emailDiv input{
-  background-color: var(--tan)  ;
-  border: var(--dark-olive-green) 1px solid;
+  color: #5a6b47;
+  border: #eee1cd 1px solid;
   text-align: center;
   padding: 10px;  
 }
@@ -108,6 +96,7 @@ main{
 }
 
 .containerRegistro form .grupos div label{
+  color: #5a6b47;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -115,8 +104,8 @@ main{
 }
 
 .containerRegistro form .grupos div input{
-  background-color: var(--tan)  ;
-  border: var(--dark-olive-green) 1px solid;
+  color: #5a6b47;
+  border: #eee1cd 1px solid;
   text-align: center;
   padding: 10px;  
 }
@@ -135,11 +124,8 @@ main{
   margin-bottom: 5px;
   background-color: #5a6b47;    
   border: none;
-  border-radius: 10px;
   width: 50%;
-  height: 40px;
-  margin-top: 50px;
-  padding: 20px;
+  padding: 25px;
   font-size: 20px;
   font-weight: bold;
   background-color: var(--artichoke);
@@ -147,7 +133,6 @@ main{
   border: none;
   cursor: pointer;
   transition:450ms;
-  
 }
 
 .containerRegistro .botonRegistro:hover {
