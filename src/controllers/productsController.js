@@ -1,7 +1,7 @@
 const fs  = require("fs");
 const path = require("path");
 const multer = require("multer");
-const db = require('../database/models'); //requiere la base de datos. no tocar
+//const db = require('../database/models'); //requiere la base de datos. no tocar
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 
@@ -14,7 +14,7 @@ const productsController = {
   //   for(product of products){
   //     productsList.push(product.name);
   //   }
-  //   res.render('products', {ps:productsList})
+ res.render('products/products');
   // })
    
  

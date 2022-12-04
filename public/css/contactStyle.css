@@ -26,3 +26,62 @@
 /*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
+.mainContact .contact h2{
+    text-align: left;
+    align-items: center;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 40px;
+    margin-left: 50px;
+  }
+  
+  .mainContact .contact{
+    color: #5a6b47;
+    border-bottom: #5a6b47 5px solid;
+  }
+
+
+.infoContact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+  .infoContact .imgContact {
+    width: 100%;
+  }
+  .infoContact .imgContact img{
+    width: 100%;
+  }
+
+  .infoContact .imgContact .mobile{
+    display: none;
+  }
+  .infoContact .detailContact{
+    width: 80%;
+    padding: 40px;
+    color: #5a6b47;
+  }
+  .infoContact .detailContact a{
+    text-decoration: none;
+    color:#5a6b47 ;
+  }
+  .infoContact .detailContact p{
+    font-size: 30px;
+  }
+
+  /*VERSION MOBILE*/
+@media (max-width: 767px){
+    .infoContact{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .infoContact .imgContact .mobile{
+      display: block;
+    }
+    .infoContact .imgContact .desktop{
+      display: none;
+    }
+   
+   
+  }
