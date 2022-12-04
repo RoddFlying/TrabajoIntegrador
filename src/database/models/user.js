@@ -23,7 +23,19 @@ function userData(sequelize, Datatypes){
         password: {
             type: Datatypes.STRING(20)
         },
-        address: {
+        address_street: {
+            type: Datatypes.STRING(100)
+        },
+        address_extra: {
+            type: Datatypes.STRING(100)
+        },
+        address_city: {
+            type: Datatypes.STRING(100)
+        },
+        address_zipcode: {
+            type: Datatypes.INTEGER
+        },
+        address_state: {
             type: Datatypes.STRING(100)
         },
         profile_image: {
