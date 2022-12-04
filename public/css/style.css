@@ -133,7 +133,7 @@ footer{
     margin-top: 10px;
     background-color: #3f3222;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 footer .space{
     width: 100%;
@@ -145,7 +145,7 @@ footer i{
     
 }
 footer .menuFooter {
-    padding: 40px 60px;
+    padding: 20px 20px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: #ffffff;
     display: flex;
@@ -192,8 +192,29 @@ footer .redesSociales {
 
 /*VERSION MOBILE*/
 @media (max-width: 767px){
+    header{
+        display: grid;
+        grid-template-columns:1fr;
+        justify-content: space-between;
+        border-bottom: #5a6b47 3px solid;
+    }
+    header .headingLogo {
+        width: 70%;
+        margin-left: 10px;
+    }
     header .mobile-nav-bar{
-        display: flex;
+        display: block;
+        width: 70%;
+        border-top: #5a6b47 3px solid;
+        padding: 10px 0;
+    }
+    header .mobile-nav-bar a{
+        color: #5a6b47;
+        font-size: 28px;
+    }
+    header .mobile-nav-bar i{
+        color: #5a6b47;
+        font-size: 28px;
     }
     header .nav-bar{
         display: none;
@@ -206,6 +227,11 @@ footer .redesSociales {
     header .headingContainer .searchBar input{
         display: none;
     } */
+    footer{
+        background-color: #3f3222;
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+    }
 
     footer .menuFooter div {
         width: 80%;
