@@ -29,7 +29,7 @@
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
 
-section {
+.login section {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
