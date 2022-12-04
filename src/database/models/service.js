@@ -15,7 +15,7 @@ function serviceData(sequelize, Datatypes){
             allowNull: false
         },
         price: {
-            type: Datatypes.DECIMAL(65,00)
+            type: Datatypes.DECIMAL(10,2)
         },
         discount: {
             type: Datatypes.INTEGER,

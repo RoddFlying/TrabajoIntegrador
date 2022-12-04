@@ -19,7 +19,7 @@ function productsData(sequelize, Datatypes){
             allowNull: true
         },
         price: {
-            type: Datatypes.DECIMAL(65,00),
+            type: Datatypes.DECIMAL(10,2),
             allowNull: false
         },
         discount: {

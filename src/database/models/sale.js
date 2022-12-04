@@ -19,15 +19,11 @@ function saleData(sequelize, Datatypes){
             type: Datatypes.INTEGER,
             allowNull: true
         },
-        service_id:{
-            type: Datatypes.INTEGER,
-            allowNull: true
-        },
         payment_method_id: {
             type: Datatypes.INTEGER,
         },
         unit_amount:{
-            type: Datatypes.DECIMAL(65,00),
+            type: Datatypes.DECIMAL(10,2),
             allowNull: false
         },
         quantity: {
