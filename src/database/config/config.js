@@ -1,11 +1,11 @@
 module.exports = {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "growshop",
-    "host": "127.0.0.1", //revisar si esta bien conectado a mamp
+    "username": "mauchisss",
+    "password": "Frida2020!",
+    "database": "mauchisss_growshop",
+    "host": "mysql-mauchisss.alwaysdata.net", //revisar si esta bien conectado a mamp
     "dialect": "mysql",
-    "port": 8889 
+    "port": 3306
   },
   "test": {
     "username": "root",

@@ -88,10 +88,11 @@ processRegister: async (req,res) => {
    });
 },
   profile: (req, res) => {
+    res.render('users/perfil')
 
-  res.render('users/perfil',{
-    user: req.session.userLogged
-  });
+  // res.render('users/perfil',{
+  //   user: req.session.userLogged
+  // });
 
 },
   logout: (req,res) => {
