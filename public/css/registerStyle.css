@@ -27,7 +27,20 @@
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
+.register{
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+
+.register .resigterBanner{
+  width: 100%;
+}
+.register .resigterBanner .mobile{
+  display: none;
+}
+
 .containerRegistro{
+  width: 100%;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   margin: auto;
 }
@@ -155,6 +168,20 @@
 
 /*VERSION MOBILE*/
 @media (max-width: 767px){
+  .register{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .register .resigterBanner{
+    width: 100%;
+  }
+  .register .resigterBanner .mobile{
+    display: block;
+  }
+  .register .resigterBanner .desktop{
+    display: none;
+  }
   
  
 }
