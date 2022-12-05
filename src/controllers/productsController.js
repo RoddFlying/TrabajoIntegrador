@@ -21,7 +21,7 @@ const productsController = {
   },
   //crear el producto
    create: (req,res) =>{
-    res.render('createProducts');
+    res.render('products/createProducts');
 
   },
  
@@ -44,15 +44,15 @@ const productsController = {
   },
 
   //mostrar detalles del producto
-  detail: (req,res)=>{
+  detail: async  (req,res)=>{
     // db.products.findByPk(req.params.id)
     //   .then(function(product){
-    //     req.render('detailProducts',{producto: objetoProducto})
+    //     req.render('products/detailProducts',{producto: objetoProducto})
     //   })
    },
 
   //editar un producto
-  edit: (req,res) => {
+  edit: async  (req,res) => {
     let idProducto = req.params.id;
     let objetoProducto;
     for(let o of products){
@@ -61,7 +61,7 @@ const productsController = {
         break;
       }
     }
-    req.render('editProducts',{producto: objetoProducto})
+    req.render('products/editProducts',{producto: objetoProducto})
 
   },
 
