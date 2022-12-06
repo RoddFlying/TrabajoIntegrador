@@ -2,7 +2,7 @@ const bcryptjs = require ('bcryptjs');
 const { UserInfo } = require("git");
 const { dirname } = require('path');
 const path = require("path");
-//const db = require('../database/models'); //requiere la base de datos. no tocar
+const db = require('../database/models'); //requiere la base de datos. no tocar
 
 const usersController = {
   
@@ -26,6 +26,7 @@ processRegister: async (req,res) => {
     telephone: req.body.telefono,
     role_id: 2
   });
+  console.log(User);
   // const resultValidation = validationResult(req);
   
   // if (resultValidation.error.length > 0 ) {

@@ -1,7 +1,7 @@
 const fs  = require("fs");
 const path = require("path");
 const multer = require("multer");
-//const db = require('../database/models'); //requiere la base de datos. no tocar
+const db = require('../database/models'); //requiere la base de datos. no tocar
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 
@@ -26,7 +26,7 @@ const productsController = {
   },
  
     //guardar producto creardo
-    store: (req,res)=>{
+    store: async (req,res)=>{
     // db.products.store({
     //   //no poner id porque ya lo pone automaticamente
     //     name : req.body.name,
@@ -66,7 +66,7 @@ const productsController = {
   },
 
   //actualizar el producto
-  update: (req,res)=>{
+  update: async (req,res)=>{
   // // db.products.update({
      
   //       name : req.body.name,
@@ -89,7 +89,7 @@ const productsController = {
     },
 
     //eliminar un producto
-    delete: (req,res) => {
+    delete: async (req,res) => {
       
     } 
 
