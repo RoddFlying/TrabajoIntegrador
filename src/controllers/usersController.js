@@ -1,8 +1,13 @@
 const bcryptjs = require ('bcryptjs');
 const { UserInfo } = require("git");
 const { dirname } = require('path');
+const fs  = require("fs");
 const path = require("path");
+const multer = require("multer");
 const db = require('../database/models'); //requiere la base de datos. no tocar
+
+//db.user.findAll({include: [{association: 'role'}]})
+
 
 const usersController = {
   
