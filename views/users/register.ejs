@@ -27,7 +27,7 @@
 
     <div class="contenedor">  
 
-      <form action="register" method="POST">
+      <form action="/user/register" method="POST" enctype="multipart/form-data">
         <div class="emailDiv">
             <label > Correo Electrónico </label>
             <input  type="email" name="email" placeholder="user@futureisgreen.com.ar" required>
@@ -35,11 +35,11 @@
         <div class="grupos">
             <div>
                 <label > Contraseña </label>  
-                <input  type="password" name="contraseña" placeholder="********" required>        
+                <input  type="password" name="contrasena1" placeholder="********" required>        
             </div>
             <div>
                 <label > Confirmar Contraseña </label>  
-                <input type="password" name="contraseña" placeholder="********" required>        
+                <input type="password" name="contrasena2" placeholder="********" required>        
             </div>
         </div>
         <div class="grupos">

@@ -1,6 +1,6 @@
 function guestMiddleware(req, res, next) {
-    if (req.session.userLogged) {
-        return res.redirect('/profile');
+    if (req.session && req.session.userLogged) {
+        return res.redirect('/register');
     }
     next();
 }

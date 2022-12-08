@@ -2,7 +2,7 @@ const bcryptjs = require ('bcryptjs');
 const { UserInfo } = require("git");
 const { dirname } = require('path');
 const fs  = require("fs");
-const path = require("path");
+//const path = require("path");
 const multer = require("multer");
 const db = require('../database/models'); //requiere la base de datos. no tocar
 
@@ -16,12 +16,13 @@ const usersController = {
     res.render('users/register');
 },
 processRegister: async (req,res) => {
+  console.log(req.body)
   let User = await db.user.create({
     name: req.body.nombre,
     surname: req.body.apellido,
     dni: req.body.dni,
     email: req.body.email,
-    password: bcryptjs.hashSync(req.body.constraseña, 10),
+    password: bcryptjs.hashSync(req.body.constrasena1,10), //anda mal el bcrypt
     address_street: req.body.calle,
     address_extra: req.body.extra,
     address_city: req.body.ciudad,

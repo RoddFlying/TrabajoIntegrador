@@ -21,7 +21,7 @@ function userData(sequelize, Datatypes){
             type: Datatypes.STRING(90)
         },
         password: {
-            type: Datatypes.STRING(20)
+            type: Datatypes.STRING(255)
         },
         address_street: {
             type: Datatypes.STRING(100)
@@ -39,7 +39,7 @@ function userData(sequelize, Datatypes){
             type: Datatypes.STRING(100)
         },
         profile_image: {
-            type: Datatypes.STRING(100)
+            type: Datatypes.STRING(255)
         },
         telephone: {
             type: Datatypes.INTEGER
@@ -48,7 +48,7 @@ function userData(sequelize, Datatypes){
             type: Datatypes.INTEGER
         }
     }
-    config = {timestamps: false};
+    config = {timestamps: false, freezeTableName: true};
  const usuario = sequelize.define(alias,cols,config);
 
  usuario.associate = function (modelos){

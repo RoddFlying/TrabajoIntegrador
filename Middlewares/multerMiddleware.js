@@ -3,7 +3,7 @@ const multer = require ('multer');
 
 const configImage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, './public/img/avatars'))
+        cb(null, path.join(__dirname, '../public/img/avatars'))
     },
     filename: (req, file, cb) =>{
         let nombreImagen = Date.now() + file.originalname;
