@@ -26,7 +26,7 @@ const productsController = {
  
     //guardar producto creardo
     store: async (req,res)=>{
-    let producto = await db.products.create({
+    let producto = await db.products.createstop({
       //no poner id porque ya lo pone automaticamente
         name : req.body.name,
         brand : req.body.brand,
