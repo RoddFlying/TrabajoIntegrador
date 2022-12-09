@@ -2,7 +2,7 @@
 <html lang="en">
 
      <!-- INCLUDES HEAD-->
-<%- include('../partials/head' %> <!-- , {title: Productos})-->
+<%- include('../partials/head') %> <!-- , {title: Productos})-->
 <body>
     <!-- INCLUDES HEADER-->
 <%- include('../partials/header') %>
@@ -11,23 +11,24 @@
   <section class="main-products">
   <section class="products">
     
-    <% for(let objeto of ps) { %>
-    <a href="product/detail/<%= object.id %>">
+    <% ps.forEach(product => { %>
+    <a href="product/detail/<%= product.id %>">
     <article class="product-item" name="product-spec">
-     <img src="<%= object.image %>" name="image" alt="image-product">
+     <img src="<%= product.image %>" name="image" alt="image-product">
      <div class="product-price">
-        <p class="price" name="price">$<%= object.price %></p>
-        <!-- <% if(true){%>
-          <p class="discount" name="discount"> <%= object.discount %>%OFF</p>
-        <%}%> -->
+        <p class="price" name="price">$<%= toThousand(product.price) %></p>
+        <% if (product.discount !== 0) { %>
+          <p><%= product.discount %>  % OFF</p>
+          <p>$ <%= toThousand(product.price - (product.price * product.discount / 100)) %></p>
+      <% } else { %>
       </div>
-      <h3 class="name" name="name"><%= object.name %></h3>
-      <h4 class="brand" name="brand"><%= object.brand %></h4>
-      <h5 class="category" name="category"><%= object.category %></h5>
+      <h3 class="name" name="name"><%= product.name %></h3>
+      <h4 class="brand" name="brand"><%= product.brand %></h4>
+      <h5 class="category" name="category"><%= product.category %></h5>
 
     </article>
     </a>
-    <% } %>
+    <% }) %>
   
     </section>
   </section>

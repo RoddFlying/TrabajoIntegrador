@@ -63,7 +63,7 @@ processRegister: async (req,res) => {
 
   // let userCreated = User.create(userToCreate);
  
-  // return res.redirect('/user/login');
+  res.redirect('/user/login');
 },
   login: (req, res) => {
       res.render('users/login');

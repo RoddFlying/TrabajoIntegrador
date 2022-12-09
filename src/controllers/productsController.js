@@ -8,14 +8,13 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 const productsController = {
   //la de productos en general
   index: async (req,res) => {
-  // let Products = await db.products.findAll();//productos seria el alias   //reemplaza al JSON por la base de datos -- 
-  // db.products.findAll({include: [{association: 'supplier'},{association: 'product_category'}]}).then((products)=>{
+  //   await db.products.findAll({include: [{association: 'supplier'},{association: 'product_category'}]}).then((products)=>{
   //   let productsList = [];
   //   for(product of products){
   //     productsList.push(product.name);
   //   }
- res.render('products/products');
-  // })
+  res.render('products/products');
+  
    
  
   },
@@ -27,20 +26,20 @@ const productsController = {
  
     //guardar producto creardo
     store: async (req,res)=>{
-    // db.products.store({
-    //   //no poner id porque ya lo pone automaticamente
-    //     name : req.body.name,
-    //     brand : req.body.brand,
-    //     category : req.body.category,
-    //     image : req.body.image,
-    //     detail : req.body.detail,
-    //     price : req.body.price,
-    //     //sale:req.body.sale;
-    //     discount: req.body.discount,
-    //     expiration_date: req.body.expiration_date,
-    //     creation_date: req.body.creation_date
-    // })
-    res.render('/')
+    let producto = await db.products.store({
+      //no poner id porque ya lo pone automaticamente
+        name : req.body.name,
+        brand : req.body.brand,
+        product_Category_id: req.body.category,
+        image : req.file.image,
+        detail : req.body.detail,
+        price : req.body.price,
+        discount: req.body.discount,
+        expiration_date: req.body.expiration_date,
+        creation_date: req.body.creation_date
+    });
+    console.log(producto);
+    //res.render('/')
   },
 
   //mostrar detalles del producto

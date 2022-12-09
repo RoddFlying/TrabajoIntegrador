@@ -28,8 +28,8 @@ const upload = multer ({ storage: storage});
 router.get("/", productsController.index);
 
 //vista de formulario de creación
-//router.get('/create', productsController.create);
-//router.post('/create', productsController.store);
+router.get('/create', productsController.create);
+router.post('/create', productsController.store);
 
 //detalle del producto
 //router.get('/detail/:id', productsController.detail);
