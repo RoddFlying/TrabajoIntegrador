@@ -33,33 +33,23 @@
   <input type="text" id="brand" name="brand" placeholder="el Mejor" class="form-input">
 </div>
 
- <div class="formProducts">
-   <label for="price" class="form-label"> Precio del producto </label>
-   <input type="number" id="price" name="productprice" placeholder="$220" class="form-input"> <!--Porque aca tiene procutprice y en los demas oslo discount etc.-->
- </div>
+ 
 
 </div>
 
 <div class="group">
+
+  <div class="formProducts">
+    <label for="price" class="form-label"> Precio del producto </label>
+    <input type="number" id="price" name="productprice" placeholder="$220" class="form-input"> <!--Porque aca tiene procutprice y en los demas oslo discount etc.-->
+  </div>
 
  <div class="formProducts">
    <label for="discount" class="form-label">Descuento</label>
    <input type="number" id="discount" name="discount" placeholder="10%" class="form-input">
  </div>
 
- <div class="formProducts">
-   <label for="category" class="form-label">Categoría</label>
-   <select id="category" name="category" class="form-input">
-     <option value="1">carpas</option>
-     <option value="2">fertilizantes</option>
-     <option value="3">frascos</option>
-     <option value="4">hidroponia</option>
-     <option value="5">luces</option>
-     <option value="6">parafrenalia</option>
-     <option value="7">picadores</option>
-     <option value="8">sustratos</option>
-   </select>
- </div>
+ 
 
 </div>
 
@@ -83,17 +73,30 @@
  </div>
 
  <div class="formProducts">
-   <label for="detail" class="form-label" >  Detalle de producto </label>
-   <textarea name="detail" id="detail" class="form-input"></textarea>
- </div>
+  <label for="category" class="form-label">Categoría</label>
+  <select id="category" name="category" class="form-input">
+    <option value="1">carpas</option>
+    <option value="2">fertilizantes</option>
+    <option value="3">frascos</option>
+    <option value="4">hidroponia</option>
+    <option value="5">luces</option>
+    <option value="6">parafrenalia</option>
+    <option value="7">picadores</option>
+    <option value="8">sustratos</option>
+  </select>
+</div>
+
+ 
 
 </div>
-<div class="botton">
-
- <div class="formProducts">
+<div class="groupDetail">
+  <div class="formProducts">
+    <label for="detail" class="form-label" >  Detalle de producto </label>
+    <textarea name="detail" id="detail" class="form-input"></textarea>
+  </div>
+</div>
+<div class="button">
    <button type="submit" class="action-button create">Guardar Producto</button>
- </div>
-
 </div>
 
 </form>

@@ -24,69 +24,113 @@
 
 
 .mainCreateProducts{
-  margin-top: 300px;
+
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .mainCreateProducts .registroProducto{
-  margin-top: 270px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-}
-
-.mainCreateProducts .registroProducto h2{
-  color: #ffffff;
-  background-color:var(--dark-olive-green);
-  text-align: center;
-  align-items: center;
-  font-family: 'Roboto', Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 20px;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 .mainCreateProducts .registroProducto .subtitulo{
-  background-color: var(--dark-olive-green);
-  color: #ffffff;
-  padding: 20px;
-  border-top: #000000 5px solid;
-  margin: 50px auto 30px auto;
+  color: #5a6b47;
+  border-bottom: #5a6b47 5px solid;
 }
 
 .mainCreateProducts .registroProducto .subtitulo h2{
   text-align: left;
+  align-items: center;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 40px;
+  margin-left: 50px;
 }
 
 .mainCreateProducts .registroProducto form {
+  width: 70%;
+  padding: 40px;
+  margin: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .mainCreateProducts .registroProducto form .group{
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 10px;
+  margin-top: 25px;
+  
 }
-
 .mainCreateProducts .registroProducto form .group .formProducts{
+  margin: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
 }
 
-.mainCreateProducts .containerProducto form .group .formProducts label{
+.mainCreateProducts .registroProducto form .group .formProducts label{
+  color: #5a6b47;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   padding: 10px;
 }
 
-.mainCreateProducts .containerProducto form .group .formProducts input{
-  background-color: var(--tan);
-  border: var(--dark-olive-green) 1px solid;
+.mainCreateProducts .registroProducto form .group .formProducts input{
+  color: #5a6b47;
+  border: #eee1cd 1px solid;
+  text-align: center;
+  padding: 10px;  
+}
+
+.mainCreateProducts .registroProducto form .groupDetail {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 25px;
+}
+.mainCreateProducts .registroProducto form .groupDetail .formProducts{
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+}
+
+.mainCreateProducts .registroProducto form .groupDetail .formProducts label{
+  color: #5a6b47;
+  font-weight: bold;
+  font-size: 20px;
   text-align: center;
   padding: 10px;
+}
+
+.mainCreateProducts .registroProducto form .groupDetail .formProducts input{
+  color: #5a6b47;
+  border: #eee1cd 1px solid;
+  text-align: center;
+  padding: 10px;  
+  width: 100%;
+}
+
+.mainCreateProducts .registroProducto form .button{
+  margin-top: 30px;
+}
+
+.mainCreateProducts .registroProducto form .button button{
+  margin: auto;
+  color:white;
+  justify-content: center;
+  margin-bottom: 5px;
+  background-color: #5a6b47;    
+  border: none;
+  width: 50%;
+  padding: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--artichoke);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition:450ms;
 }
