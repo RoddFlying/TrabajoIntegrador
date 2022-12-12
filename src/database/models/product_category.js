@@ -18,7 +18,7 @@ function product_categoryData(sequelize, Datatypes){
 
     categoria_producto.hasMany(modelos.products, {
        as: "productos",
-       foreignKey: "product_Category_id"
+       foreignKey: "product_category_id"
         });
 };
 

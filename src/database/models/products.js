@@ -42,7 +42,7 @@ function productsData(sequelize, Datatypes){
             type: Datatypes.DATE,
             allowNull: true
         },
-        product_Category_id: {
+        product_category_id: {
             type: Datatypes.INTEGER,
             allowNull: false
         },
@@ -58,7 +58,7 @@ function productsData(sequelize, Datatypes){
 
     productos.belongsTo(modelos.product_category, {   
        as: "categoriaProductos",
-       foreignKey: "product_Category_id"
+       foreignKey: "product_category_id"
         });
     productos.belongsTo(modelos.supplier, {   
         as: "provedor",

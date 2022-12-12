@@ -8,15 +8,13 @@ const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 const productsController = {
   //la de productos en general
   index: async (req,res) => {
-  //   await db.products.findAll({include: [{association: 'supplier'},{association: 'product_category'}]}).then((products)=>{
-  //   let productsList = [];
-  //   for(product of products){
-  //     productsList.push(product.name);
-  //   }
+    await db.products.findAll({include: [{association: 'categoriaProductos'}]}).then((products)=>{
+    let productsList = [];
+    for(product of products){
+      productsList.push(product.name);
+    }
   res.render('products/products');
-  
-   
- 
+  })
   },
   //crear el producto
    create: (req,res) =>{

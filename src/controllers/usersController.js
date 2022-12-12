@@ -22,7 +22,7 @@ processRegister: async (req,res) => {
     surname: req.body.apellido,
     dni: req.body.dni,
     email: req.body.email,
-    password: bcryptjs.hashSync(req.body.constrasena1,10), //anda mal el bcrypt
+    //password: bcryptjs.hashSync(req.body.constrasena1,10), //anda mal el bcrypt
     address_street: req.body.calle,
     address_extra: req.body.extra,
     address_city: req.body.ciudad,
