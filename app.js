@@ -18,7 +18,8 @@ const app = express();
 
 //middleware//
 app.use( express.static(path.join(__dirname, '../public')));  //app.use( express.static(publicPath));
-app.use(express.urlencoded({extended:false}));
+//app.use(express.urlencoded({extended: false})); (generaba error)
+
 //app.use(logger('dev'));
 app.use(express.json());
 app.use(cookies());
