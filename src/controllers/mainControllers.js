@@ -1,16 +1,21 @@
 const fs = require('fs');
 const path = require ('path');
 
-//const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-//const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+let productsdb = [];
+
+const db = require('../database/models');
+
+//const Op = db.Sequelize.Op;
+
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 
 const controlador = {
   index: (req, res) => { 
-
-  //  const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+  
   res.render("home");
-   // res.render("./home", {products: products});
+
+  res.render("./home", {products: products});
 
   },
   contact: (req, res) => {

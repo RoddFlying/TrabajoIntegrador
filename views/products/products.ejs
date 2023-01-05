@@ -20,12 +20,11 @@
         <% if (product.discount !== 0) { %>
           <p><%= product.discount %>  % OFF</p>
           <p>$ <%= toThousand(product.price - (product.price * product.discount / 100)) %></p>
-      <% } else { %>
+        <% } %>
       </div>
       <h3 class="name" name="name"><%= product.name %></h3>
       <h4 class="brand" name="brand"><%= product.brand %></h4>
       <h5 class="category" name="category"><%= product.category %></h5>
-
     </article>
     </a>
     <% }) %>

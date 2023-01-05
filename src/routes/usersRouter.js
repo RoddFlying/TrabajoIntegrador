@@ -4,8 +4,8 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", usersController.login); //USERS MODIFICACION
-//router.get("/register", usersController.register); 
-//router.get("/profile/:id", usersController.profile);  
+router.get("/register", usersController.register); 
+router.get("/profile/:id", usersController.profile);  
 
 
 const uploadFile     = require ('./../../Middlewares/multerMiddleware');
@@ -14,7 +14,7 @@ const guestMiddleware = require('./../../Middlewares/guestmiddleware');
 const authMiddleware = require('./../../Middlewares/authMiddleware');
 
 router.get('/register', guestMiddleware, usersController.register);
-//router.post('/register', guestMiddleware, usersController.processRegister);
+router.post('/register', guestMiddleware, usersController.processRegister);
 
 router.post('/register', uploadFile.single('filename'),  usersController.processRegister);
 

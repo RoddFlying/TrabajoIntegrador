@@ -1,21 +1,29 @@
+const { validationResult } = require('express-validator');// importa los resultados de las validaciones
+const { privateDecrypt } = require('crypto');
+
 const fs  = require("fs");
 const path = require("path");
 const multer = require("multer");
 const db = require('../database/models'); //requiere la base de datos. no tocar
 
-const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
+const toThousand = num => (num || 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 
 const productsController = {
   //la de productos en general
   index: async (req,res) => {
     //error dice de pasar async: true - adonde va?
-    await db.products.findAll({include: [{association: 'categoriaProductos'}]}).then((products)=>{
-    let productsList = [];
-    for(product of products){
-      productsList.push(product.name);
-    }
-  res.render('products/products');
-  })
+    await db.products
+      .findAll({ include: [{ association: "categoriaProductos" }] })
+      .then((products) => {
+        let productsList = [];
+        for (product of products) {
+          productsList.push(product);
+        }
+        res.render("products/products", {
+          ps: productsList,
+          toThousand: toThousand,
+        });
+      });
   },
   //crear el producto
    create: (req,res) =>{
