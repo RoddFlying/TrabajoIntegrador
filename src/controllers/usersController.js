@@ -12,17 +12,17 @@ const db = require('../database/models'); //requiere la base de datos. no tocar
 const usersController = {
   
   register: (req, res) => {
-    //res.cookie('testing', 'hola mundo', { maxAge: 1000 * 30 })
+
     res.render('users/register');
 },
 processRegister: async (req,res) => {
   console.log(req.body)
-  let User = await db.user.create({
+    await db.user.create({
     name: req.body.nombre,
     surname: req.body.apellido,
     dni: req.body.dni,
     email: req.body.email,
-    //password: bcryptjs.hashSync(req.body.constrasena1,10), //anda mal el bcrypt
+    password: req.body.constrasena1, //anda mal el bcrypt
     address_street: req.body.calle,
     address_extra: req.body.extra,
     address_city: req.body.ciudad,
@@ -33,52 +33,47 @@ processRegister: async (req,res) => {
     role_id: 2
   });
   console.log(User);
-  // const resultValidation = validationResult(req);
+   const resultValidation = validationResult(req);
   
-  // if (resultValidation.error.length > 0 ) {
-  //   return res.render('userRegisterForm', {
-  //     errors: resultValidation.mapped(),
-  //     oldData: req.body
-  //   });
-  // }
+  if (resultValidation.error.length > 0 ) {
+     return res.render('userRegisterForm', {
+       errors: resultValidation.mapped(),
+       oldData: req.body
+     });
+   }
 
-  // let userInDB = User.findByField('email',req.body.email);
+   let userInDB = User.findByField('email',req.body.email);
   
-  // if (userInDB) {
-  //   return res.render('userRegisterForm', {
-  //     errors: {
-  //       email: {
-  //       msg: 'Este usuario ya está registrado'
-  //     }
-  //   },
-  //     oldData: req.body
-  //   });
-  // }
+   if (userInDB) {
+     return res.render('users/register', {
+       errors: {
+         email: {
+         msg: 'Este usuario ya está registrado'
+       }
+    },
+       oldData: req.body
+     });
+  }
 
-  // let userToCreate = {
-  //   ...req.body,
-  //   password: bcryptjs.hashSync(req.body.password, 10),
-  //   avatar: req.file.filename 
-  // }
-
-  // let userCreated = User.create(userToCreate);
- 
   res.redirect('/user/login');
 },
   login: (req, res) => {
       res.render('users/login');
+
 },
-  loginProcess: (req,res)=>{
-  let userToLogin = User.findByField('email', req.body.email);
+  loginProcess: async (req,res)=>{
+  let userToLogin = await db.user.findOne({ 
+    where: {email: req.body.CorreoElectronico }
+  });
  
   if (userToLogin) {
-    let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password)
+   let isOkThePassword = bcryptjs.compare(req.body.contraseña, userToLogin.password)
    if(isOkThePassword){
        delete userToLogin.password;
-       req.session.userLogged = userToLogin;
+      req.session.userLogged = userToLogin;
 
        if (req.body.remember_user){
-        res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60 })
+       res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60 })
        }
        return res.redirect('users/profile');
    }
@@ -92,21 +87,22 @@ processRegister: async (req,res) => {
   }
    return res.render('users/login', {
     errors: {
-      email: {
+       email: {
         msg: 'No se encuentra este email es nuestra base de datos'
       }
-    }
+   }
    });
 },
   profile: (req, res) => {
     res.render('users/perfil')
 
-  // res.render('users/perfil',{
-  //   user: req.session.userLogged
-  // });
+   res.render('users/perfil',{
+     user: req.session.userLogged
+   });
 
 },
-  logout: (req,res) => {
+  
+ logout: (req,res) => {
     res.clearCookie('userEmail');
     req.session.destroy();
     return res.redirect('/');
