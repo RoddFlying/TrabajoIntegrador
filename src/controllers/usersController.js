@@ -6,7 +6,7 @@ const bcryptjs = require ('bcryptjs');
 const fs  = require("fs");
 
 //const multer = require('multer');
-//const enctype = require('enctype');
+
 
 const db = require('../database/models'); //requiere la base de datos. no tocar
 

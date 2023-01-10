@@ -3,7 +3,7 @@ const { privateDecrypt } = require('crypto');
 
 const fs  = require("fs");
 const path = require("path");
-const multer = require("multer");
+//const multer = require("multer");
 const db = require('../database/models'); //requiere la base de datos. no tocar
 
 const toThousand = num => (num || 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
@@ -38,7 +38,7 @@ const productsController = {
         name : req.body.name,
         brand : req.body.brand,
         product_Category_id: req.body.category,
-        image : req.file.image,
+        //image : req.file.imageProd,
         detail : req.body.detail,
         price : req.body.price,
         discount: req.body.discount,
