@@ -38,7 +38,7 @@ const productsController = {
         name : req.body.name,
         brand : req.body.brand,
         product_Category_id: req.body.category,
-       // image : req.file.image,
+        image : req.file.image,
         detail : req.body.detail,
         price : req.body.price,
         discount: req.body.discount,
@@ -46,7 +46,7 @@ const productsController = {
         creation_date: req.body.creation_date
     });
     console.log(producto);
-    //res.render('/')
+    res.redirect('/');
   },
 
   //mostrar detalles del producto
