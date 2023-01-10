@@ -15,10 +15,6 @@ function saleData(sequelize, Datatypes){
             type: Datatypes.INTEGER,
             allowNull: true
         },
-        service_id:{
-            type: Datatypes.INTEGER,
-            allowNull: true
-        },
         payment_method_id: {
             type: Datatypes.INTEGER,
         },
@@ -46,10 +42,6 @@ function saleData(sequelize, Datatypes){
     venta.belongsTo(modelos.products, {   
         as: "productos",
         foreignKey: "product_id"
-        });
-    venta.belongsTo(modelos.service, {   
-        as: "servicio",
-        foreignKey: "service_id"
         });
     venta.belongsTo(modelos.payment_method, {   
         as: "metodo_pago",
