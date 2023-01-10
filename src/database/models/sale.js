@@ -30,7 +30,7 @@ function saleData(sequelize, Datatypes){
             type: Datatypes.INTEGER
         },
         sale_detail_id: {
-            type: Datatypes.DECIMAL(65,00),
+            type: Datatypes.INTEGER,
             allowNull: false
         }
     }

@@ -21,10 +21,10 @@
             <h2>INICIAR SESION</h2>
         </div>
     
-    <form action = "/" method="POST" class="formulario" > 
+    <form action = "/user/login" method="POST" class="formulario" > 
     <div>
         <label > Correo Eléctronico </label>
-        <input  type="email" name="CorreoElectronico" class="form-control" placeholder="user@growgreen.com">
+        <input  type="email" name="email" class="form-control" placeholder="user@growgreen.com">
          <% if (locals.errors && errors.email) {  %>
           <div class="text-danger">
           <%= errors.email.msg %>    
@@ -34,7 +34,7 @@
        
     <div>
         <label > Contraseña </label>
-        <input  type="password" name="Contraseña" placeholder="*********">
+        <input  type="password" name="contrasena" placeholder="*********">
     </div>
         <button class="boton">CONFIRMAR</button>
     <div class="otrasOpciones">

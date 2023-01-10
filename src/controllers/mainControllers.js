@@ -15,7 +15,7 @@ const controlador = {
   
   res.render("home");
 
-  res.render("./home", {products: products});
+  res.render("/home", {products: products});
 
   },
   contact: (req, res) => {

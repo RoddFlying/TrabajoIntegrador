@@ -4,7 +4,7 @@ function userData(sequelize, Datatypes){
         id:{
             type: Datatypes.INTEGER,
             primaryKey: true,
-            autoIncremental: true
+            autoIncrement: true
         },
         name: {
             type: Datatypes.STRING(80),
@@ -63,8 +63,7 @@ function userData(sequelize, Datatypes){
          foreignKey: "user_id"
         });
     };
-
+  
  return usuario
 } 
-
 module.exports = userData;

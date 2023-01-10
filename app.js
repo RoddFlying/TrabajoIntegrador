@@ -6,6 +6,9 @@ const methodOverride = require('method-override');
 const session = require ('express-session');
 const cookies = require ('cookie-parser');
 
+const {sequelize} = require ('./src/database/models') 
+sequelize.sync({alter:false}).then(()=> console.log ('modelossincronizados'));
+
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 //const logger = require('morgan');
 const createError = require('http-errors');
@@ -29,6 +32,14 @@ app.use(methodOverride ("_method")); //Procesamiento PUT y DELETE
 app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
+app.use(express.urlencoded({extended:true}));
+
+app.use(session({
+  secret: 'shh, is a secret',
+  resave:false ,
+  saveUninitialized: false,
+}));
+
 //Routes//
 const mainRouter = require('./src/routes/mainRouter');
 const productsRouter = require('./src/routes/productsRouter');
@@ -39,18 +50,13 @@ app.use('/products', productsRouter);
 app.use('/user', usersRouter);
 
 
-app.use(session({
-  secret: 'shh, is a secret',
-  resave:false ,
-  saveUninitialized: false,
-}));
+
 
 app.use(userLoggedMiddleware);
 
 const publicPath = path.resolve(__dirname, './public');
 app.use( express.static(publicPath));
-app.use(express.urlencoded({extended:false}));
-app.use(express.json());
+
 app.use(methodOverride ("_method")); //Procesamiento PUT y DELETE
 
 //ejs//
