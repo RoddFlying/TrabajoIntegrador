@@ -13,7 +13,7 @@ const productsController = {
   index: async (req,res) => {
     //error dice de pasar async: true - adonde va?
     await db.products
-      .findAll({ include: [{ association: "categoriaProductos" }] })
+      .findAll({ include: [{ association: "categoria_producto" }] })
       .then((products) => {
         let productsList = [];
         for (product of products) {
@@ -38,7 +38,7 @@ const productsController = {
       //no poner id porque ya lo pone automaticamente
         name : req.body.name,
         brand : req.body.brand,
-        product_Category_id: req.body.category,
+        product_category_id: req.body.category,
         image : req.file.imageProd,
         detail : req.body.detail,
         price : req.body.productprice,
