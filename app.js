@@ -47,10 +47,7 @@ const usersRouter = require('./src/routes/usersRouter');
 
 app.use("/", mainRouter); 
 app.use('/products', productsRouter);
-app.use('/user', usersRouter);
-
-
-
+app.use('/user', usersRouter); 
 
 app.use(userLoggedMiddleware);
 

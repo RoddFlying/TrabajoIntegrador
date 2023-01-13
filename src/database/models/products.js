@@ -57,7 +57,7 @@ function productsData(sequelize, Datatypes){
  productos.associate = function (modelos){
 
     productos.belongsTo(modelos.product_category, {   
-       as: "categoriaProductos",
+       as: "categoria_productos",
        foreignKey: "product_category_id"
         });
     productos.belongsTo(modelos.supplier, {   

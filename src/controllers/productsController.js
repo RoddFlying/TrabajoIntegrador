@@ -33,14 +33,15 @@ const productsController = {
  
     //guardar producto creardo
     store: async (req,res)=>{
+      console.log( req.body )
     let producto = await db.products.create({
       //no poner id porque ya lo pone automaticamente
         name : req.body.name,
         brand : req.body.brand,
         product_Category_id: req.body.category,
-        //image : req.file.imageProd,
+        image : req.file.imageProd,
         detail : req.body.detail,
-        price : req.body.price,
+        price : req.body.productprice,
         discount: req.body.discount,
         expiration_date: req.body.expiration_date,
         creation_date: req.body.creation_date
