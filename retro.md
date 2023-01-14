@@ -17,8 +17,10 @@ Sprint 6 Base de Datos:
 Realizamos un diagrama de base de datos del proyecto junto con un script (.sql). Buscando que cada operación que se relacionaba con datos de los archivos JSON ahora lo haga con su base de datos correspondiente y que los CRUD queden funcionales y vinculadas con la base de datos
 
 Sprint 7 Validaciones
+Luego de poder solucionar los retrasos que venian de los sprints anteriores comenzamos con validaciones del back-end con Express Validator junto con validaciones del front-end con JavaScript (Registro de usuarios, login de usuarios, creación y modificación de productos) 
 
 Sprint 8 API + React
+
 
 
 
