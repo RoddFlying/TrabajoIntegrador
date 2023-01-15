@@ -52,3 +52,28 @@
     width: 100%;
     margin: auto;
 }
+
+@media (max-width: 1023px){
+    .main-products .products{
+        width: 90%; /*seccion main*/
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+  
+  }
+  
+  /*VERSION MOBILE*/
+  @media (max-width: 767px){
+    .main-products .products{
+        width: 90%; /*seccion main*/
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    
+  }
+  
+  

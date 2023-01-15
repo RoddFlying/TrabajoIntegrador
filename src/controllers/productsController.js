@@ -39,7 +39,7 @@ const productsController = {
         name : req.body.name,
         brand : req.body.brand,
         product_category_id: req.body.category,
-        image : req.file.imageProd,
+        image : req.file.imageProd, //ver que pasa q todavia no funciona
         detail : req.body.detail,
         price : req.body.productprice,
         discount: req.body.discount,
