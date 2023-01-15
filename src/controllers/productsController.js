@@ -53,10 +53,16 @@ const productsController = {
   //mostrar detalles del producto
   detail: async  (req,res)=>{
     db.products.findByPk(req.params.id)
-      .then(function(product){
-        req.render('products/detailProducts',{producto: objetoProducto})
-      })
-      
+            .then(product => {
+                res.render('products/detailProducts', { product });
+            })
+            .catch(error => res.send(error));
+  //   try {
+  //     let product = await db.products.findByPk(req.params.id);
+  //     res.render('products/detailProducts', { product })
+  // } catch (error) {
+  //     console.log(error)
+  
    },
 
   //editar un producto

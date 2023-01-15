@@ -27,7 +27,7 @@ function productsData(sequelize, Datatypes){
             allowNull: true
         },
         image: {
-            type: Datatypes.STRING(200),
+            type: Datatypes.STRING(1000),
             allowNull: true
         },
         expiration_date: {

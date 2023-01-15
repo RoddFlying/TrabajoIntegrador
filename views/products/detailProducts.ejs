@@ -11,8 +11,6 @@
 <%- include("../partials/header") %>
 <main>
     <section class="mainDetailProducts">
-        <% ps.forEach(product => { %>
-<!--FALTA INFO PRICE, DISCOUNT, CATEGORY EXPIRATION_DATE, CREATION_DATE PRECIO FINAL (<%= product.price - ((producto.discount * producto.price)/100) %>)-->
     <section class="product">
         <div class="productTitle">
             <h2><%= producto.name %></h2>
@@ -47,7 +45,6 @@
         </div>
         </div>
     </section>
-    <% ps.forEach(product => { %>
 </section>
 </main>
  <!-- INCLUDES FOOTER-->
