@@ -75,24 +75,23 @@ const productsController = {
 
   //actualizar el producto
   update: async (req,res)=>{
-  // // db.products.update({
+   db.products.update({
      
-  //       name : req.body.name,
-  //       brand : req.body.brand,
-  //       category : req.body.category,
-  //       image : req.body.image,
-  //       detail : req.body.detail,
-  //       price : req.body.price,
-  //       //sale:req.body.sale;
-  //       discount: req.body.discount,
-  //       expiration_date: req.body.expiration_date,
-  //       creation_date: req.body.creation_date
-  //   }
-  // ,{
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //   })
+        name : req.body.name,
+        brand : req.body.brand,
+        category : req.body.category,
+        image : req.file.imageProd,
+        detail : req.body.detail,
+        price : req.body.price,
+        discount: req.body.discount,
+        expiration_date: req.body.expiration_date,
+        creation_date: req.body.creation_date
+    }
+  ,{
+      where: {
+        id: req.params.id
+      }
+    })
     res.render('/')
     },
 
