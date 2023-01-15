@@ -52,10 +52,11 @@ const productsController = {
 
   //mostrar detalles del producto
   detail: async  (req,res)=>{
-    // db.products.findByPk(req.params.id)
-    //   .then(function(product){
-    //     req.render('products/detailProducts',{producto: objetoProducto})
-    //   })
+    db.products.findByPk(req.params.id)
+      .then(function(product){
+        req.render('products/detailProducts',{producto: objetoProducto})
+      })
+      
    },
 
   //editar un producto

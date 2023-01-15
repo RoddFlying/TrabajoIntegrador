@@ -14,7 +14,7 @@
     <% ps.forEach(product => { %>
     <a href="product/detail/<%= product.id %>">
     <article class="product-item" name="product-spec">
-     <img src="<%= product.image %>" name="image" alt="image-product">
+     <img src="img/products/<%= product.image %>" name="image" alt="image-product">
      <div class="product-price">
         <p class="price" name="price">$<%= toThousand(product.price) %></p>
         <% if (product.discount !== 0) { %>
