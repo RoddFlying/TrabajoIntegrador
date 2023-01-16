@@ -26,16 +26,15 @@ const productsController = {
       });
   },
   //crear el producto
-   create: (req,res) =>{
+   create: (req, res) =>{
     res.render('products/createProducts');
 
   },
- 
-    //guardar producto creardo
+    //guardar producto creado
+
     store: async (req,res)=>{
       console.log( req.body )
     let producto = await db.products.create({
-      //no poner id porque ya lo pone automaticamente
         name : req.body.name,
         brand : req.body.brand,
         product_category_id: req.body.category,
