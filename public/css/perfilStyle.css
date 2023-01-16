@@ -19,61 +19,42 @@
      --tan: #dabf94;
      --cafe-noir :#3f3222;
      --white : #ffffff;
-    }
+    } 
+    
+    
 
+/*PALETA DE COLORES -- VERDE MUSGO: #5a6b47 - VERDE CLARO: #a1a48f - CREMA: #dabf94 - NEGRO: #000000 - MARRON: #3f3222 - BLANCO: #ffffff */
 
+/*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
-.main-products{
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  align-items: center;
-  display: block;
-  background-color: #a1a48f;
-}
-
-.main-products .products{
-    width: 90%; /*seccion main*/
+.perfil {
+    background-color: #a1a48f;
+    margin-top: 15px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr;
 }
-.main-products .products a{
-    text-decoration: none;
-    color: #000000;
-    margin-top: 30px;
+.perfil section{
+    margin-top: 20px;
     width: 90%;
-}
-.main-products .products article{
-    width: 90%;
-    padding: 20px;
-    background-color: #ffffff;
-}
-.main-products .products article img{
-    width: 100%;
     margin: auto;
 }
+.perfilUsuario{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.perfilUsuario div{
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.perfilUsuario div h2{
+    font-size: 30px;
+}
+.perfilUsuario div h3{
+    font-size: 15px;
+}
+.perfilUsuario img{
+    width: 100%;
 
-@media (max-width: 1023px){
-    .main-products .products{
-        width: 90%; /*seccion main*/
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    
-    }
-  
-  }
-  
-  /*VERSION MOBILE*/
-  @media (max-width: 767px){
-    .main-products .products{
-        width: 90%; /*seccion main*/
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-    
-    }
-    
-  }
-  
-  
+}

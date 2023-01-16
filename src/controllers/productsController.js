@@ -16,8 +16,8 @@ const productsController = {
       .findAll({ include: [{ association: "categoria_producto" }] })
       .then((products) => {
         let productsList = [];
-        for (product of products) {
-          productsList.push(product);
+        for (products of products) {
+          productsList.push(products);
         }
         res.render("products/products", {
           ps: productsList,
@@ -38,7 +38,7 @@ const productsController = {
         name : req.body.name,
         brand : req.body.brand,
         product_category_id: req.body.category,
-        image : req.file.imageProd,
+        image : req.file.imageProd, //ver que pasa q todavia no funciona
         detail : req.body.detail,
         price : req.body.productprice,
         discount: req.body.discount,
@@ -51,10 +51,17 @@ const productsController = {
 
   //mostrar detalles del producto
   detail: async  (req,res)=>{
-    // db.products.findByPk(req.params.id)
-    //   .then(function(product){
-    //     req.render('products/detailProducts',{producto: objetoProducto})
-    //   })
+    db.products.findByPk(req.params.id)
+            .then(product => {
+                res.render('products/detailProducts', { product });
+            })
+            .catch(error => res.send(error));
+  //   try {
+  //     let product = await db.products.findByPk(req.params.id);
+  //     res.render('products/detailProducts', { product })
+  // } catch (error) {
+  //     console.log(error)
+  
    },
 
   //editar un producto
@@ -73,24 +80,23 @@ const productsController = {
 
   //actualizar el producto
   update: async (req,res)=>{
-  // // db.products.update({
+   db.products.update({
      
-  //       name : req.body.name,
-  //       brand : req.body.brand,
-  //       category : req.body.category,
-  //       image : req.body.image,
-  //       detail : req.body.detail,
-  //       price : req.body.price,
-  //       //sale:req.body.sale;
-  //       discount: req.body.discount,
-  //       expiration_date: req.body.expiration_date,
-  //       creation_date: req.body.creation_date
-  //   }
-  // ,{
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //   })
+        name : req.body.name,
+        brand : req.body.brand,
+        category : req.body.category,
+        image : req.file.imageProd,
+        detail : req.body.detail,
+        price : req.body.price,
+        discount: req.body.discount,
+        expiration_date: req.body.expiration_date,
+        creation_date: req.body.creation_date
+    }
+  ,{
+      where: {
+        id: req.params.id
+      }
+    })
     res.render('/')
     },
 

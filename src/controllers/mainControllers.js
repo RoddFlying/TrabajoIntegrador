@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require ('path');
 
-let productsdb = [];
+let products = [];
 
 const db = require('../database/models');
 
