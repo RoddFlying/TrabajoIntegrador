@@ -16,8 +16,8 @@ const productsController = {
       .findAll({ include: [{ association: "categoria_producto" }] })
       .then((products) => {
         let productsList = [];
-        for (product of products) {
-          productsList.push(product);
+        for (products of products) {
+          productsList.push(products);
         }
         res.render("products/products", {
           ps: productsList,
