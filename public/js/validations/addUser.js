@@ -1,3 +1,5 @@
+const Swal = require('sweetalert2');
+
 window.addEventListener("load", function () {
 
     let formulario = document.getElementById("addUserForm")
