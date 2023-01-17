@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- INCLUDES HEAD-->
+<%- include('../partials/head') %>
+
+<body> 
+
+<!-- INCLUDES HEADER-->
+<%- include("../partials/header") %>
+
+<main class="perfil">
+    <section class="perfilUsuario">
+        <div>
+            <h2> Hola <%=  user.name + " " + user.surname %>  </h2>
+            <h3><%= user.email %> </h3>
+        </div>
+        <img src="/img/avatars/<%= user.profile_image %>">
+        <div class="adminButton">
+            <!-- agregar los links de permiso del admin -->
+            <a href=""> <h2>  </h2> </a>
+            <a href=""> <h2>  </h2> </a>
+        </div>
+    </section>
+    <section>
+        <img src="" alt="">
+    </section>
+</main>
+
+    
+</body>
+
+ <!-- INCLUDES FOOTER-->
+ <%- include('../partials/footer') %>
+
+</html>
