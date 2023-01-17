@@ -58,3 +58,8 @@
     width: 100%;
 
 }
+.adminButton a{
+    text-decoration: none;
+    color: #3f3222;
+    font-weight: bold;
+}
