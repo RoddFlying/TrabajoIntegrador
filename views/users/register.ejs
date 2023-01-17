@@ -27,7 +27,7 @@
 
     <div class="contenedor">  
 
-      <form action="/user/register" method="POST" enctype="multipart/form-data">
+      <form action="/user/register" method="POST" enctype="multipart/form-data" class="addUserForm">
         <div class="emailDiv">
             <label > Correo Electrónico </label>
             <input  type="email" name="email" placeholder="user@futureisgreen.com.ar" required>
@@ -97,6 +97,6 @@
  <!-- INCLUDES FOOTER-->
  <%- include('../partials/footer') %>
 
- <script src="../js/validations/pacientesRegistroValidations.js"></script>
+ <script src="../js/validations/addUser.js"></script>
 </body>
 </html>

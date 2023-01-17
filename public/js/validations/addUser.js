@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
 
-    let formulario = document.getElementById("formAddUser")
+    let formulario = document.getElementById("addUserForm")
 
     let inputs = {
         name: document.getElementById('nombre'),
