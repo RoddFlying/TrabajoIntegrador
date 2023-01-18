@@ -1,59 +1,138 @@
-const Swal = require('sweetalert2');
+let a = document.getElementById("addProductForm2");
 
-window.addEventListener("load", function () {
+a.addEventListener("submit", function(ev){
+    
+    ev.preventDefault();
 
-    let formulario = document.getElementById("addProductForm")
-
-    let inputs = {
-        name: document.getElementById('name'),
-        brand: document.getElementById('brand'),
-        detail: document.getElementById('detail'),
-        price: document.getElementById('productprice'),
+    let b = document.getElementById('name').value;
+    if (b==""){
+        alert('Completar el campo Nombre del producto');
+        return;
     }
 
-    formulario.addEventListener('submit', function(e) {
-        let errores = [];   
-        
-        if (inputs.name.value == "") {
-            errores.push('Debe introducir el nombre del producto.')
-        }
+    let z = document.getElementById('brand').value;
+    if (z==""){
+        alert('Completar el campo Marca');
+        return;
+    }
 
-        if (inputs.brand.value == "") {
-            errores.push('Debe introducir la marca del producto.')
-        }
+    let c = document.getElementById('price').value;
+    if (c==""){
+        alert('Completar el campo Precio');
+        return;
+    }
 
-        if (inputs.detail.value == "") {
-            errores.push("Debe introducir una brave descripción del producto.")
-        }
+    let r = document.getElementById('discount').value;
+    if (r==""){
+        alert('Completar el campo Descuento');
+        return;
+    }
 
-        if (inputs.price.value == "") {
-            errores.push("Debe introducir el precio del producto.")
-        }
+    let e = document.getElementById('creation_date').value;
+    if (e==""){
+        alert('Completar el campo Fecha de creación');
+        return;
+    }
 
-        if (errores.length != 0) {
-            e.preventDefault();
+    
+    let f = document.getElementById('imagefile').value;
+    if (f==""){
+        alert('Completar el campo Imagen');
+        return;
+    }
 
-            let divAlert = document.getElementById("divAlert")
+    let g = document.getElementById('category').value;
+    if (g==""){
+        alert('Completar el campo Categoria');
+        return;
+    }
 
-            divAlert.classList.remove('displayNone')
+    let d = document.getElementById('detail').value;
+    if (d==""){
+        alert('Completar el campo Descripción');
+        return;
+    }
 
-            let ulErrores = document.getElementById("errorList")
 
-            for (let i = 0; i < errores.length; i++) {
-                ulErrores.innerHTML += `
-                    <li>${errores[i]}</li>
-              `
-            }
-        // }else{
-        //     Swal.fire({
-        //         position: 'top-end',
-        //         icon: 'success',
-        //         title: '¡Su producto fue cargado exitosamente!, por favor a la página de productos para poder visualizarlo.',
-        //         showConfirmButton: false,
-        //         timer: 1500
-        //       })
-        }
-
-    })
-
+    a.submit()
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const Swal = require('sweetalert2');
+
+// window.addEventListener("load", function () {
+
+//     let formulario = document.getElementById("addProductForm2")
+
+//     let inputs = {
+//         name: document.getElementById('name'),
+//         brand: document.getElementById('brand'),
+//         detail: document.getElementById('detail'),
+//         price: document.getElementById('productprice'),
+//     }
+
+//     formulario.addEventListener('submit', function(e) {
+//         let errores = [];   
+        
+//         if (inputs.name.value == "") {
+//             errores.push('Debe introducir el nombre del producto.')
+//         }
+
+//         if (inputs.brand.value == "") {
+//             errores.push('Debe introducir la marca del producto.')
+//         }
+
+//         if (inputs.detail.value == "") {
+//             errores.push("Debe introducir una brave descripción del producto.")
+//         }
+
+//         if (inputs.price.value == "") {
+//             errores.push("Debe introducir el precio del producto.")
+//         }
+
+//         if (errores.length != 0) {
+//             e.preventDefault();
+
+//             let divAlert = document.getElementById("divAlert")
+
+//             divAlert.classList.remove('displayNone')
+
+//             let ulErrores = document.getElementById("errorList")
+
+//             for (let i = 0; i < errores.length; i++) {
+//                 ulErrores.innerHTML += `
+//                     <li>${errores[i]}</li>
+//               `
+//             }
+//         // }else{
+//         //     Swal.fire({
+//         //         position: 'top-end',
+//         //         icon: 'success',
+//         //         title: '¡Su producto fue cargado exitosamente!, por favor a la página de productos para poder visualizarlo.',
+//         //         showConfirmButton: false,
+//         //         timer: 1500
+//         //       })
+//         }
+
+//     })
+
+// })

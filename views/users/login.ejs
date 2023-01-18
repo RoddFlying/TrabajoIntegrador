@@ -6,7 +6,10 @@
 <body>
     <!-- INCLUDES HEADER-->
     <%- include('../partials/header') %>
-    
+    <div class ="form">
+     
+        <div class= "loginform">
+
     <main>
     <section class="login">
     <section class="imagen">
@@ -21,7 +24,7 @@
     <form action = "/user/login" method="POST" class="formulario" > 
     <div>
         <label > Correo Eléctronico </label>
-        <input  type="email" name="email" class="form-control" placeholder="user@growgreen.com">
+        <input  type="emailinput" name="email" class="form-control" placeholder="user@growgreen.com"><br>
          <% if (locals.errors && errors.email) {  %>
           <div class="text-danger">
           <%= errors.email.msg %>    
@@ -31,20 +34,21 @@
        
     <div>
         <label > Contraseña </label>
-        <input  type="password" name="contrasena" placeholder="*********">
+        <input  type="password123" name="contrasena" placeholder="*********"><br>
     </div>
         <button class="boton">CONFIRMAR</button>
     <div class="otrasOpciones">
         <p>¿No tienes cuenta?</p>
         <a href= "/user/register" class="registrarse"  >    Registrarse  </a>
-
+       <input type= "submit" value="ingresar" class= "submit"> <br> 
          <a href="#" class="contraseña2"> Olvide mi contraseña </a>
     </div>
   </form>   
 </section>
 </section>
 </main> 
-
+</div>
+</div>
 
  <!-- INCLUDES FOOTER-->
  <%- include('../partials/footer') %>

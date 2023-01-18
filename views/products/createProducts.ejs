@@ -19,7 +19,7 @@
 </div>
 
 
-<form action="create" method="POST" enctype="multipart/form-data" class="addProductForm">
+<form action="create" method="POST" enctype="multipart/form-data"  id="addProductForm2">
 
 <div class="group">
 
@@ -69,7 +69,7 @@
 
  <div class="formProducts">
    <label for="imageProduct" class="form-label">Seleccionar Imagen:</label>
-   <input type="file" name="imageProd" placeholder="product image">
+   <input type="file" id="imagefile" name="imageProd" placeholder="product image">
  </div>
 
  <div class="formProducts">
@@ -109,7 +109,7 @@
 
  <!-- INCLUDES FOOTER-->
  <%- include('../partials/footer') %> 
-
+ 
  <script src="../js/validations/addProduct.js"></script>
  </body> 
 </html>
