@@ -19,7 +19,7 @@
     </div>
 
 <!--faltan categorias-->
- <form action="/products/edit/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+ <form id="editprod" action="/products/edit/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
 
    <div class="group">
 
@@ -65,7 +65,7 @@
 
      <div class="formProducts">
        <label for="image" class="form-label">Seleccionar Imagen:</label>
-       <input type="file" name="image" value="<%= producto.image %>">
+       <input id= "imagefile" type="file" name="image" value="<%= producto.image %>">
      </div>
 
      <div class="formProducts">
@@ -93,5 +93,7 @@
 
   <!-- INCLUDES FOOTER-->
 <%- include('./partials/footer') %>
+
+<script src="../js/validations/ProductEdit.js"></script>
 </body>
 </html>

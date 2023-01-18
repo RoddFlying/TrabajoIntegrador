@@ -70,7 +70,7 @@ const productsController = {
         break;
       }
     }
-    req.render('products/editProducts',{producto: objetoProducto})
+    res.render('products/editProducts',{producto: objetoProducto})
 
   },
 

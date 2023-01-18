@@ -59,24 +59,6 @@ a.addEventListener("submit", function(ev){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const Swal = require('sweetalert2');
 
 // window.addEventListener("load", function () {
