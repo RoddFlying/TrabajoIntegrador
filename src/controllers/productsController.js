@@ -33,12 +33,12 @@ const productsController = {
     //guardar producto creado
 
     store: async (req,res)=>{
-      console.log( req.body )
+      console.log( 'hola',req.file )
     let producto = await db.products.create({
         name : req.body.name,
         brand : req.body.brand,
         product_category_id: req.body.category,
-        image : req.file.imageProd, //ver que pasa q todavia no funciona
+        image : req.file.filename, //ver que pasa q todavia no funciona
         detail : req.body.detail,
         price : req.body.productprice,
         discount: req.body.discount,
@@ -51,17 +51,13 @@ const productsController = {
 
   //mostrar detalles del producto
   detail: async  (req,res)=>{
+   
     db.products.findByPk(req.params.id)
+    
             .then(product => {
                 res.render('products/detailProducts', { product });
             })
-            .catch(error => res.send(error));
-  //   try {
-  //     let product = await db.products.findByPk(req.params.id);
-  //     res.render('products/detailProducts', { product })
-  // } catch (error) {
-  //     console.log(error)
-  
+            .catch(error => res.send(error));  
    },
 
   //editar un producto
