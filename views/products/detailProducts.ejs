@@ -24,7 +24,7 @@
                 <button>-</button>
             </div> -->
             <button><h3>AGREGAR A CARRITO</h3></button>
-            <!-- <button><i class="fa-regular fa-heart"></i></button> -->
+            <button><i class="fa-regular fa-heart"></i></button> 
         </div>
 
 
@@ -33,7 +33,7 @@
         <img name="image" src="img/products/<%= producto.image %>" alt="">
         <div class="productSpecInfo">
             <div class="product-price">
-                <p class="price">$<%= toThousand(product.price) %></p>
+                <p>$<%= toThousand(product.price) %></p>
                 <% if (product.discount !== 0) { %>
                   <p><%= product.discount %>  % OFF</p>
                   <p name="finalPrice">$ <%= toThousand(product.price - (product.price * product.discount / 100)) %></p>

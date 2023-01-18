@@ -93,6 +93,7 @@
   border: var(--dark-olive-green) 1px solid;
   font-size: 20px;
   padding: 20px;
+  box-shadow: 2px 2px 1px grey;
 }
 
 .login .boton{

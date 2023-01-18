@@ -93,6 +93,7 @@
   border: #eee1cd 1px solid;
   text-align: center;
   padding: 10px;  
+  box-shadow: 2px 2px 1px grey;
 }
 
 .containerRegistro form .grupos{
@@ -121,7 +122,8 @@
   color: #5a6b47;
   border: #eee1cd 1px solid;
   text-align: center;
-  padding: 10px;  
+  padding: 10px; 
+  box-shadow: 2px 2px 1px grey; 
 }
 
 .containerRegistro .checkbox{
