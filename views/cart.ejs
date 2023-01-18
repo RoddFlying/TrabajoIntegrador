@@ -40,19 +40,6 @@
                 <% cartItems.forEach(item => { %>
             <article class="carrito-item">
                 <div class="itemImg">
-                    <img src="img/cbdcbggummies.png" alt="" class="imgItemCart">
-                    <h3 class="nombreItemCart">Fruity CBD/CBG Hemp Gummies | 500mg CBD | 500mg CBD</h3>
-                </div>
-                <h3 class="precioItemCart">$1800</h3>
-                <div class="masMenos">
-                    <button>+</button>
-                    <!--icon favorite, add product, cart--> <h3>1</h3>
-                    <button>-</button>
-                </div>
-                <h3>$1800</h3>
-            </article>
-            <article>
-                <div class="itemImg">
                     <img src="/imag/products/<%= product.image %>" alt="" class="imgItemCart">
                     <h3 class="nombreItemCart"> <%= product.nombreProducto %> </h3>
                 </div>
@@ -64,17 +51,18 @@
                 </div>
                 <h3>$1800</h3>
             </article>
+            <% }) %>
         </div>
         <div class="resumenCart">
             <h3>Resumen</h3>
             <div class="subtotalCart">
-                <h4>Sub-total</h4>
-                <h4>$3600</h4>
+                <h4>Total</h4>
+                <h4>$ <%= total %> </h4>
             </div>
-            <div class="totalsEnvioCart">
+            <!-- <div class="totalsEnvioCart">
                 <h4>Total sin envio</h4>
                 <h4>$3600</h4>
-            </div>
+            </div> -->
             <button><a href="#">PAGAR</a></button>
 
 
