@@ -69,7 +69,7 @@ app.use((req, res, next) => {
 //listen//
 
 app.listen(3001, () => {
-  console.log("servidor corriendo puerto 3000");
+  console.log("servidor corriendo puerto 3001");
 });
 
 // exports
