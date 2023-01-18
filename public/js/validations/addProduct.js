@@ -44,14 +44,14 @@ window.addEventListener("load", function () {
                     <li>${errores[i]}</li>
               `
             }
-        }else{
-            Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: '¡Su producto fue cargado exitosamente!, por favor a la página de productos para poder visualizarlo.',
-                showConfirmButton: false,
-                timer: 1500
-              })
+        // }else{
+        //     Swal.fire({
+        //         position: 'top-end',
+        //         icon: 'success',
+        //         title: '¡Su producto fue cargado exitosamente!, por favor a la página de productos para poder visualizarlo.',
+        //         showConfirmButton: false,
+        //         timer: 1500
+        //       })
         }
 
     })

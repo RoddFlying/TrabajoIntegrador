@@ -73,14 +73,14 @@ window.addEventListener("load", function () {
                     <li>${errores[i]}</li>
               `
             }
-        }else{
-            Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: 'Usuario agregado exitosamente!',
-                showConfirmButton: false,
-                timer: 1500
-              })
+        // }else{
+        //     Swal.fire({
+        //         position: 'top-end',
+        //         icon: 'success',
+        //         title: 'Usuario agregado exitosamente!',
+        //         showConfirmButton: false,
+        //         timer: 1500
+        //       })
         }
 
     })
