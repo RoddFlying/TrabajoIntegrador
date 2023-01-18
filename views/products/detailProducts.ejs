@@ -13,7 +13,7 @@
     <section class="mainDetailProducts">
     <section class="product">
         <div class="productTitle">
-            <h2><%= producto.name %></h2>
+            <h2 name="name"><%= producto.name %></h2>
             <p></p>
             <p class="productTitleCreator"><%= producto.brand %></p>
         </div>
@@ -30,16 +30,15 @@
 
     </section>
     <section class="productSpec"> 
-        <img src="img/products/<%= producto.image %>" alt="">
+        <img name="image" src="img/products/<%= producto.image %>" alt="">
         <div class="productSpecInfo">
-            <div class="productPrice">
-            <% if(product.discount !== 0) { %>
-                <h2>Precio: $<%= toThousand(product.price - (product.price * product.discount / 100)) %> </h2> 
-                <h4 class="discount"><%= product.discount %> % OFF</h4>             
-            <% } else{  %> 
-                <h2> Precio: $<%= toThousand(product.price) %> </h2>
-            <% } %> 
-            </div>
+            <div class="product-price">
+                <p class="price">$<%= toThousand(product.price) %></p>
+                <% if (product.discount !== 0) { %>
+                  <p><%= product.discount %>  % OFF</p>
+                  <p name="finalPrice">$ <%= toThousand(product.price - (product.price * product.discount / 100)) %></p>
+                <% } %>
+              </div>
             <h3>Especificaciones del producto</h3>
             <p> <%= producto.detail %></p>
         </div>
@@ -49,5 +48,7 @@
 </main>
  <!-- INCLUDES FOOTER-->
 <%- include('../partials/footer') %>
+<script src="js/validations/addItemCart.js"></script>
+
 </body>
 </html>

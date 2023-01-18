@@ -29,7 +29,16 @@
         <div class="itemResumenCart">
 
         <div class="itemsCart">
-            <article>
+            <% if(cartItems == '') { %>  
+                <div class="no_items_container">
+                    <div class="message">
+                    <h2>No tienes productos agregados al carrito! </h2>
+                    <h3><a href="/products">Mira nuestros productos</a></h3>
+                    </div>
+                </div>
+            <% } else { %>
+                <% cartItems.forEach(item => { %>
+            <article class="carrito-item">
                 <div class="itemImg">
                     <img src="img/cbdcbggummies.png" alt="" class="imgItemCart">
                     <h3 class="nombreItemCart">Fruity CBD/CBG Hemp Gummies | 500mg CBD | 500mg CBD</h3>
@@ -44,10 +53,10 @@
             </article>
             <article>
                 <div class="itemImg">
-                    <img src="img/gummiescanna.png" alt="" class="imgItemCart">
-                    <h3 class="nombreItemCart">Fruity CBD/CBG Hemp Gummies | 500mg CBD | 500mg CBD</h3>
+                    <img src="/imag/products/<%= product.image %>" alt="" class="imgItemCart">
+                    <h3 class="nombreItemCart"> <%= product.nombreProducto %> </h3>
                 </div>
-                <h3 class="precioItemCart">$1800</h3>
+                <h3 class="precioItemCart"><%= product.precioProducto %> </h3>
                 <div class="masMenos">
                     <button>+</button>
                     <!--icon favorite, add product, cart--> <h3>1</h3>
@@ -81,7 +90,7 @@
           
     <%- include('../partials/footer') %>
     
-      
+    <script src="js/validations/showItemsCart.js"></script>
 
 </body>
 

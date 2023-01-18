@@ -55,7 +55,7 @@ const productsController = {
     db.products.findByPk(req.params.id)
     
             .then(product => {
-                res.render('products/detailProducts', { product });
+                res.render('products/detailProducts', { producto: product});
             })
             .catch(error => res.send(error));  
    },
