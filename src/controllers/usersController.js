@@ -110,6 +110,7 @@ processRegister: async (req,res) => {
     req.session.destroy();
     return res.redirect('/');
 },
+
 // api usuario 
 
   list: (req, res) => {

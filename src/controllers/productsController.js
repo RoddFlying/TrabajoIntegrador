@@ -98,33 +98,19 @@ const productsController = {
     //Api producto//
     
     list: (req, res) => {
-      db.producto.findAll({include: [{association: 'productoCategoria'}]})
+      db.producto.findAll({include: [{association: 'categoria_producto'}]})
       .then(function(productos){
       
           let listaProductos = []
           
           for (producto of productos){
               let aux = {
-                  nombre: producto.nombre,
-                  precio: producto.precio,
-                  categoria: producto.productoCategoria.nombre,
+                  nombre: producto.name,
+                  precio: producto.price,
+                  categoria: producto.categoria_producto.name,
               }
               listaProductos.push(aux);
           }
-
-          let productosGato = []
-          
-          for (producto of productos){
-              if(producto.productoCategoria.id == 2){
-              productosGato.push(producto);
-          }}
-
-          let productosPerro = []
-          
-          for (producto of productos){
-              if(producto.productoCategoria.id == 1){
-              productosPerro.push(producto);
-          }}
 
           let otherProducts = []
           
@@ -138,7 +124,8 @@ const productsController = {
           products: listaProductos,
           count: listaProductos.length,
           countByCategory: {Perros: productosPerro.length, Gatos: productosGato.length, Otros: otherProducts.length}
-      })}) 
+      
+        })}) 
   },
 
   categories: (req,res) => {
@@ -146,8 +133,8 @@ const productsController = {
       .then(function(categorias){
       res.json({descripcion:"Total Categorias",
           codigo:200,
-          categories: categorias,
-          count: categorias.length
+          categories: categoria_producto,
+          count: categoria_producto.length
       })
       })
   },

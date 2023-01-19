@@ -29,21 +29,11 @@
 
 
     </section>
-    <section class="productSpec"> 
-        <img name="image" src="img/products/<%= producto.image %>" alt="">
-        <div class="productSpecInfo">
-            <div class="product-price">
-                <p>$<%= toThousand(product.price) %></p>
-                <% if (product.discount !== 0) { %>
-                  <p><%= product.discount %>  % OFF</p>
-                  <p name="finalPrice">$ <%= toThousand(product.price - (product.price * product.discount / 100)) %></p>
-                <% } %>
-              </div>
-            <h3>Especificaciones del producto</h3>
-            <p> <%= producto.detail %></p>
-        </div>
-        </div>
-    </section>
+
+
+  <!-- Agregar PRECIO IMAGEN DESCRIPCION -->
+
+
 </section>
 </main>
  <!-- INCLUDES FOOTER-->
