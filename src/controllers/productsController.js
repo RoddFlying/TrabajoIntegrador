@@ -6,7 +6,7 @@ const path = require("path");
 //const multer = require("multer");
 const db = require('../database/models'); //requiere la base de datos. no tocar
 
-const toThousand = num => (num || 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
+const toThousand = num => (num ).toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 
 const productsController = {
   //la de productos en general
@@ -33,12 +33,12 @@ const productsController = {
     //guardar producto creado
 
     store: async (req,res)=>{
-      console.log( 'hola',req.file )
+      
     let producto = await db.products.create({
         name : req.body.name,
         brand : req.body.brand,
         product_category_id: req.body.category,
-        image : req.file.filename, //ver que pasa q todavia no funciona
+        image: req.file.filename,
         detail : req.body.detail,
         price : req.body.productprice,
         discount: req.body.discount,
