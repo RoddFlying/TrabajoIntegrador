@@ -82,6 +82,7 @@
   border: #eee1cd 1px solid;
   text-align: center;
   padding: 10px;  
+  box-shadow: 2px 2px 1px grey;
 }
 
 .mainCreateProducts .registroProducto form .groupDetail {
@@ -111,6 +112,7 @@
   text-align: center;
   padding: 10px;  
   width: 100%;
+  box-shadow: 2px 2px 1px grey;
 }
 
 .mainCreateProducts .registroProducto form .button{
@@ -133,4 +135,5 @@
   border: none;
   cursor: pointer;
   transition:450ms;
+  box-shadow: 2px 2px 1px grey;
 }
