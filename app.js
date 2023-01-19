@@ -3,8 +3,9 @@
 const express = require("express");
 const path = require("path");
 const methodOverride = require('method-override');
-const session = require ('express-session');
-const cookies = require ('cookie-parser');
+const session = require('express-session');
+const cookies = require('cookie-parser');
+const cors = require('cors');
 
 const {sequelize} = require ('./src/database/models') 
 sequelize.sync({alter:false}).then(()=> console.log ('modelossincronizados'));
@@ -20,10 +21,11 @@ const app = express();
 //const methodOverride = require('method-override');
 
 //middleware//
-app.use( express.static(path.join(__dirname, '../public')));  //app.use( express.static(publicPath));
+app.use( express.static(path.join(__dirname, '../public')));  
 //app.use(express.urlencoded({extended: false})); (generaba error)
 
-//app.use(logger('dev'));
+
+app.use(cors());  
 app.use(express.json());
 app.use(cookies());
 app.use(methodOverride ("_method")); //Procesamiento PUT y DELETE 
@@ -52,6 +54,7 @@ app.use('/user', usersRouter);
 app.use(userLoggedMiddleware);
 
 const publicPath = path.resolve(__dirname, './public');
+
 app.use( express.static(publicPath));
 
 app.use(methodOverride ("_method")); //Procesamiento PUT y DELETE
