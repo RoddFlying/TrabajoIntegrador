@@ -51,12 +51,6 @@ a.addEventListener("submit", function(ev){
         alert('Completar el campo Fecha de creación');
         return;
     }
-
     
-   
-
-   
-
-
     a.submit()
 })

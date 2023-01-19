@@ -66,6 +66,11 @@ app.use((req, res, next) => {
   res.status(404).render("not-found")
 });
 
+// API//
+
+const apiRoutes = require('./src/routes/apiRouter')
+app.use('/', apiRoutes)
+
 //listen//
 
 app.listen(3001, () => {

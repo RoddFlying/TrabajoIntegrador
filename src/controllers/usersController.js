@@ -110,10 +110,48 @@ processRegister: async (req,res) => {
     req.session.destroy();
     return res.redirect('/');
 },
+// api usuario 
 
-//  cart: (req, res) => {
- //     res.render('cart')
-//}
+  list: (req, res) => {
+  db.usuario.findAll()
+  .then(function(usuarios){
+
+      let listaUsuarios = []
+
+      for (usuario of usuarios){
+          let aux = {
+              nombre: usuario.nombre,
+              apellido: usuario.apellido,
+              email: usuario.email,
+              admin: usuario.admin,
+              local: usuario.local_id
+          }
+          listaUsuarios.push(aux);
+      }
+
+      res.json({
+      codigo:200,
+      descripcion: "Lista de usuarios",
+      count: listaUsuarios.length,
+      users: listaUsuarios})
+
+  }) 
+},
+  user: (req, res) => {
+  db.usuario.findByPk(req.params.id)
+  .then(function(user){
+      let filteredUser = {
+          nombre: user.nombre,
+          apellido: user.apellido,
+          email: user.email,
+          admin: user.admin,
+          local: user.local_id
+      }
+  res.json({
+      codigo:200,
+      user: filteredUser
+  })})
+}
 
 };
 

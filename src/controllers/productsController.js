@@ -93,7 +93,73 @@ const productsController = {
     //eliminar un producto
     delete: async (req,res) => {
       
-    } 
+    },
+    
+    list: (req, res) => {
+      db.producto.findAll({include: [{association: 'productoCategoria'}]})
+      .then(function(productos){
+      
+          let listaProductos = []
+          
+          for (producto of productos){
+              let aux = {
+                  nombre: producto.nombre,
+                  precio: producto.precio,
+                  categoria: producto.productoCategoria.nombre,
+              }
+              listaProductos.push(aux);
+          }
+
+          let productosGato = []
+          
+          for (producto of productos){
+              if(producto.productoCategoria.id == 2){
+              productosGato.push(producto);
+          }}
+
+          let productosPerro = []
+          
+          for (producto of productos){
+              if(producto.productoCategoria.id == 1){
+              productosPerro.push(producto);
+          }}
+
+          let otherProducts = []
+          
+          for (producto of productos){
+              if(producto.productoCategoria.id == 3){
+              otherProducts.push(producto);
+          }}
+
+          res.json({descripcion: "Lista de productos",
+          codigo:200,
+          products: listaProductos,
+          count: listaProductos.length,
+          countByCategory: {Perros: productosPerro.length, Gatos: productosGato.length, Otros: otherProducts.length}
+      })}) 
+  },
+
+  categories: (req,res) => {
+      db.categoria.findAll()
+      .then(function(categorias){
+      res.json({descripcion:"Total Categorias",
+          codigo:200,
+          categories: categorias,
+          count: categorias.length
+      })
+      })
+  },
+
+  product: (req,res) => {
+      db.producto.findByPk(req.params.id, {include: [{association: 'productoCategoria'}]})
+      .then(function(product){
+      res.json({descripcion:"Producto",
+          codigo:200,
+          producto: product
+  })  
+  })
+  }
+
 
   };
    
