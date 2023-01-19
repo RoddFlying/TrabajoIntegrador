@@ -149,6 +149,7 @@
   border: none;
   cursor: pointer;
   transition:450ms;
+  box-shadow: 2px 2px 1px grey;
 }
 
 .containerRegistro .botonRegistro:hover {

@@ -104,6 +104,7 @@
   background-color: var(--artichoke);
   color: var(--white);
   border: none;
+  box-shadow: 2px 2px 1px grey;
 }
 
 .login .otrasOpciones{

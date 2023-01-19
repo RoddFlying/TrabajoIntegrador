@@ -21,6 +21,9 @@ const controlador = {
   contact: (req, res) => {
     res.render('contact')
   },
+  cart:(req, res) => {
+    res.render('cart')
+  }
 
 };
 module.exports = controlador;

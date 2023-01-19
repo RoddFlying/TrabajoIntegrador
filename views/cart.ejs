@@ -29,29 +29,38 @@
         <div class="itemResumenCart">
 
         <div class="itemsCart">
-            <% if(cartItems == '') { %>  
-                <div class="no_items_container">
-                    <div class="message">
-                    <h2>No tienes productos agregados al carrito! </h2>
-                    <h3><a href="/products">Mira nuestros productos</a></h3>
-                    </div>
-                </div>
-            <% } else { %>
-                <% cartItems.forEach(item => { %>
-            <article class="carrito-item">
-                <div class="itemImg">
-                    <img src="/imag/products/<%= product.image %>" alt="" class="imgItemCart">
-                    <h3 class="nombreItemCart"> <%= product.nombreProducto %> </h3>
-                </div>
-                <h3 class="precioItemCart"><%= product.precioProducto %> </h3>
-                <div class="masMenos">
-                    <button>+</button>
-                    <!--icon favorite, add product, cart--> <h3>1</h3>
-                    <button>-</button>
-                </div>
-                <h3>$1800</h3>
-            </article>
+            <ul></ul>
+            <% pedido.forEach(producto => { %>
+                <li i class="detailProductList">
+                    <section class="image">
+                        <img src=<%=product.image %> alt="">
+                    </section>
+                    <section class="detalle">
+                        <h4><%= product.name %> <%= product.brand %> </h4>
+                        <p class="price">$<%= product.price %> </p>
+                        <p class="discount"><%= product.discount > " " ? product.discount + '%' : " " %> </p>
+                        <!--CONTADOR-->
+                        <div class="counter">
+                            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                            <input type="text" value="1">
+                            <span class="up" onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                    </section>
+                    <section class="editar">
+                        <!-- <a href="/productos/producto/<%= product.id %>" >
+                            <i class="fas fa-pencil-alt"></i>
+                        </a> -->
+                        <form action="/carrito/delete/<%= product.id %>" method="POST" >
+                            <button class="boton-editar"><i class="fa-regular fa-trash-can"></i></button>
+                        </form>
+                        <h4>$<%= product.price-(product.price * product.discount /100)  %> </h4>
+                    </section>
+                </li>               
             <% }) %>
+            </ul>
+        
+
+
         </div>
         <div class="resumenCart">
             <h3>Resumen</h3>

@@ -94,6 +94,8 @@ const productsController = {
     delete: async (req,res) => {
       
     },
+
+    //Api producto//
     
     list: (req, res) => {
       db.producto.findAll({include: [{association: 'productoCategoria'}]})

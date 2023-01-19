@@ -1,9 +1,9 @@
-let path = require('path');
+// let path = require('path');
 
-let cartController = {
-    index: (req, res) => {
-        res.render('cart')
-}}
+// let cartController = {
+//     index: (req, res) => {
+//         res.render('cart')
+// }}
 
 
-module.exports = cartController;
+// module.exports = cartController;
