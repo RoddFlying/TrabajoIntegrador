@@ -3,13 +3,13 @@
 <head>
      <!-- INCLUDES HEAD-->
 
-<%- include('./partials/head',{title: 'Editando: ' + producto.name})) %>
+<%- include('../partials/head',{title: 'Editando: ' + producto.name}) %>
 
 
 </head>
 <body>
     <!-- INCLUDES HEADER-->
-<%- include('./partials/header') %>
+<%- include('../partials/header') %>
 
 <!--usar css de createProductStyle.css-->
 <main>
@@ -92,8 +92,8 @@
 </main>
 
   <!-- INCLUDES FOOTER-->
-<%- include('./partials/footer') %>
+<%- include('../partials/footer') %>
 
-<script src="../js/validations/ProductEdit.js"></script>
+<script src="js/validations/ProductEdit.js"></script>
 </body>
 </html>

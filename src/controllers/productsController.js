@@ -61,17 +61,11 @@ const productsController = {
    },
 
   //editar un producto
-  edit: async  (req,res) => {
-    let idProducto = req.params.id;
-    let objetoProducto;
-    for(let o of products){
-      if (idProducto == o.id){
-        objetoProducto = o;
-        break;
-      }
-    }
-    res.render('products/editProducts',{producto: objetoProducto})
-
+  edit: (req,res) => {
+    db.products.findByPk (req.params.id)
+    .then(function ( objetoProducto){
+      res.render("products/editProducts", {producto: objetoProducto}) 
+    } )
   },
 
   //actualizar el producto
@@ -81,7 +75,7 @@ const productsController = {
         name : req.body.name,
         brand : req.body.brand,
         category : req.body.category,
-        image : req.file.imageProd,
+        image : req.file.filename,
         detail : req.body.detail,
         price : req.body.price,
         discount: req.body.discount,
