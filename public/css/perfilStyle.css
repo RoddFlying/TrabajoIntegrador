@@ -54,6 +54,16 @@
 .perfilUsuario div h3{
     font-size: 15px;
 }
+.perfilUsuario div button{
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--artichoke);
+    color: var(--white);
+    border: none;
+    box-shadow: 2px 2px 1px grey;
+}
 .perfilUsuario img{
     width: 100%;
 
