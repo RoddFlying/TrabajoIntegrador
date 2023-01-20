@@ -70,23 +70,24 @@ const productsController = {
 
   //actualizar el producto
   update: async (req,res)=>{
-   db.products.update({
-     
-        name : req.body.name,
-        brand : req.body.brand,
-        category : req.body.category,
-        image : req.file.filename,
-        detail : req.body.detail,
-        price : req.body.price,
-        discount: req.body.discount,
-        expiration_date: req.body.expiration_date,
-        creation_date: req.body.creation_date
+
+   let edit = db.products.update({ 
+    name : req.body.name,
+    brand : req.body.brand,
+    product_category_id: req.body.category,
+    image: req.file.filename,
+    detail : req.body.detail,
+    price : req.body.productprice,
+    discount: req.body.discount,
+    expiration_date: req.body.expiration_date,
+    creation_date: req.body.creation_date
     }
   ,{
       where: {
         id: req.params.id
       }
     })
+    console.log (edit)
     res.render('/')
     },
 
