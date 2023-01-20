@@ -33,11 +33,16 @@
     padding: 30px;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    border-bottom: #5a6b47 3px solid;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+.mainDetailProducts .product .barratop p{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .mainDetailProducts .product .productSpec{
     width: 100%;
-    padding: 40%;
+    padding: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -47,6 +52,16 @@
 .mainDetailProducts .product .productSpec .productSpecInfo {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 10px;
+}
+.mainDetailProducts .product .productSpec .productSpecInfo .product-price{
+    border-bottom: #5a6b47 3px solid;
+    padding: 20px;
+}
+.mainDetailProducts .product .productSpec .productSpecInfo p{
+    
+    width: 80%;
+    margin: 20px;
 }
 
 /*VERSION TABLET*/

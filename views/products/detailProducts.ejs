@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- INCLUDES HEAD-->
+<%- include('../partials/head') %>
 
-     <!-- INCLUDES HEAD-->
-<%- include('../partials/head') %> <!--Para agregarle algo al title  , {title: producto.name})-->
-
-
-<body> 
- 
-<!-- INCLUDES HEADER-->
-<%- include("../partials/header") %>
+<body>
+    <!-- INCLUDES HEADER-->
+    <%- include('../partials/header') %>
 <main>
     <section class="mainDetailProducts">
     <section class="product">
@@ -30,7 +27,7 @@
         </div>
     </div>
      <div class="productSpec">
-            <img src="../../public/img/products/<%= producto.image %>" alt="" name="image">
+            <img src="img/products/<%= producto.image %>" name="image" alt="image-product">
             <div class="productSpecInfo">
                 <div class="product-price">
                     <h3 class="price" name="price">$<%= producto.price %></h3>
