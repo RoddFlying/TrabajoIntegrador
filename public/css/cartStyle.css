@@ -27,12 +27,23 @@
 
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
-.mainCart{
+main{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    margin: auto;
-}
 
-.mainCart .tituloCart{
+   
+}
+.mainCart{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+.listaCart{
+    width: 100%;
+}
+.tituloCart{
+    width: 100%;
+    margin: auto;
     color:#3f3222;
     padding: 20px;
     border-bottom: #5a6b47 5px solid;
@@ -47,72 +58,59 @@
     grid-template-columns: 4fr 2fr 1fr 1fr ;
     border-bottom: #5a6b47 3px solid;
     padding: 20px;
-    width: 75%;
+    width: 100%;
 }
 
 .mainCart .itemResumenCart{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
-.mainCart .itemsCart article{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    border-bottom: #5a6b47 2px solid;
+    grid-template-columns: 4fr 2fr 1fr 1fr ;
+    border-bottom: #5a6b47 3px solid;
     padding: 20px;
-
-}
-
-.mainCart .itemsCart article h3{
-    margin: 0 10px;
-    text-align: left;
-}
-.mainCart .itemsCart article .itemImg {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-}
-
-.mainCart .itemsCart article .itemImg img{
     width: 100%;
-    border:  #5a6b47 1px solid;
-
 }
-.mainCart .masMenos{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+.mainCart .itemResumenCart h2{
+    font-size: 20px;
+    padding: 10px;
+    width: 75%;
 }
-
-.mainCart .resumenCart {
-    background-color: #3f3222;
-    color: #ffffff;
+.mainCart .itemResumenCart h3{
+    font-size: 18px;
+    padding: 10px;
+    width: 75%;
+}
+.mainCart .itemResumenCart h4{
+    font-size: 15px;
+    padding: 10px;
+    width: 75%;
+}
+.resumenCart{
+    width: 80%;
+    margin: auto;
+    border: #5a6b47 3px solid;
     padding: 20px;
-    margin: 20px;
-    /*sin terminar*/
 }
-
-.mainCart .subtotalCart{
-    display: flex;
-    flex-wrap: nowrap;
-
-}
-.mainCart .totalsEnvioCart{
-    display: flex;
-    flex-wrap: nowrap;
-
-}
-.mainCart .resumenCart button{
-    background-color: #5a6b47;
+.resumenCart button{
+    margin-top: 50px;
     padding: 20px;
-    margin: 10px 0;
-    /*falta centrar*/
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--artichoke);
+    color: var(--white);
+    border: none;
+    box-shadow: 2px 2px 1px grey;
 }
-.mainCart .resumenCart a{
-    color: #ffffff;
+.resumenCart button:active{
+    background-color: var(--dark-olive-green);
+    box-shadow: 3px 3px 2px darkgrey;
+    transform: translateY(2px);
+}
+.resumenCart button a{
     text-decoration: none;
+    color: var(--white);
+    
 }
+
+
 
 
 

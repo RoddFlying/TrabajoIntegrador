@@ -33,10 +33,10 @@
   grid-template-columns: 1fr 8fr;
 }
 
-.register .resigterBanner{
+.register .registerBanner{
   width: 100%;
 }
-.register .resigterBanner .mobile{
+.register .registerBanner .mobile{
   display: none;
 }
 
@@ -152,9 +152,10 @@
   box-shadow: 2px 2px 1px grey;
 }
 
-.containerRegistro .botonRegistro:hover {
-  border-radius: 30%;
-  
+.containerRegistro .botonRegistro:active{
+  background-color: var(--dark-olive-green);
+  box-shadow: 3px 3px 2px darkgrey;
+  transform: translateY(2px);
 }
 
 

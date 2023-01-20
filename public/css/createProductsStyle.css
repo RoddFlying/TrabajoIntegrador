@@ -137,3 +137,9 @@
   transition:450ms;
   box-shadow: 2px 2px 1px grey;
 }
+
+.mainCreateProducts .registroProducto form .button button:active{
+  background-color: var(--dark-olive-green);
+  box-shadow: 3px 3px 2px darkgrey;
+  transform: translateY(2px);
+}
