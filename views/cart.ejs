@@ -31,12 +31,12 @@
             <% productosCarrito.forEach(producto => { %>
                 <li i class="detailProductList">
                     <section class="image">
-                        <img src=<%=product.image %> alt="">
+                        <img src=<%=producto.imagen %> alt="">
                     </section>
                     <section class="detalle">
-                        <h4><%= product.name %> <%= product.brand %> </h4>
-                        <p class="price">$<%= product.price %> </p>
-                        <p class="discount"><%= product.discount > " " ? product.discount + '%' : " " %> </p>
+                        <h4><%= producto.nombre %>  </h4>
+                        <p class="price">$<%= producto.precio %> </p>
+                        <p class="discount"><%= producto.descuento > " " ? producto.descuento + '%' : " " %> </p>
                         <!--CONTADOR-->
                         <!-- <div class="counter">
                             <span class="down" onClick='decreaseCount(event, this)'>-</span>

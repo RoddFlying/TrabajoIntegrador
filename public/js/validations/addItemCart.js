@@ -4,9 +4,10 @@ let boton = document.getElementById('agregarcarrito');
 
 boton.addEventListener('click', ()=>{
     let nombreProducto = document.getElementsByName('name');
-    let precioProducto = document.getElementsByName('finalPrice');
+    let precioProducto = document.getElementsByName('price');
+    let descuentoProducto = document.getElementsByName('discount');
     let imagenProducto = document.getElementsByName('image');
-    let productoNuevo = {nombre: nombreProducto, precio: precioProducto, imagen:imagenProducto};
+    let productoNuevo = {nombre: nombreProducto, precio: precioProducto, imagen:imagenProducto, descuento: descuentoProducto};
     let productosCarrito = JSON.parse(localStorage.getItem('carrito'));
     if (productosCarrito == undefined || productosCarrito == null){
         productosCarrito = []
