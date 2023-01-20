@@ -71,7 +71,7 @@ const productsController = {
   //actualizar el producto
   update: async (req,res)=>{
 
-   let edit = db.products.update({ 
+   let edit = await db.products.update({ 
     name : req.body.name,
     brand : req.body.brand,
     product_category_id: req.body.category,
@@ -87,8 +87,7 @@ const productsController = {
         id: req.params.id
       }
     })
-    console.log (edit)
-    res.render('/')
+    res.redirect('/products')
     },
 
     //eliminar un producto
