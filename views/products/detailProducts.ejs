@@ -2,7 +2,7 @@
 <html lang="en">
 
      <!-- INCLUDES HEAD-->
-<%- include('../partials/head', {title: producto.name}) %> <!--Para agregarle algo al title-->
+<%- include('../partials/head') %> <!--Para agregarle algo al title  , {title: producto.name})-->
 
 
 <body> 
@@ -23,8 +23,15 @@
                 icon favorite, add product, cart<h3>1</h3>
                 <button>-</button>
             </div> -->
-            <button><h3>AGREGAR A CARRITO</h3></button>
+            <button class="agregarcarrito"><h3>AGREGAR A CARRITO</h3></button>
             <button><i class="fa-regular fa-heart"></i></button> 
+        </div>
+        <div>
+            <img src="<%= producto.image %>" alt="">
+            <div>
+              
+                <p><%= producto.detail %></p>
+            </div>
         </div>
 
 
