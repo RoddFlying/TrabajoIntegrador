@@ -27,10 +27,10 @@
         <div class="itemResumenCart">
 
         <div class="itemsCart">
-             <% carrito.forEach(producto => { %> <!--es productosCarrito o carrito -->
+             <% productosCarrito.forEach(producto => { %> <!--es productosCarrito o carrito -->
                 <article i class="detailProductList">
                     <section class="itemImg">
-                        <img src="img/products/<%=producto.imagen %>" alt="">
+                        <img src="img/products/<%= producto.imagen %>" alt="">
                     </section>
                     <section class="detalle">
                         <h3><%= producto.nombre %>  </h3>
@@ -47,7 +47,7 @@
                         <form action="/carrito/delete/<%= product.id %>" method="POST" >
                             <button class="boton-editar"><i class="fa-regular fa-trash-can"></i></button>
                         </form>
-                        <h4>$ <%= product.price-(product.price * product.discount /100)  %> </h4>
+                        <h4 id="valorProd">$ <%= producto.precio-(producto.precio * producto.descuento /100)  %> </h4>
                     </section>
                 </article>               
             <% }) %>
@@ -59,7 +59,7 @@
             <h3>Resumen</h3>
             <div class="subtotalCart">
                 <h4>Total</h4> 
-                 <h4>$ <%= total %> </h4> <!--sumar todos los precios -->
+                 <h4>$  </h4> <!--sumar todos los precios -->
             </div>
             <!-- <div class="totalsEnvioCart">
                 <h4>Total sin envio</h4>

@@ -5,6 +5,10 @@ const router = express.Router();
 
 router.get("/", mainControllers.index);
 router.get("/contact", mainControllers.contact);
+
+// Carrito
 router.get("/carrito", mainControllers.cart);
+
+
 
 module.exports = router;

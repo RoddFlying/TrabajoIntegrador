@@ -74,6 +74,21 @@
     padding: 20px;
     text-align: justify;
 }
+.mainDetailProducts .product .barratop button{
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--artichoke);
+    color: var(--white);
+    border: none;
+    box-shadow: 2px 2px 1px grey;
+}
+.mainDetailProducts .product .barratop button:active{
+    background-color: var(--dark-olive-green);
+    box-shadow: 3px 3px 2px darkgrey;
+    transform: translateY(2px);
+}
 
 /*VERSION TABLET*/
 @media (max-width: 1023px){

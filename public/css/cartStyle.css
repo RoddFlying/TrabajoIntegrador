@@ -28,27 +28,26 @@
 /*ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp no usar otros del sitio asi son todos similares*/
 
 .mainCart{
-    margin-top: 275px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    margin: 275px 80px 40px 80px;
+    margin: auto;
+}
 
-}
 .mainCart .tituloCart{
-    background-color: #dabf94;
-    color: #ffffff;
+    color:#3f3222;
     padding: 20px;
-    border-top: #000000 5px solid;
+    border-bottom: #5a6b47 5px solid;
 }
+
 .mainCart .tituloCart h2{
     text-align: left;
 }
+
 .mainCart .detalleCart{
     display: grid;
     grid-template-columns: 4fr 2fr 1fr 1fr ;
-    border-bottom: #000000 3px solid;
+    border-bottom: #5a6b47 3px solid;
     padding: 20px;
     width: 75%;
-   
 }
 
 .mainCart .itemResumenCart{
@@ -59,7 +58,7 @@
 .mainCart .itemsCart article{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    border-bottom: #000000 2px solid;
+    border-bottom: #5a6b47 2px solid;
     padding: 20px;
 
 }
@@ -75,7 +74,7 @@
 
 .mainCart .itemsCart article .itemImg img{
     width: 100%;
-    border: #000000 1px solid;
+    border:  #5a6b47 1px solid;
 
 }
 .mainCart .masMenos{
