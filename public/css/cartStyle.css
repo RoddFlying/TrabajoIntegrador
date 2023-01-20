@@ -44,7 +44,7 @@
 }
 .mainCart .detalleCart{
     display: grid;
-    grid-template-columns: 6fr 1fr 2fr 1fr ;
+    grid-template-columns: 4fr 2fr 1fr 1fr ;
     border-bottom: #000000 3px solid;
     padding: 20px;
     width: 75%;
@@ -58,7 +58,7 @@
 
 .mainCart .itemsCart article{
     display: grid;
-    grid-template-columns: 6fr 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     border-bottom: #000000 2px solid;
     padding: 20px;
 

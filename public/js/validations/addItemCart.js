@@ -1,6 +1,6 @@
 const Swal = require('sweetalert2');
 
-let boton = document.getElementById('agregarcarrito');
+var boton = document.getElementById('agregarcarrito');
 
 boton.addEventListener('click', ()=>{
     let nombreProducto = document.getElementsByName('name');

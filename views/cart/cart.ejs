@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  
-<%-include('./partials/head') %>
+<%-include('../partials/head') %>
       
 
  <!-- INCLUDES HEAD-->
@@ -9,7 +9,7 @@
  
  <body>
     <!-- INCLUDES HEADER-->
-  <%- include('./partials/header') %>
+  <%- include('../partials/header') %>
     <main>
         <section class="mainCart">
       <section class="tituloCart">
@@ -27,17 +27,16 @@
         <div class="itemResumenCart">
 
         <div class="itemsCart">
-            <ul></ul>
-            <% productosCarrito.forEach(producto => { %>
-                <li i class="detailProductList">
-                    <section class="image">
-                        <img src=<%=producto.imagen %> alt="">
+             <% carrito.forEach(producto => { %> <!--es productosCarrito o carrito -->
+                <article i class="detailProductList">
+                    <section class="itemImg">
+                        <img src="img/products/<%=producto.imagen %>" alt="">
                     </section>
                     <section class="detalle">
-                        <h4><%= producto.nombre %>  </h4>
+                        <h3><%= producto.nombre %>  </h3>
                         <p class="price">$<%= producto.precio %> </p>
-                        <p class="discount"><%= producto.descuento > " " ? producto.descuento + '%' : " " %> </p>
-                        <!--CONTADOR-->
+                        <p class="discount"><%= producto.descuento %> </p>
+                 
                         <!-- <div class="counter">
                             <span class="down" onClick='decreaseCount(event, this)'>-</span>
                             <input type="text" value="1">
@@ -45,17 +44,13 @@
                         </div> -->
                     </section>
                     <section class="editar">
-                        <!-- <a href="/productos/producto/<%= product.id %>" >
-                            <i class="fas fa-pencil-alt"></i>
-                        </a> -->
                         <form action="/carrito/delete/<%= product.id %>" method="POST" >
                             <button class="boton-editar"><i class="fa-regular fa-trash-can"></i></button>
                         </form>
-                        <h4>$<%= product.price-(product.price * product.discount /100)  %> </h4>
+                        <h4>$ <%= product.price-(product.price * product.discount /100)  %> </h4>
                     </section>
-                </li>               
+                </article>               
             <% }) %>
-            </ul>
         
 
 
@@ -63,8 +58,8 @@
         <div class="resumenCart">
             <h3>Resumen</h3>
             <div class="subtotalCart">
-                <h4>Total</h4>
-                <h4>$ <%= total %> </h4>
+                <h4>Total</h4> 
+                 <h4>$ <%= total %> </h4> <!--sumar todos los precios -->
             </div>
             <!-- <div class="totalsEnvioCart">
                 <h4>Total sin envio</h4>
@@ -83,9 +78,10 @@
     </main>
  
           
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
     
-    <script src="../public/js/validations/showItemsCart.js"></script>
+    <script src="../../public/js/validations/showItemsCart.js"></script>
+    <script src="../../public/js/validations/addItemCart.js"></script>
 
 </body>
 

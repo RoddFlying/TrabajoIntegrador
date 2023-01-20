@@ -22,7 +22,7 @@ const controlador = {
     res.render('contact')
   },
   cart:(req, res) => {
-    res.render('cart')
+    res.render('cart/cart')
   }
 
 };
