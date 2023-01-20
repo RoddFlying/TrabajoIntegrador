@@ -33,13 +33,13 @@
         </div>
     </div>
      <div class="productSpec">
-            <img src="/img/products/<%= producto.image %>" name="image" alt="image-product">
+            <img src="/img/products/<%= producto.image %>" name="image" alt="image-product" id="image">
             <div class="productSpecInfo">
                 <div class="product-price">
-                    <h3 class="price" name="price">$<%= producto.price %></h3>
+                    <h3 class="price" name="price" id="price">$<%= producto.price %></h3>
                     <% if (producto.discount !== 0) { %>
-                      <h3 class="discount" name="discount"><%= producto.discount %>  % OFF</h3>
-                      <h3 name="finalprice">$ <%= producto.price - (producto.price * producto.discount / 100) %></h3>
+                      <h3 class="discount" name="discount" id="discount"><%= producto.discount %>  % OFF</h3>
+                      <h3 name="finalprice" id="finalprice">$ <%= producto.price - (producto.price * producto.discount / 100) %></h3>
                     <% } %>
                   </div>
                 <p><%= producto.detail %></p>
