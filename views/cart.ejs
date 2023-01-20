@@ -30,7 +30,7 @@
 
         <div class="itemsCart">
             <ul></ul>
-            <% pedido.forEach(producto => { %>
+            <% productosCarrito.forEach(producto => { %>
                 <li i class="detailProductList">
                     <section class="image">
                         <img src=<%=product.image %> alt="">
@@ -40,11 +40,11 @@
                         <p class="price">$<%= product.price %> </p>
                         <p class="discount"><%= product.discount > " " ? product.discount + '%' : " " %> </p>
                         <!--CONTADOR-->
-                        <div class="counter">
+                        <!-- <div class="counter">
                             <span class="down" onClick='decreaseCount(event, this)'>-</span>
                             <input type="text" value="1">
                             <span class="up" onClick='increaseCount(event, this)'>+</span>
-                        </div>
+                        </div> -->
                     </section>
                     <section class="editar">
                         <!-- <a href="/productos/producto/<%= product.id %>" >

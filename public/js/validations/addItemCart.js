@@ -9,3 +9,5 @@ boton.addEventListener('click', ()=>{
     productosCarrito.push(productoNuevo);
     localStorage.setItem('carrito',JSON.stringify(productosCarrito))
 }) 
+//¿Como exportar el carrito?
+//module.exports = productosCarrito;
