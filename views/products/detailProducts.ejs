@@ -23,8 +23,15 @@
                 icon favorite, add product, cart<h3>1</h3>
                 <button>-</button>
             </div> -->
-            <button class="agregarcarrito"><h3>AGREGAR A CARRITO</h3></button>
+            <button id="agregarcarrito"><h3>AGREGAR A CARRITO</h3></button>
             <button><i class="fa-regular fa-heart"></i></button> 
+            <div class="product-price">
+                <p class="price" name="price">$<%= producto.price %></p>
+                <% if (producto.discount !== 0) { %>
+                  <p><%= producto.discount %>  % OFF</p>
+                  <p>$ <%= producto.price - (producto.price * producto.discount / 100) %></p>
+                <% } %>
+              </div>
         </div>
         <div>
             <img src="<%= producto.image %>" alt="">
