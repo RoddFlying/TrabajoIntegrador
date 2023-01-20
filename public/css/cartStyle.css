@@ -90,8 +90,9 @@ main{
     padding: 20px;
 }
 .resumenCart button{
+    width: 80%;
     margin-top: 50px;
-    padding: 20px;
+    padding: 10px;
     font-size: 15px;
     font-weight: bold;
     background-color: var(--artichoke);
@@ -116,6 +117,9 @@ main{
 
 /*VERSION TABLET*/
 @media (max-width: 1023px){
+    .mainCart{
+        grid-template-columns: 1fr ;
+    }
     .mainCart .itemResumenCart{
         display: flex;
         flex-wrap: wrap;
@@ -124,6 +128,12 @@ main{
     }
     .mainCart .detalleCart{
         width: 100%;
+        grid-template-columns: 1fr ;
+       
+    }
+    .mainCart .itemResumenCart{
+        width: 100%;
+        grid-template-columns: 1fr ;
     }
   
   }

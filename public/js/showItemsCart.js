@@ -2,7 +2,7 @@ let productosCarrito = JSON.parse(localStorage.getItem('carrito'));
 
 console.log(productosCarrito);
 
-//const total = productosCarrito.reduce((acc, items)=> acc + items.precioFinal, 0 )
+let total = productosCarrito.reduce((acc, items)=> acc + items.precioFinal, 0 )
 
 let div1 = document.getElementById('itemscart');
 
@@ -25,6 +25,10 @@ for (let p of productosCarrito){
     let precioProd = document.createElement('h3');
     precioProd.innerText = p.precioFinal;
     div1.appendChild(precioProd);
+
+    let total = document.createElement('h3');
+    precioSuma.innerText = total;
+    div2.appendChild(precioSuma);
     
 }
 
