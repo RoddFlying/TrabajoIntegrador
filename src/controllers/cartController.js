@@ -25,7 +25,7 @@ const cartController = {
     
       });
 
-      res.redirect('../products/products.ejs');
+      res.redirect('products/products');
 
     } catch (error) {
         console.log(error);
