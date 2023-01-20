@@ -30,9 +30,14 @@
 
      <div class="formProducts">
        <label for="price" class="form-label"> Precio del producto </label>
-       <input type="number" id="price" name="price" placeholder="<%= producto.price %>" value="<%= producto.price %>"class="form-input"> <!--Porque aca tiene procutprice y en los demas oslo discount etc.-->
+       <input type="number" id="price" name="productprice" placeholder="<%= producto.price %>" value="<%= producto.price %>"class="form-input"> <!--Porque aca tiene procutprice y en los demas oslo discount etc.-->
      </div>
 
+     <div class="formProducts">
+      <label for="brand" class="form-label">Marca del producto</label>
+      <input type="text" id="brand" value="<%= producto.brand %>" name="brand" placeholder="<%= producto.brand %>" class="form-input">
+    </div>
+    
    </div>
 
    <div class="group">
@@ -43,21 +48,20 @@
      </div>
 
      <div class="formProducts">
-       <label for="category" class="form-label">Categoría</label>
-       <% if (producto.category=="viseted") { %>
-       <select id="category" name="category" class="form-input">
-         <option value="">Elegí</option>
-         <option value="in-sale">En oferta</option>
-         <option value="visited" selected>Últimos agregados</option>
-       </select>
-       <% } else { %>
-        <select id="category" name="category" class="form-input">
-          <option value="">Elegí</option>
-          <option value="in-sale" selected>En oferta</option>
-          <option value="visited" >Últimos agregados</option>
-        </select>
-      <% } %>
-     </div>
+      <label for="category" class="form-label">Categoría</label>
+      <select id="category" name="category" value= "<%= producto.category %>" class="form-input">
+        <option value="1">carpas</option>
+        <option value="2">fertilizantes</option>
+        <option value="3">frascos</option>
+        <option value="4">hidroponia</option>
+        <option value="5">luces</option>
+        <option value="6">parafrenalia</option>
+        <option value="7">picadores</option>
+        <option value="8">sustratos</option>
+      </select>
+    </div>
+    
+     
 
    </div>
 
@@ -65,12 +69,12 @@
 
      <div class="formProducts">
        <label for="image" class="form-label">Seleccionar Imagen:</label>
-       <input id= "imagefile" type="file" name="image" value="<%= producto.image %>">
+       <input id= "imagefile" type="file" name="imageProd" value="<%= producto.image %>">
      </div>
 
      <div class="formProducts">
        <label for="detail" class="form-label" >  Descripción </label>
-       <textarea name="detail" id="detail" value="<%= producto.detail %>"class="form-input"></textarea>
+       <textarea name="detail" id="detail" value="<%= producto.detail %>" placeholder="<%= producto.detail %>"  class="form-input"></textarea>
      </div>
 
    </div>

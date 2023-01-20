@@ -35,7 +35,7 @@ router.get('/detail/:id', productsController.detail);
 
 //editar el producto
 router.get('/edit/:id', productsController.edit);
-router.put('/edit/:id', productsController.update);
+router.put('/edit/:id',upload.single('imageProd'), productsController.update);
 
 //eliminar un producto
 
