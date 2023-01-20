@@ -43,6 +43,4 @@ function cart_itemData(sequelize, Datatypes){
 
    };
 
-
-
 module.exports = cart_itemData;
