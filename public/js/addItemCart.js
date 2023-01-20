@@ -1,4 +1,4 @@
-alert('producto se sumo al carrito');
+
 var boton = document.getElementById('agregarcarrito');
 
 boton.addEventListener('click', ()=>{
