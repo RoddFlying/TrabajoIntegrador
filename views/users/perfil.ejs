@@ -39,9 +39,22 @@
             <h3><%= user.email %> </h3>
             <br>
             <br>
+            <div id="funcionesAdmin" class="funciones-admin">
+                <a href="/products/create"> 
+                    <h2> Agregar productos </h2> 
+                </a>
+                <a href="/products/edit"> 
+                    <h2> Editar producto </h2> 
+                </a>
+                <a href="/user/estadisticas">
+                    <h2>Estadisticas</h2>
+                </a>
+
+            </div>
             <br>
             <br>
-            <button>LOG OUT</button>
+            <a href="/user/logout"><button>LOG OUT</button></a>
+            
         </div>
         <img src="/img/avatars/<%= user.profile_image %>">
     </section>
@@ -55,5 +68,6 @@
 
  <!-- INCLUDES FOOTER-->
  <%- include('../partials/footer') %>
+ <script src="/js/showAdmin.js"></script>
 
 </html>

@@ -79,7 +79,9 @@ processRegister: async (req,res) => {
       // if (req.body.remember_user){
        res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60 })
        //}
+     
        return res.redirect('/user/profile/'+ userToLogin.id);
+    
    }
    return res.render('users/login', {
     errors: {

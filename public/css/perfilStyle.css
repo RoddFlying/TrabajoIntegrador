@@ -73,3 +73,24 @@
     color: #3f3222;
     font-weight: bold;
 }
+.funciones-admin{
+    display: none;
+}
+
+
+@media (max-width: 1023px){
+    .perfil {
+        grid-template-columns: 1fr;
+    }
+    
+  
+  }
+  
+  /*VERSION MOBILE*/
+  @media (max-width: 767px){
+   
+    
+   
+  }
+  
+  
