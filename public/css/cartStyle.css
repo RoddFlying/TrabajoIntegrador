@@ -69,17 +69,17 @@ main{
     width: 100%;
 }
 .mainCart .itemResumenCart h2{
-    font-size: 20px;
-    padding: 10px;
-    width: 75%;
-}
-.mainCart .itemResumenCart h3{
     font-size: 18px;
     padding: 10px;
     width: 75%;
 }
-.mainCart .itemResumenCart h4{
+.mainCart .itemResumenCart h3{
     font-size: 15px;
+    padding: 10px;
+    width: 75%;
+}
+.mainCart .itemResumenCart h4{
+    font-size: 12px;
     padding: 10px;
     width: 75%;
 }
@@ -89,9 +89,14 @@ main{
     border: #5a6b47 3px solid;
     padding: 20px;
 }
+.resumenCart .subtotalCart{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 15px;
+}
 .resumenCart button{
     width: 80%;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
