@@ -63,7 +63,7 @@
                     <h3 class="price" name="price" id="price">$<%= producto.price %></h3>
                     <% if (producto.discount !== 0) { %>
                       <h3 class="discount" name="discount" id="discount"><%= producto.discount %>  % OFF</h3>
-                      <h3 name="finalprice" id="finalprice">$ <%= producto.price - (producto.price * producto.discount / 100) %></h3>
+                      <h3 name="finalprice" >$ <span id="finalprice"> <%= producto.price - (producto.price * producto.discount / 100) %></span></h3>
                     <% } %>
                   </div>
                 <p><%= producto.detail %></p>

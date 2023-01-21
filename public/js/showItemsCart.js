@@ -2,8 +2,7 @@ let productosCarrito = JSON.parse(localStorage.getItem('carrito'));
 
 console.log(productosCarrito);
 
-let total = productosCarrito.reduce((acc, items)=> acc + items.precioFinal, 0 );
-
+let total = productosCarrito.reduce((acc, items)=> acc + Number(items.precioFinal), 0 );
 
 let div1 = document.getElementById('itemscart');
 

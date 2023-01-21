@@ -36,8 +36,8 @@
 }
 .perfil section{
     margin-top: 20px;
-    width: 90%;
     margin: auto;
+    width: 100%;
 }
 .perfilUsuario{
     background-color: #ffffff;
@@ -76,7 +76,17 @@
 /* .funciones-admin{
     display: none;
 } */
-
+.imagengeneralperfil {
+    width: 100%;
+}
+.imagengeneralperfil img{
+    width: 100%;
+}
+.funciones-admin a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
 
 @media (max-width: 1023px){
     .perfil {
