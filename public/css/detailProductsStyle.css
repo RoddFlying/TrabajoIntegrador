@@ -90,6 +90,7 @@
     transform: translateY(2px);
 }
 
+
 /*VERSION TABLET*/
 @media (max-width: 1023px){
     .mainDetailProducts .product .barratop{
