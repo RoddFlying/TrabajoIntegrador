@@ -55,7 +55,8 @@ processRegister: async (req,res) => {
     profile_image: req.file.filename,
     role_id: 2
   });
-  res.redirect('/user/login');
+
+  res.redirect('/user');
 },
   login: (req, res) => {
     if (req.session && req.session.userLogged ){

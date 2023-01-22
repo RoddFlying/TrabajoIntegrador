@@ -51,3 +51,12 @@ ICONOS: https://fontawesome.com/icons/magnifying-glass?s=solid&f=sharp
 Seguimos con correciones, debemos arreglar rutas y hacer las vistas faltantes. Agredar productos al JSON para podes probaralo todo.
 
 Productos: https://www.upgrowshop.com
+
+
+Admin
+email: super@admin.com
+pw: Super
+
+User
+email: user@tipo.com
+pw: Ejemplo
