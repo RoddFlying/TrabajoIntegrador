@@ -98,12 +98,12 @@ const productsController = {
     //Api producto//
     
     list: (req, res) => {
-      db.producto.findAll({include: [{association: 'categoria_producto'}]})
-      .then(function(productos){
+      db.products.findAll()
+      .then(function(products){
       
           let listaProductos = []
           
-          for (producto of productos){
+          for (producto of products){
               let aux = {
                   nombre: producto.name,
                   precio: producto.price,
@@ -114,7 +114,7 @@ const productsController = {
 
           let otherProducts = []
           
-          for (producto of productos){
+          for (producto of products){
               if(producto.productoCategoria.id == 3){
               otherProducts.push(producto);
           }}
@@ -122,8 +122,7 @@ const productsController = {
           res.json({descripcion: "Lista de productos",
           codigo:200,
           products: listaProductos,
-          count: listaProductos.length,
-          countByCategory: {Perros: productosPerro.length, Gatos: productosGato.length, Otros: otherProducts.length}
+          count: listaProductos.length
       
         })}) 
   },
@@ -138,6 +137,13 @@ const productsController = {
       })
       })
   },
+
+  sarasa: (req,res) => {
+    res.json({descripcion:"Total Categorias",
+        codigo:200
+    })
+  },
+
 
   product: (req,res) => {
       db.producto.findByPk(req.params.id, {include: [{association: 'productoCategoria'}]})

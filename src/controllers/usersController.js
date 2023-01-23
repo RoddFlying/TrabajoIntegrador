@@ -131,10 +131,7 @@ processRegister: async (req,res) => {
       }
 
       res.json({
-      codigo:200,
-      descripcion: "Lista de usuarios",
-      count: listaUsuarios.length,
-      users: listaUsuarios})
+      codigo:200})
 
   }) 
 },
