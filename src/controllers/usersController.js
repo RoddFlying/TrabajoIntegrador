@@ -125,36 +125,39 @@ profileAdmin: (req, res) => {
 // api usuario 
 
   list: (req, res) => {
-  db.usuario.findAll()
+  db.user.findAll()
   .then(function(usuarios){
 
       let listaUsuarios = []
 
       for (usuario of usuarios){
           let aux = {
-              nombre: usuario.nombre,
-              apellido: usuario.apellido,
+              nombre: usuario.name,
+              apellido: usuario.surname,
+              dni: usuario.dni,
               email: usuario.email,
-              admin: usuario.admin,
-              local: usuario.local_id
+              admin: usuario.role_id,
+              telephone: usuario.telephone,
           }
           listaUsuarios.push(aux);
       }
-
-      res.json({
-      codigo:200})
-
-  }) 
+      res.json({descripcion: "Lista de usuarios",
+      codigo:200,
+      users: listaUsuarios,
+      count: listaUsuarios.length
+  
+    })}) 
 },
   user: (req, res) => {
-  db.usuario.findByPk(req.params.id)
-  .then(function(user){
+  db.user.findByPk(req.params.id)
+  .then(function(usuario){
       let filteredUser = {
-          nombre: user.nombre,
-          apellido: user.apellido,
-          email: user.email,
-          admin: user.admin,
-          local: user.local_id
+        nombre: usuario.name,
+        apellido: usuario.surname,
+        dni: usuario.dni,
+        email: usuario.email,
+        admin: usuario.role_id,
+        telephone: usuario.telephone,
       }
   res.json({
       codigo:200,

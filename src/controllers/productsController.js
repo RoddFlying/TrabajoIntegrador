@@ -121,25 +121,18 @@ const productsController = {
   },
 
   categories: (req,res) => {
-      db.categoria.findAll()
+      db.product_category.findAll()
       .then(function(categorias){
       res.json({descripcion:"Total Categorias",
           codigo:200,
-          categories: categoria_producto,
-          count: categoria_producto.length
+          categories: categorias,
+          count: categorias.length
       })
       })
   },
-
-  sarasa: (req,res) => {
-    res.json({descripcion:"Total Categorias",
-        codigo:200
-    })
-  },
-
 
   product: (req,res) => {
-      db.producto.findByPk(req.params.id, {include: [{association: 'productoCategoria'}]})
+      db.products.findByPk(req.params.id, {include: [{association: 'categoria_producto'}]})
       .then(function(product){
       res.json({descripcion:"Producto",
           codigo:200,
