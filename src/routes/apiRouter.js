@@ -13,6 +13,4 @@ router.get('/categories', productsController.categories)
 
 router.get('/product/:id', productsController.product)
 
-router.get('/sarasa', productsController.sarasa)
-
 module.exports = router

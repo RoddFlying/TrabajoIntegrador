@@ -98,7 +98,7 @@ const productsController = {
     //Api producto//
     
     list: (req, res) => {
-      db.products.findAll()
+      db.products.findAll({include: [{association: 'categoria_producto'}]})
       .then(function(products){
       
           let listaProductos = []
@@ -111,13 +111,6 @@ const productsController = {
               }
               listaProductos.push(aux);
           }
-
-          let otherProducts = []
-          
-          for (producto of products){
-              if(producto.productoCategoria.id == 3){
-              otherProducts.push(producto);
-          }}
 
           res.json({descripcion: "Lista de productos",
           codigo:200,

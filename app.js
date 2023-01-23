@@ -5,7 +5,7 @@ const path = require("path");
 const methodOverride = require('method-override');
 const session = require('express-session');
 const cookies = require('cookie-parser');
-//const cors = require('cors');
+const cors = require('cors');
 
 const {sequelize} = require ('./src/database/models') 
 sequelize.sync({alter:false}).then(()=> console.log ('modelossincronizados'));
@@ -22,10 +22,8 @@ const app = express();
 
 //middleware//
 app.use( express.static(path.join(__dirname, '../public')));  
-//app.use(express.urlencoded({extended: false})); (generaba error)
 
-
-//app.use(cors());  
+app.use(cors());  
 app.use(express.json());
 app.use(cookies());
 app.use(methodOverride ("_method")); //Procesamiento PUT y DELETE 
@@ -41,6 +39,10 @@ app.use(session({
   resave:false ,
   saveUninitialized: false,
 }));
+
+// API//
+const apiRoutes = require('./src/routes/apiRouter')
+app.use('/', apiRoutes)
 
 //Routes//
 const mainRouter = require('./src/routes/mainRouter');
@@ -69,10 +71,7 @@ app.use((req, res, next) => {
   res.status(404).render("not-found")
 });
 
-// API//
 
-const apiRoutes = require('./src/routes/apiRouter')
-app.use('/', apiRoutes)
 
 //listen//
 
