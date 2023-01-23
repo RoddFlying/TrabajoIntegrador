@@ -6,30 +6,60 @@
 <body> 
 
 <!-- INCLUDES HEADER-->
-<%- include("../partials/header") %>
+<header>
+    <!-- <div class="searchBar">
+    
+        <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i>
+        <input type="text" placeholder="Buscar productos, servicios, más..">
+    </div> -->
+    <div class="headingLogo">
+        <a href="/"><img src="/img/logoGHboceto.png" alt="" class="logo"><a>
+    </div>
+   
+    <nav class="nav-bar">
+        <ul class="menuPrincipal">
+            <li><a href="/products">PRODUCTOS</a></li>             
+            <li> <a href="/user"><i class="fa-sharp fa-solid fa-user fa-2x"></i></a></li>
+            <li><a href="/carrito"><i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i></a> </li>
+        </ul>
+    </nav>
+    <div class="mobile-nav-bar">
+        <a href="/products"></a><i class="fa-sharp fa-solid fa-bars"></i></a>
+        <a href="/user"><i class="fa-sharp fa-solid fa-user fa-2x"></i></a>
+        <a href="/carrito"><i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i></a>
+    </div>
 
-<main class="admin">
-    <section class="perfilAdmin">
+
+</header>
+
+<main class="perfil">
+    <section class="perfilUsuario">
         <div>
             <h2> Hola <%=  user.name + " " + user.surname %>  </h2>
             <h3><%= user.email %> </h3>
+            <br>
+            <br>
+            <div id="funcionesAdmin" class="funciones-admin">
+                <a href="/products/create"> 
+                    <h4> Agregar productos </h4> 
+                </a>
+                <!-- <a href="/products/edit"> 
+                    <h4> Editar producto </h4> 
+                </a> Esto tiene q estar en cada producto. no aca-->
+                <a href="/user/estadisticas">
+                    <h4>Estadisticas</h4>
+                </a>
+
+            </div>
+            <br>
+            <br>
+            <a href="/user/logout"><button>LOG OUT</button></a>
+            
         </div>
         <img src="/img/avatars/<%= user.profile_image %>">
-        <div class="adminButton">
-            <!-- agregar los links de permiso del admin -->
-            <a href=""> 
-                <h2> Agregar productos </h2> 
-            </a>
-            <a href=""> 
-                <h2> Editar producto </h2> 
-            </a>
-            <a href="">
-                <h2>Estadisticas</h2>
-            </a>
-        </div>
     </section>
-    <section>
-        <img src="" alt="">
+    <section class="imagengeneralperfil">
+        <img src="/img/userPerfil.jpeg" alt="img perfil">
     </section>
 </main>
 
@@ -38,5 +68,6 @@
 
  <!-- INCLUDES FOOTER-->
  <%- include('../partials/footer') %>
+ <script src="/js/showAdmin.js"></script>
 
 </html>

@@ -10,7 +10,7 @@ const cookies = require('cookie-parser');
 const {sequelize} = require ('./src/database/models') 
 sequelize.sync({alter:false}).then(()=> console.log ('modelossincronizados'));
 
-const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+const userLoggedMiddleware = require('./Middlewares/userLoggedMiddleware');
 //const logger = require('morgan');
 const createError = require('http-errors');
 

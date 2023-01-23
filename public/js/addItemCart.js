@@ -21,5 +21,3 @@ boton.addEventListener('click', ()=>{
     console.log(productosCarrito);
 }) 
 
-//¿Como exportar el carrito?
-//module.exports = productosCarrito;

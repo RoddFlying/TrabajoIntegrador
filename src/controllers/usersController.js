@@ -55,7 +55,8 @@ processRegister: async (req,res) => {
     profile_image: req.file.filename,
     role_id: 2
   });
-  res.redirect('/user/login');
+
+  res.redirect('/user');
 },
   login: (req, res) => {
     if (req.session && req.session.userLogged ){
@@ -79,7 +80,11 @@ processRegister: async (req,res) => {
       // if (req.body.remember_user){
        res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60 })
        //}
+     if(userToLogin.role_id == 1){
+      return res.redirect('/user/adminUser/'+ userToLogin.id);
+     }else{
        return res.redirect('/user/profile/'+ userToLogin.id);
+   }
    }
    return res.render('users/login', {
     errors: {
@@ -104,7 +109,13 @@ processRegister: async (req,res) => {
    });
 
 },
-  
+profileAdmin: (req, res) => {
+
+  res.render('users/adminUser',{
+    user: req.session.userLogged
+  });
+
+},
  logout: (req,res) => {
     res.clearCookie('userEmail');
     req.session.destroy();

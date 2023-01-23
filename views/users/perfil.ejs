@@ -39,14 +39,16 @@
             <h3><%= user.email %> </h3>
             <br>
             <br>
+           
             <br>
             <br>
-            <button>LOG OUT</button>
+            <a href="/user/logout"><button>LOG OUT</button></a>
+            
         </div>
         <img src="/img/avatars/<%= user.profile_image %>">
     </section>
-    <section>
-        <img src="/img/userPerfil.jpg" alt="img perfil">
+    <section class="imagengeneralperfil">
+        <img src="/img/userPerfil.jpeg" alt="img perfil">
     </section>
 </main>
 
@@ -55,5 +57,6 @@
 
  <!-- INCLUDES FOOTER-->
  <%- include('../partials/footer') %>
+ <script src="/js/showAdmin.js"></script>
 
 </html>
