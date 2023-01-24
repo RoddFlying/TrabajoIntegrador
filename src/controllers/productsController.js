@@ -107,7 +107,7 @@ const productsController = {
               let aux = {
                   nombre: producto.name,
                   precio: producto.price,
-                  categoria: producto.categoria_producto.name,
+                  categoria: producto.categoria_producto.name
               }
               listaProductos.push(aux);
           }
